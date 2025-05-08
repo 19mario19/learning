@@ -28,8 +28,8 @@ storeCategory.subscribe((data) => {
 })
 
 // initialisation on load
-storeLang.value = JSON.parse(localStorage.getItem("lang"))
-storeCategory.value = JSON.parse(localStorage.getItem("category"))
+storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
+storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all" 
 storeData.value = db.All
 
 // functions
