@@ -1,0 +1,917 @@
+/**
+ * Enum of supported language codes.
+ * @readonly
+ * @enum {string}
+ */
+const lang = {
+  ro: "ro",
+  ru: "ru",
+  ua: "ua",
+  sp: "sp",
+  bg: "bg",
+  hi: "hi",
+}
+
+const categories = {
+  all: {
+    name: "all",
+    translation: {
+      [lang.ro]: "toate cuvintele 📚",
+      [lang.ru]: "все слова 📚",
+      [lang.ua]: "усі слова 📚",
+      [lang.sp]: "todas las palabras 📚",
+      [lang.bg]: "всички думи 📚",
+      [lang.hi]: "सभी शब्द 📚",
+    },
+  },
+  bathroom: {
+    name: "bathroom",
+    translation: {
+      [lang.ro]: "baie 🛁",
+      [lang.ru]: "ванная 🛁",
+      [lang.ua]: "ванна кімната 🛁",
+      [lang.sp]: "baño 🛁",
+      [lang.bg]: "баня 🛁",
+      [lang.hi]: "बाथरूम 🛁",
+    },
+  },
+  bedroom: {
+    name: "bedroom",
+    translation: {
+      [lang.ro]: "dormitor 🛌",
+      [lang.ru]: "спальня 🛌",
+      [lang.ua]: "спальня 🛌",
+      [lang.sp]: "dormitorio 🛌",
+      [lang.bg]: "спалня 🛌",
+      [lang.hi]: "शयनकक्ष 🛌",
+    },
+  },
+  supplies: {
+    name: "supplies",
+    translation: {
+      [lang.ro]: "consumabile 🧴",
+      [lang.ru]: "расходные материалы 🧴",
+      [lang.ua]: "витратні матеріали 🧴",
+      [lang.sp]: "suministros 🧴",
+      [lang.bg]: "консумативи 🧴",
+      [lang.hi]: "आपूर्ति 🧴",
+    },
+  },
+  cleaning: {
+    name: "cleaning",
+    translation: {
+      [lang.ro]: "curățenie 🧼",
+      [lang.ru]: "уборка 🧼",
+      [lang.ua]: "прибирання 🧼",
+      [lang.sp]: "limpieza 🧼",
+      [lang.bg]: "почистване 🧼",
+      [lang.hi]: "सफाई 🧼",
+    },
+  },
+  requests: {
+    name: "requests",
+    translation: {
+      [lang.ro]: "cereri 🗣️",
+      [lang.ru]: "запросы 🗣️",
+      [lang.ua]: "запити 🗣️",
+      [lang.sp]: "solicitudes 🗣️",
+      [lang.bg]: "заявки 🗣️",
+      [lang.hi]: "अनुरोध 🗣️",
+    },
+  },
+}
+const testData = {
+  list: [
+    // Bathroom items
+    {
+      id: 0,
+      name: "towel",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "prosop 🧖‍♀️",
+        [lang.ru]: "полотенце 🧖‍♀️",
+        [lang.ua]: "рушник 🧖‍♀️",
+        [lang.sp]: "toalla 🧖‍♀️",
+        [lang.bg]: "хавлия 🧖‍♀️",
+        [lang.hi]: "तौलिया 🧖‍♀️",
+      },
+    },
+    {
+      id: 1,
+      name: "hand towel",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "prosop de mâini ✋",
+        [lang.ru]: "полотенце для рук ✋",
+        [lang.ua]: "рушник для рук ✋",
+        [lang.sp]: "toalla de mano ✋",
+        [lang.bg]: "кърпа за ръце ✋",
+        [lang.hi]: "हाथ तौलिया ✋",
+      },
+    },
+    {
+      id: 2,
+      name: "bath mat",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "covoraș de baie 👣",
+        [lang.ru]: "коврик для ванной 👣",
+        [lang.ua]: "килимок для ванної 👣",
+        [lang.sp]: "alfombra de baño 👣",
+        [lang.bg]: "подложка за баня 👣",
+        [lang.hi]: "बाथ मैट 👣",
+      },
+    },
+    {
+      id: 3,
+      name: "toilet paper",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "hârtie igienică 🧻",
+        [lang.ru]: "туалетная бумага 🧻",
+        [lang.ua]: "туалетний папір 🧻",
+        [lang.sp]: "papel higiénico 🧻",
+        [lang.bg]: "тоалетна хартия 🧻",
+        [lang.hi]: "टॉयलेट पेपर 🧻",
+      },
+    },
+    {
+      id: 4,
+      name: "shower",
+      categories: [categories.bathroom, categories.cleaning],
+      translation: {
+        [lang.ro]: "duș 🚿",
+        [lang.ru]: "душ 🚿",
+        [lang.ua]: "душ 🚿",
+        [lang.sp]: "ducha 🚿",
+        [lang.bg]: "душ 🚿",
+        [lang.hi]: "शॉवर 🚿",
+      },
+    },
+    {
+      id: 5,
+      name: "bathtub",
+      categories: [categories.bathroom, categories.cleaning],
+      translation: {
+        [lang.ro]: "cadă 🛀",
+        [lang.ru]: "ванна 🛀",
+        [lang.ua]: "ванна 🛀",
+        [lang.sp]: "bañera 🛀",
+        [lang.bg]: "вана 🛀",
+        [lang.hi]: "बाथटब 🛀",
+      },
+    },
+    {
+      id: 6,
+      name: "toilet",
+      categories: [categories.bathroom, categories.cleaning],
+      translation: {
+        [lang.ro]: "toaletă 🚽",
+        [lang.ru]: "туалет 🚽",
+        [lang.ua]: "туалет 🚽",
+        [lang.sp]: "inodoro 🚽",
+        [lang.bg]: "тоалетна 🚽",
+        [lang.hi]: "शौचालय 🚽",
+      },
+    },
+    {
+      id: 7,
+      name: "sink",
+      categories: [categories.bathroom, categories.cleaning],
+      translation: {
+        [lang.ro]: "chiuvetă 🧼",
+        [lang.ru]: "раковина 🧼",
+        [lang.ua]: "раковина 🧼",
+        [lang.sp]: "lavabo 🧼",
+        [lang.bg]: "мивка 🧼",
+        [lang.hi]: "सिंक 🧼",
+      },
+    },
+    {
+      id: 8,
+      name: "shampoo",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "șampon 🧴",
+        [lang.ru]: "шампунь 🧴",
+        [lang.ua]: "шампунь 🧴",
+        [lang.sp]: "champú 🧴",
+        [lang.bg]: "шампоан 🧴",
+        [lang.hi]: "शैम्पू 🧴",
+      },
+    },
+    {
+      id: 9,
+      name: "conditioner",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "balsam de păr 🧴",
+        [lang.ru]: "кондиционер для волос 🧴",
+        [lang.ua]: "кондиціонер для волосся 🧴",
+        [lang.sp]: "acondicionador 🧴",
+        [lang.bg]: "балсам за коса 🧴",
+        [lang.hi]: "कंडीशनर 🧴",
+      },
+    },
+    {
+      id: 10,
+      name: "body wash",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "gel de duș 🧴",
+        [lang.ru]: "гель для душа 🧴",
+        [lang.ua]: "гель для душу 🧴",
+        [lang.sp]: "gel de ducha 🧴",
+        [lang.bg]: "душ гел 🧴",
+        [lang.hi]: "बॉडी वॉश 🧴",
+      },
+    },
+    {
+      id: 11,
+      name: "soap",
+      categories: [categories.bathroom, categories.supplies],
+      translation: {
+        [lang.ro]: "săpun 🧼",
+        [lang.ru]: "мыло 🧼",
+        [lang.ua]: "мило 🧼",
+        [lang.sp]: "jabón 🧼",
+        [lang.bg]: "сапун 🧼",
+        [lang.hi]: "साबुन 🧼",
+      },
+    },
+    {
+      id: 12,
+      name: "hairdryer",
+      categories: [categories.bathroom],
+      translation: {
+        [lang.ro]: "uscător de păr 💨",
+        [lang.ru]: "фен 💨",
+        [lang.ua]: "фен 💨",
+        [lang.sp]: "secador de pelo 💨",
+        [lang.bg]: "сешоар 💨",
+        [lang.hi]: "हेयर ड्रायर 💨",
+      },
+    },
+    // Bedroom items
+    {
+      id: 13,
+      name: "bed",
+      categories: [categories.bedroom, categories.cleaning],
+      translation: {
+        [lang.ro]: "pat 🛏️",
+        [lang.ru]: "кровать 🛏️",
+        [lang.ua]: "ліжко 🛏️",
+        [lang.sp]: "cama 🛏️",
+        [lang.bg]: "легло 🛏️",
+        [lang.hi]: "बिस्तर 🛏️",
+      },
+    },
+    {
+      id: 14,
+      name: "sheets",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "cearceafuri 🛌",
+        [lang.ru]: "простыни 🛌",
+        [lang.ua]: "простирадла 🛌",
+        [lang.sp]: "sábanas 🛌",
+        [lang.bg]: "чаршафи 🛌",
+        [lang.hi]: "चादरें 🛌",
+      },
+    },
+    {
+      id: 15,
+      name: "pillow",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "pernă 🛏️",
+        [lang.ru]: "подушка 🛏️",
+        [lang.ua]: "подушка 🛏️",
+        [lang.sp]: "almohada 🛏️",
+        [lang.bg]: "възглавница 🛏️",
+        [lang.hi]: "तकिया 🛏️",
+      },
+    },
+    {
+      id: 16,
+      name: "pillowcase",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "față de pernă 🛏️",
+        [lang.ru]: "наволочка 🛏️",
+        [lang.ua]: "наволочка 🛏️",
+        [lang.sp]: "funda de almohada 🛏️",
+        [lang.bg]: "калъфка за възглавница 🛏️",
+        [lang.hi]: "तकिया कवर 🛏️",
+      },
+    },
+    {
+      id: 17,
+      name: "blanket",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "pătură 🛌",
+        [lang.ru]: "одеяло 🛌",
+        [lang.ua]: "ковдра 🛌",
+        [lang.sp]: "manta 🛌",
+        [lang.bg]: "одеяло 🛌",
+        [lang.hi]: "कंबल 🛌",
+      },
+    },
+    {
+      id: 18,
+      name: "duvet",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "plapumă ☁️",
+        [lang.ru]: "пуховое одеяло ☁️",
+        [lang.ua]: "пухова ковдра ☁️",
+        [lang.sp]: "edredón ☁️",
+        [lang.bg]: "юрган ☁️",
+        [lang.hi]: "रजाई ☁️",
+      },
+    },
+    {
+      id: 19,
+      name: "duvet cover",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "husă de plapumă 🛌",
+        [lang.ru]: "пододеяльник 🛌",
+        [lang.ua]: "підковдра 🛌",
+        [lang.sp]: "funda de edredón 🛌",
+        [lang.bg]: "плик за завивка 🛌",
+        [lang.hi]: "कंबल का कवर 🛌",
+      },
+    },
+    {
+      id: 20,
+      name: "mattress",
+      categories: [categories.bedroom],
+      translation: {
+        [lang.ro]: "saltea 🛏️",
+        [lang.ru]: "матрас 🛏️",
+        [lang.ua]: "матрац 🛏️",
+        [lang.sp]: "colchón 🛏️",
+        [lang.bg]: "матрак 🛏️",
+        [lang.hi]: "गद्दा 🛏️",
+      },
+    },
+    {
+      id: 21,
+      name: "mattress protector",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "protecție de saltea 🛡️",
+        [lang.ru]: "наматрасник 🛡️",
+        [lang.ua]: "наматрацник 🛡️",
+        [lang.sp]: "protector de colchón 🛡️",
+        [lang.bg]: "протектор за матрак 🛡️",
+        [lang.hi]: "गद्दा रक्षक 🛡️",
+      },
+    },
+    {
+      id: 22,
+      name: "extra blanket",
+      categories: [categories.bedroom, categories.requests],
+      translation: {
+        [lang.ro]: "pătură suplimentară ➕🛌",
+        [lang.ru]: "дополнительное одеяло ➕🛌",
+        [lang.ua]: "додаткова ковдра ➕🛌",
+        [lang.sp]: "manta adicional ➕🛌",
+        [lang.bg]: "допълнително одеяло ➕🛌",
+        [lang.hi]: "अतिरिक्त कंबल ➕🛌",
+      },
+    },
+    {
+      id: 23,
+      name: "extra pillow",
+      categories: [categories.bedroom, categories.requests],
+      translation: {
+        [lang.ro]: "pernă suplimentară ➕🛏️",
+        [lang.ru]: "дополнительная подушка ➕🛏️",
+        [lang.ua]: "додаткова подушка ➕🛏️",
+        [lang.sp]: "almohada adicional ➕🛏️",
+        [lang.bg]: "допълнителна възглавница ➕🛏️",
+        [lang.hi]: "अतिरिक्त तकिया ➕🛏️",
+      },
+    },
+    // Cleaning items and terminology
+    {
+      id: 24,
+      name: "vacuum cleaner",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "aspirator 💨",
+        [lang.ru]: "пылесос 💨",
+        [lang.ua]: "пилосос 💨",
+        [lang.sp]: "aspiradora 💨",
+        [lang.bg]: "прахосмукачка 💨",
+        [lang.hi]: "वैक्यूम क्लीनर 💨",
+      },
+    },
+    {
+      id: 25,
+      name: "mop",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "mop 🧹",
+        [lang.ru]: "швабра 🧹",
+        [lang.ua]: "швабра 🧹",
+        [lang.sp]: "trapeador 🧹",
+        [lang.bg]: "моп 🧹",
+        [lang.hi]: "पोंछा 🧹",
+      },
+    },
+    {
+      id: 26,
+      name: "broom",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "mătură 🧹",
+        [lang.ru]: "метла 🧹",
+        [lang.ua]: "мітла 🧹",
+        [lang.sp]: "escoba 🧹",
+        [lang.bg]: "метла 🧹",
+        [lang.hi]: "झाड़ू 🧹",
+      },
+    },
+    {
+      id: 27,
+      name: "dustpan",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "făraș 🗑️",
+        [lang.ru]: "совок 🗑️",
+        [lang.ua]: "совок 🗑️",
+        [lang.sp]: "recogedor 🗑️",
+        [lang.bg]: "лопатка за боклук 🗑️",
+        [lang.hi]: "धूलदान 🗑️",
+      },
+    },
+    {
+      id: 28,
+      name: "duster",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "pămătuf de praf 🧹",
+        [lang.ru]: "метелка для пыли 🧹",
+        [lang.ua]: "щітка для пилу 🧹",
+        [lang.sp]: "plumero 🧹",
+        [lang.bg]: "прахова кърпа 🧹",
+        [lang.hi]: "डस्टर 🧹",
+      },
+    },
+    {
+      id: 29,
+      name: "cleaning spray",
+      categories: [categories.cleaning, categories.supplies],
+      translation: {
+        [lang.ro]: "spray de curățare 🧴",
+        [lang.ru]: "чистящий спрей 🧴",
+        [lang.ua]: "чистячий спрей 🧴",
+        [lang.sp]: "spray de limpieza 🧴",
+        [lang.bg]: "спрей за почистване 🧴",
+        [lang.hi]: "सफाई स्प्रे 🧴",
+      },
+    },
+    {
+      id: 30,
+      name: "disinfectant",
+      categories: [categories.cleaning, categories.supplies],
+      translation: {
+        [lang.ro]: "dezinfectant 🧪",
+        [lang.ru]: "дезинфицирующее средство 🧪",
+        [lang.ua]: "дезінфікуючий засіб 🧪",
+        [lang.sp]: "desinfectante 🧪",
+        [lang.bg]: "дезинфектант 🧪",
+        [lang.hi]: "डिसइंफेक्टेंट 🧪",
+      },
+    },
+    {
+      id: 31,
+      name: "glass cleaner",
+      categories: [categories.cleaning, categories.supplies],
+      translation: {
+        [lang.ro]: "soluție de curățat geamuri 🧴",
+        [lang.ru]: "средство для чистки стекол 🧴",
+        [lang.ua]: "засіб для чищення скла 🧴",
+        [lang.sp]: "limpiacristales 🧴",
+        [lang.bg]: "препарат за почистване на стъкла 🧴",
+        [lang.hi]: "कांच क्लीनर 🧴",
+      },
+    },
+    // Common phrases and requests
+    {
+      id: 32,
+      name: "do not disturb",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "nu deranjați 🤫",
+        [lang.ru]: "не беспокоить 🤫",
+        [lang.ua]: "не турбувати 🤫",
+        [lang.sp]: "no molestar 🤫",
+        [lang.bg]: "не безпокойте 🤫",
+        [lang.hi]: "परेशान न करें 🤫",
+      },
+    },
+    {
+      id: 33,
+      name: "please clean my room",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "vă rog să-mi curățați camera 🙏🧹",
+        [lang.ru]: "пожалуйста, уберите мою комнату 🙏🧹",
+        [lang.ua]: "будь ласка, приберіть мою кімнату 🙏🧹",
+        [lang.sp]: "por favor, limpie mi habitación 🙏🧹",
+        [lang.bg]: "моля, почистете стаята ми 🙏🧹",
+        [lang.hi]: "कृपया मेरा कमरा साफ करें 🙏🧹",
+      },
+    },
+    {
+      id: 34,
+      name: "need more towels",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "am nevoie de mai multe prosoape ➕🧖‍♀️",
+        [lang.ru]: "нужны дополнительные полотенца ➕🧖‍♀️",
+        [lang.ua]: "потрібні додаткові рушники ➕🧖‍♀️",
+        [lang.sp]: "necesito más toallas ➕🧖‍♀️",
+        [lang.bg]: "трябват ми още кърпи ➕🧖‍♀️",
+        [lang.hi]: "मुझे और तौलिये चाहिए ➕🧖‍♀️",
+      },
+    },
+    {
+      id: 35,
+      name: "need more toilet paper",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "am nevoie de mai multă hârtie igienică ➕🧻",
+        [lang.ru]: "нужна туалетная бумага ➕🧻",
+        [lang.ua]: "потрібен туалетний папір ➕🧻",
+        [lang.sp]: "necesito más papel higiénico ➕🧻",
+        [lang.bg]: "трябва ми още тоалетна хартия ➕🧻",
+        [lang.hi]: "मुझे और टॉयलेट पेपर चाहिए ➕🧻",
+      },
+    },
+    {
+      id: 36,
+      name: "clean",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "curat ✨",
+        [lang.ru]: "чистый ✨",
+        [lang.ua]: "чистий ✨",
+        [lang.sp]: "limpio ✨",
+        [lang.bg]: "чист ✨",
+        [lang.hi]: "साफ ✨",
+      },
+    },
+    {
+      id: 37,
+      name: "dirty",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "murdar 汚",
+        [lang.ru]: "грязный 汚",
+        [lang.ua]: "брудний 汚",
+        [lang.sp]: "sucio 汚",
+        [lang.bg]: "мръсен 汚",
+        [lang.hi]: "गंदा 汚",
+      },
+    },
+    {
+      id: 38,
+      name: "stain",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "pată 🔴",
+        [lang.ru]: "пятно 🔴",
+        [lang.ua]: "пляма 🔴",
+        [lang.sp]: "mancha 🔴",
+        [lang.bg]: "петно 🔴",
+        [lang.hi]: "धब्बा 🔴",
+      },
+    },
+    {
+      id: 39,
+      name: "trash",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "gunoi 🗑️",
+        [lang.ru]: "мусор 🗑️",
+        [lang.ua]: "сміття 🗑️",
+        [lang.sp]: "basura 🗑️",
+        [lang.bg]: "боклук 🗑️",
+        [lang.hi]: "कचरा 🗑️",
+      },
+    },
+    {
+      id: 40,
+      name: "trash bin",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "coș de gunoi 🗑️",
+        [lang.ru]: "мусорное ведро 🗑️",
+        [lang.ua]: "смітник 🗑️",
+        [lang.sp]: "papelera 🗑️",
+        [lang.bg]: "кошче за боклук 🗑️",
+        [lang.hi]: "कूड़ेदान 🗑️",
+      },
+    },
+    // Additional words
+    {
+      id: 41,
+      name: "pillowcase",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: "față de pernă 🛏️",
+        [lang.ru]: "наволочка 🛏️",
+        [lang.ua]: "наволочка 🛏️",
+        [lang.sp]: "funda de almohada 🛏️",
+        [lang.bg]: "калъфка за възглавница 🛏️",
+        [lang.hi]: "तकिया का खोल 🛏️",
+      },
+    },
+    {
+      id: 42,
+      name: "remote control",
+      categories: [categories.bedroom],
+      translation: {
+        [lang.ro]: "telecomandă 🕹️",
+        [lang.ru]: "пульт дистанционного управления 🕹️",
+        [lang.ua]: "пульт дистанційного керування 🕹️",
+        [lang.sp]: "mando a distancia 🕹️",
+        [lang.bg]: "дистанционно управление 🕹️",
+        [lang.hi]: "रिमोट कंट्रोल 🕹️",
+      },
+    },
+    {
+      id: 43,
+      name: "air conditioning",
+      categories: [categories.bedroom],
+      translation: {
+        [lang.ro]: "aer condiționat ❄️",
+        [lang.ru]: "кондиционер ❄️",
+        [lang.ua]: "кондиціонер ❄️",
+        [lang.sp]: "aire acondicionado ❄️",
+        [lang.bg]: "климатик ❄️",
+        [lang.hi]: "वातानुकूलन ❄️",
+      },
+    },
+    {
+      id: 44,
+      name: "hanger",
+      categories: [categories.bedroom],
+      translation: {
+        [lang.ro]: "umeras 🧥",
+        [lang.ru]: "вешалка 🧥",
+        [lang.ua]: "вішалка 🧥",
+        [lang.sp]: "percha 🧥",
+        [lang.bg]: "закачалка 🧥",
+        [lang.hi]: "हैंगर 🧥",
+      },
+    },
+    {
+      id: 45,
+      name: "luggage rack",
+      categories: [categories.bedroom],
+      translation: {
+        [lang.ro]: "suport pentru bagaje 💼",
+        [lang.ru]: "подставка для багажа 💼",
+        [lang.ua]: "підставка для багажу 💼",
+        [lang.sp]: "portamaletas 💼",
+        [lang.bg]: "багажник 💼",
+        [lang.hi]: "सामान रखने का रैक 💼",
+      },
+    },
+    {
+      id: 46,
+      name: "make the bed",
+      categories: [categories.cleaning, categories.requests],
+      translation: {
+        [lang.ro]: "fă patul 🛏️",
+        [lang.ru]: "заправить кровать 🛏️",
+        [lang.ua]: "застелити ліжко 🛏️",
+        [lang.sp]: "hacer la cama 🛏️",
+        [lang.bg]: "оправям леглото 🛏️",
+        [lang.hi]: "बिस्तर बनाना 🛏️",
+      },
+    },
+    {
+      id: 47,
+      name: "dust",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "praf 💨",
+        [lang.ru]: "пыль 💨",
+        [lang.ua]: "пил 💨",
+        [lang.sp]: "polvo 💨",
+        [lang.bg]: "прах 💨",
+        [lang.hi]: "धूल 💨",
+      },
+    },
+    {
+      id: 48,
+      name: "polish",
+      categories: [categories.cleaning, categories.supplies],
+      translation: {
+        [lang.ro]: "lustru ✨",
+        [lang.ru]: "полироль ✨",
+        [lang.ua]: "поліроль ✨",
+        [lang.sp]: "lustre ✨",
+        [lang.bg]: "полир ✨",
+        [lang.hi]: "पॉलिश ✨",
+      },
+    },
+    {
+      id: 49,
+      name: "stains on the carpet",
+      categories: [categories.requests, categories.cleaning],
+      translation: {
+        [lang.ro]: "pete pe covor 🔴",
+        [lang.ru]: "пятна на ковре 🔴",
+        [lang.ua]: "плями на килимі 🔴",
+        [lang.sp]: "manchas en la alfombra 🔴",
+        [lang.bg]: "петна по килима 🔴",
+        [lang.hi]: "कालीन पर दाग 🔴",
+      },
+    },
+    {
+      id: 50,
+      name: "change the sheets",
+      categories: [categories.requests, categories.cleaning],
+      translation: {
+        [lang.ro]: "schimbă cearceafurile 🔄🛌",
+        [lang.ru]: "поменять простыни 🔄🛌",
+        [lang.ua]: "поміняти простирадла 🔄🛌",
+        [lang.sp]: "cambiar las sábanas 🔄🛌",
+        [lang.bg]: "сменете чаршафите 🔄🛌",
+        [lang.hi]: "चादरें बदलें 🔄🛌",
+      },
+    },
+    {
+      id: 51,
+      name: "restock supplies",
+      categories: [categories.requests, categories.supplies],
+      translation: {
+        [lang.ro]: "reumple proviziile ➕🧴",
+        [lang.ru]: "пополнить запасы ➕🧴",
+        [lang.ua]: "поповнити запаси ➕🧴",
+        [lang.sp]: "reponer suministros ➕🧴",
+        [lang.bg]: "заредете консумативите ➕🧴",
+        [lang.hi]: "आपूर्ति फिर से भरें ➕🧴",
+      },
+    },
+    {
+      id: 52,
+      name: "empty the trash",
+      categories: [categories.requests, categories.cleaning],
+      translation: {
+        [lang.ro]: "golește gunoiul 🗑️",
+        [lang.ru]: "вынести мусор 🗑️",
+        [lang.ua]: "винести сміття 🗑️",
+        [lang.sp]: "vaciar la basura 🗑️",
+        [lang.bg]: "изхвърлете боклука 🗑️",
+        [lang.hi]: "कचरा खाली करें 🗑️",
+      },
+    },
+    {
+      id: 53,
+      name: "broken",
+      categories: [],
+      translation: {
+        [lang.ro]: "stricat 💔",
+        [lang.ru]: "сломанный 💔",
+        [lang.ua]: "зламаний 💔",
+        [lang.sp]: "roto 💔",
+        [lang.bg]: "счупен 💔",
+        [lang.hi]: "टूटा हुआ 💔",
+      },
+    },
+    {
+      id: 54,
+      name: "report a problem",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "raportează o problemă ⚠️",
+        [lang.ru]: "сообщить о проблеме ⚠️",
+        [lang.ua]: "повідомити про проблему ⚠️",
+        [lang.sp]: "reportar un problema ⚠️",
+        [lang.bg]: "докладвайте проблем ⚠️",
+        [lang.hi]: "एक समस्या की रिपोर्ट करें ⚠️",
+      },
+    },
+    {
+      id: 55,
+      name: "light",
+      categories: [],
+      translation: {
+        [lang.ro]: "lumină 💡",
+        [lang.ru]: "свет 💡",
+        [lang.ua]: "світло 💡",
+        [lang.sp]: "luz 💡",
+        [lang.bg]: "светлина 💡",
+        [lang.hi]: "रोशनी 💡",
+      },
+    },
+    {
+      id: 56,
+      name: "tidy up",
+      categories: [categories.cleaning],
+      translation: {
+        [lang.ro]: "fă ordine 🧹",
+        [lang.ru]: "прибраться 🧹",
+        [lang.ua]: "прибрати 🧹",
+        [lang.sp]: "ordenar 🧹",
+        [lang.bg]: "подреждам 🧹",
+        [lang.hi]: "साफ सुथरा करना 🧹",
+      },
+    },
+    {
+      id: 57,
+      name: "stains on the linen",
+      categories: [categories.requests, categories.cleaning],
+      translation: {
+        [lang.ro]: "pete pe lenjerie 🔴",
+        [lang.ru]: "пятна на белье 🔴",
+        [lang.ua]: "плями на білизні 🔴",
+        [lang.sp]: "manchas en la ropa de cama 🔴",
+        [lang.bg]: "петна по спалното бельо 🔴",
+        [lang.hi]: "लिनेन पर दाग 🔴",
+      },
+    },
+    {
+      id: 58,
+      name: "refill soap dispenser",
+      categories: [categories.requests, categories.supplies],
+      translation: {
+        [lang.ro]: "reumple dozatorul de săpun 🧴",
+        [lang.ru]: "пополнить диспенсер для мыла 🧴",
+        [lang.ua]: "поповнити диспенсер для мила 🧴",
+        [lang.sp]: "rellenar el dispensador de jabón 🧴",
+        [lang.bg]: "напълнете дозатора за сапун 🧴",
+        [lang.hi]: "साबुन डिस्पेंसर फिर से भरें 🧴",
+      },
+    },
+    {
+      id: 59,
+      name: "check out",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "verificare finală ➡️",
+        [lang.ru]: "выезд ➡️",
+        [lang.ua]: "виїзд ➡️",
+        [lang.sp]: "salida ➡️",
+        [lang.bg]: "напускане ➡️",
+        [lang.hi]: "चेक आउट ➡️",
+      },
+    },
+    {
+      id: 60,
+      name: "check in",
+      categories: [categories.requests],
+      translation: {
+        [lang.ro]: "înregistrare ⬅️",
+        [lang.ru]: "заезд ⬅️",
+        [lang.ua]: "заїзд ⬅️",
+        [lang.sp]: "entrada ⬅️",
+        [lang.bg]: "настаняване ⬅️",
+        [lang.hi]: "चेक इन ⬅️",
+      },
+    },
+  ],
+}
+
+function Database(testData) {
+  let data = testData
+
+  return {
+    get All() {
+      return data.list
+    },
+    ById: (id) => {
+      return data.list.filter((item) => item.id === id)
+    },
+    ByCategory: (categoryName) => {
+      console.log(categoryName.name, categories.all.name)
+      if (categoryName.name === categories.all.name) return data.list
+      let filtered = new Set()
+      for (let item of data.list) {
+        if (Array.isArray(item?.categories)) {
+          for (let category of item?.categories) {
+            if (category?.name === categoryName?.name) filtered.add(item)
+          }
+        }
+      }
+
+      return Array.from(filtered)
+    },
+  }
+}
+
+function newDatabase() {
+  return new Database(testData)
+}
+
+export { newDatabase, categories, lang }

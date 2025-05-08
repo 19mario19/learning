@@ -1,0 +1,23 @@
+{
+  "name": "hotellearning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "net": "node ./netlify/functions/index.js",
+    "dev": "nodemon ./netlify/functions/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

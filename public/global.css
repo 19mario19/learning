@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: inherit;
+    background: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    background-color: var(--brown-lightest);
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Inherit box-sizing to all elements */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: "Cormorant", sans-serif;
+}
+
+/* Set default box-sizing to border-box */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cormorant", sans-serif;
+}
+
+input::placeholder {
+    opacity: .7;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+:root {
+    --brown-lightest: #eae0d3;
+    --brown-lighter: #916649;
+    --brown-darker: #554b40;
+    --brown-darkest: #423a32;
+    --brown-dark: #352e28;
+
+    --brown-transparent: #c7ab8375;
+
+    --accent-color: #5f5348;
+    --button-color: #765a45;
+
+    --text-brown: #30302f;
+    --text-brown-lighter: #965f36;
+    --border-color: #a6836c;
+    --border-color-darker: #92674a;
+
+    --pad-large: 5rem;
+    --pad-med: 2.5rem;
+    --pad-small: 1rem;
+
+    --gap-large: 2rem;
+    --gap-med: 1.25rem;
+    --gap-small: .75rem;
+
+
+    --animation-fast: .25s;
+    --animation-medium: .45s;
+    --animation-slow: .75s;
+
+
+
+    --z-index-max: 99999;
+    --z-index-med: 999;
+
+    --container-width: 860px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+
+
+h1 {
+    font-size: 42px;
+    line-height: 48px;
+
+    font-weight: 800;
+}
+
+
+h2 {
+    font-size: 35px;
+    line-height: 42px;
+
+    font-weight: 600;
+
+
+
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 31px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 25px;
+
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+li {
+    cursor: pointer;
+
+
+
+
+}
+
+#app {
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--brown-darker);
+
+        padding: 1rem;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            text-align: center;
+
+
+            &.lang {
+                flex-direction: row;
+                gap: 1rem;
+                padding: .25rem;
+
+                li {
+                    font-size: 22px;
+                }
+            }
+
+            li {
+                color: white;
+                font-size: 18px;
+                padding: .25rem;
+            }
+
+        }
+
+    }
+
+    main {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            padding: 1rem;
+
+            li {
+                font-size: 20px;
+                padding: .5rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
