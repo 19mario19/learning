@@ -7,7 +7,7 @@ const lang = {
   ro: "ro",
   ru: "ru",
   ua: "ua",
-  sp: "sp",
+  es: "es",
   bg: "bg",
   hi: "hi",
 }
@@ -19,7 +19,7 @@ const categories = {
       [lang.ro]: "toate cuvintele 📚",
       [lang.ru]: "все слова 📚",
       [lang.ua]: "усі слова 📚",
-      [lang.sp]: "todas las palabras 📚",
+      [lang.es]: "todas las palabras 📚",
       [lang.bg]: "всички думи 📚",
       [lang.hi]: "सभी शब्द 📚",
     },
@@ -30,7 +30,7 @@ const categories = {
       [lang.ro]: "baie 🛁",
       [lang.ru]: "ванная 🛁",
       [lang.ua]: "ванна кімната 🛁",
-      [lang.sp]: "baño 🛁",
+      [lang.es]: "baño 🛁",
       [lang.bg]: "баня 🛁",
       [lang.hi]: "बाथरूम 🛁",
     },
@@ -41,7 +41,7 @@ const categories = {
       [lang.ro]: "dormitor 🛌",
       [lang.ru]: "спальня 🛌",
       [lang.ua]: "спальня 🛌",
-      [lang.sp]: "dormitorio 🛌",
+      [lang.es]: "dormitorio 🛌",
       [lang.bg]: "спалня 🛌",
       [lang.hi]: "शयनकक्ष 🛌",
     },
@@ -52,7 +52,7 @@ const categories = {
       [lang.ro]: "consumabile 🧴",
       [lang.ru]: "расходные материалы 🧴",
       [lang.ua]: "витратні матеріали 🧴",
-      [lang.sp]: "suministros 🧴",
+      [lang.es]: "suministros 🧴",
       [lang.bg]: "консумативи 🧴",
       [lang.hi]: "आपूर्ति 🧴",
     },
@@ -63,7 +63,7 @@ const categories = {
       [lang.ro]: "curățenie 🧼",
       [lang.ru]: "уборка 🧼",
       [lang.ua]: "прибирання 🧼",
-      [lang.sp]: "limpieza 🧼",
+      [lang.es]: "limpieza 🧼",
       [lang.bg]: "почистване 🧼",
       [lang.hi]: "सफाई 🧼",
     },
@@ -74,7 +74,7 @@ const categories = {
       [lang.ro]: "cereri 🗣️",
       [lang.ru]: "запросы 🗣️",
       [lang.ua]: "запити 🗣️",
-      [lang.sp]: "solicitudes 🗣️",
+      [lang.es]: "solicitudes 🗣️",
       [lang.bg]: "заявки 🗣️",
       [lang.hi]: "अनुरोध 🗣️",
     },
@@ -88,12 +88,30 @@ const testData = {
       name: "towel",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "prosop 🧖‍♀️",
-        [lang.ru]: "полотенце 🧖‍♀️",
-        [lang.ua]: "рушник 🧖‍♀️",
-        [lang.sp]: "toalla 🧖‍♀️",
-        [lang.bg]: "хавлия 🧖‍♀️",
-        [lang.hi]: "तौलिया 🧖‍♀️",
+        [lang.ro]: {
+          name: "prosop 🧖‍♀️",
+          transcription: "to-el",
+        },
+        [lang.ru]: {
+          name: "полотенце 🧖‍♀️",
+          transcription: "ТАУ-эл",
+        },
+        [lang.ua]: {
+          name: "рушник 🧖‍♀️",
+          transcription: "ТАУ-ел",
+        },
+        [lang.es]: {
+          name: "toalla 🧖‍♀️",
+          transcription: "TAU-el",
+        },
+        [lang.bg]: {
+          name: "хавлия 🧖‍♀️",
+          transcription: "ТАУ-ел",
+        },
+        [lang.hi]: {
+          name: "तौलिया 🧖‍♀️",
+          transcription: "टा-उल",
+        },
       },
     },
     {
@@ -101,12 +119,30 @@ const testData = {
       name: "hand towel",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "prosop de mâini ✋",
-        [lang.ru]: "полотенце для рук ✋",
-        [lang.ua]: "рушник для рук ✋",
-        [lang.sp]: "toalla de mano ✋",
-        [lang.bg]: "кърпа за ръце ✋",
-        [lang.hi]: "हाथ तौलिया ✋",
+        [lang.ro]: {
+          name: "prosop de mâini ✋",
+          transcription: "hand ta-uăl",
+        },
+        [lang.ru]: {
+          name: "полотенце для рук ✋",
+          transcription: "хэнд ТАУ-эл",
+        },
+        [lang.ua]: {
+          name: "рушник для рук ✋",
+          transcription: "хенд ТАУ-ел",
+        },
+        [lang.es]: {
+          name: "toalla de mano ✋",
+          transcription: "hand TAU-el",
+        },
+        [lang.bg]: {
+          name: "кърпа за ръце ✋",
+          transcription: "хенд ТАУ-ел",
+        },
+        [lang.hi]: {
+          name: "हाथ तौलिया ✋",
+          transcription: "हैंड टा-उल",
+        },
       },
     },
     {
@@ -114,12 +150,30 @@ const testData = {
       name: "bath mat",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "covoraș de baie 👣",
-        [lang.ru]: "коврик для ванной 👣",
-        [lang.ua]: "килимок для ванної 👣",
-        [lang.sp]: "alfombra de baño 👣",
-        [lang.bg]: "подложка за баня 👣",
-        [lang.hi]: "बाथ मैट 👣",
+        [lang.ro]: {
+          name: "covoraș de baie 👣",
+          transcription: "bath mat",
+        },
+        [lang.ru]: {
+          name: "коврик для ванной 👣",
+          transcription: "бас мат",
+        },
+        [lang.ua]: {
+          name: "килимок для ванної 👣",
+          transcription: "бас мат",
+        },
+        [lang.es]: {
+          name: "alfombra de baño 👣",
+          transcription: "bath mat",
+        },
+        [lang.bg]: {
+          name: "подложка за баня 👣",
+          transcription: "бас мат",
+        },
+        [lang.hi]: {
+          name: "बाथ मैट 👣",
+          transcription: "बाथ मैट",
+        },
       },
     },
     {
@@ -127,12 +181,30 @@ const testData = {
       name: "toilet paper",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "hârtie igienică 🧻",
-        [lang.ru]: "туалетная бумага 🧻",
-        [lang.ua]: "туалетний папір 🧻",
-        [lang.sp]: "papel higiénico 🧻",
-        [lang.bg]: "тоалетна хартия 🧻",
-        [lang.hi]: "टॉयलेट पेपर 🧻",
+        [lang.ro]: {
+          name: "hârtie igienică 🧻",
+          transcription: "toi-let pei-păr",
+        },
+        [lang.ru]: {
+          name: "туалетная бумага 🧻",
+          transcription: "той-лет ПЕЙ-пэр",
+        },
+        [lang.ua]: {
+          name: "туалетний папір 🧻",
+          transcription: "той-лет ПЕЙ-пер",
+        },
+        [lang.es]: {
+          name: "papel higiénico 🧻",
+          transcription: "toi-let pei-per",
+        },
+        [lang.bg]: {
+          name: "тоалетна хартия 🧻",
+          transcription: "той-лет ПЕЙ-пър",
+        },
+        [lang.hi]: {
+          name: "टॉयलेट पेपर 🧻",
+          transcription: "टॉयलेट पेपर",
+        },
       },
     },
     {
@@ -140,12 +212,30 @@ const testData = {
       name: "shower",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
-        [lang.ro]: "duș 🚿",
-        [lang.ru]: "душ 🚿",
-        [lang.ua]: "душ 🚿",
-        [lang.sp]: "ducha 🚿",
-        [lang.bg]: "душ 🚿",
-        [lang.hi]: "शॉवर 🚿",
+        [lang.ro]: {
+          name: "duș 🚿",
+          transcription: "shau-ăr",
+        },
+        [lang.ru]: {
+          name: "душ 🚿",
+          transcription: "ШАУ-эр",
+        },
+        [lang.ua]: {
+          name: "душ 🚿",
+          transcription: "ШАУ-ер",
+        },
+        [lang.es]: {
+          name: "ducha 🚿",
+          transcription: "SHA-u-er",
+        },
+        [lang.bg]: {
+          name: "душ 🚿",
+          transcription: "ШАУ-ър",
+        },
+        [lang.hi]: {
+          name: "शॉवर 🚿",
+          transcription: "शावर",
+        },
       },
     },
     {
@@ -153,12 +243,30 @@ const testData = {
       name: "bathtub",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
-        [lang.ro]: "cadă 🛀",
-        [lang.ru]: "ванна 🛀",
-        [lang.ua]: "ванна 🛀",
-        [lang.sp]: "bañera 🛀",
-        [lang.bg]: "вана 🛀",
-        [lang.hi]: "बाथटब 🛀",
+        [lang.ro]: {
+          name: "cadă 🛀",
+          transcription: "bath-tab",
+        },
+        [lang.ru]: {
+          name: "ванна 🛀",
+          transcription: "БАС-таб",
+        },
+        [lang.ua]: {
+          name: "ванна 🛀",
+          transcription: "БАС-таб",
+        },
+        [lang.es]: {
+          name: "bañera 🛀",
+          transcription: "bath-tab",
+        },
+        [lang.bg]: {
+          name: "вана 🛀",
+          transcription: "бас-таб",
+        },
+        [lang.hi]: {
+          name: "बाथटब 🛀",
+          transcription: "बाथटब",
+        },
       },
     },
     {
@@ -166,12 +274,30 @@ const testData = {
       name: "toilet",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
-        [lang.ro]: "toaletă 🚽",
-        [lang.ru]: "туалет 🚽",
-        [lang.ua]: "туалет 🚽",
-        [lang.sp]: "inodoro 🚽",
-        [lang.bg]: "тоалетна 🚽",
-        [lang.hi]: "शौचालय 🚽",
+        [lang.ro]: {
+          name: "toaletă 🚽",
+          transcription: "toi-let",
+        },
+        [lang.ru]: {
+          name: "туалет 🚽",
+          transcription: "ТУА-лет",
+        },
+        [lang.ua]: {
+          name: "туалет 🚽",
+          transcription: "ТУА-лет",
+        },
+        [lang.es]: {
+          name: "inodoro 🚽",
+          transcription: "TOI-let",
+        },
+        [lang.bg]: {
+          name: "тоалетна 🚽",
+          transcription: "той-лет",
+        },
+        [lang.hi]: {
+          name: "शौचालय 🚽",
+          transcription: "टॉयलेट",
+        },
       },
     },
     {
@@ -179,12 +305,30 @@ const testData = {
       name: "sink",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
-        [lang.ro]: "chiuvetă 🧼",
-        [lang.ru]: "раковина 🧼",
-        [lang.ua]: "раковина 🧼",
-        [lang.sp]: "lavabo 🧼",
-        [lang.bg]: "мивка 🧼",
-        [lang.hi]: "सिंक 🧼",
+        [lang.ro]: {
+          name: "chiuvetă 🧼",
+          transcription: "sink",
+        },
+        [lang.ru]: {
+          name: "раковина 🧼",
+          transcription: "синк",
+        },
+        [lang.ua]: {
+          name: "раковина 🧼",
+          transcription: "синк",
+        },
+        [lang.es]: {
+          name: "lavabo 🧼",
+          transcription: "sink",
+        },
+        [lang.bg]: {
+          name: "мивка 🧼",
+          transcription: "синк",
+        },
+        [lang.hi]: {
+          name: "सिंक 🧼",
+          transcription: "सिंक",
+        },
       },
     },
     {
@@ -192,12 +336,30 @@ const testData = {
       name: "shampoo",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "șampon 🧴",
-        [lang.ru]: "шампунь 🧴",
-        [lang.ua]: "шампунь 🧴",
-        [lang.sp]: "champú 🧴",
-        [lang.bg]: "шампоан 🧴",
-        [lang.hi]: "शैम्पू 🧴",
+        [lang.ro]: {
+          name: "șampon 🧴",
+          transcription: "sham-pu",
+        },
+        [lang.ru]: {
+          name: "шампунь 🧴",
+          transcription: "шам-пу",
+        },
+        [lang.ua]: {
+          name: "шампунь 🧴",
+          transcription: "шам-пу",
+        },
+        [lang.es]: {
+          name: "champú 🧴",
+          transcription: "cham-pu",
+        },
+        [lang.bg]: {
+          name: "шампоан 🧴",
+          transcription: "шам-по-ан",
+        },
+        [lang.hi]: {
+          name: "शैम्पू 🧴",
+          transcription: "शैम्पू",
+        },
       },
     },
     {
@@ -205,12 +367,30 @@ const testData = {
       name: "conditioner",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "balsam de păr 🧴",
-        [lang.ru]: "кондиционер для волос 🧴",
-        [lang.ua]: "кондиціонер для волосся 🧴",
-        [lang.sp]: "acondicionador 🧴",
-        [lang.bg]: "балсам за коса 🧴",
-        [lang.hi]: "कंडीशनर 🧴",
+        [lang.ro]: {
+          name: "balsam de păr 🧴",
+          transcription: "con-di-shuh-năr",
+        },
+        [lang.ru]: {
+          name: "кондиционер для волос 🧴",
+          transcription: "кон-ди-цио-нэр",
+        },
+        [lang.ua]: {
+          name: "кондиціонер для волосся 🧴",
+          transcription: "кон-ди-ціо-нэр",
+        },
+        [lang.es]: {
+          name: "acondicionador 🧴",
+          transcription: "a-con-di-sio-nei-r",
+        },
+        [lang.bg]: {
+          name: "балсам за коса 🧴",
+          transcription: "кон-ди-цио-нър",
+        },
+        [lang.hi]: {
+          name: "कंडीशनर 🧴",
+          transcription: "कंडीशनर",
+        },
       },
     },
     {
@@ -218,12 +398,30 @@ const testData = {
       name: "body wash",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "gel de duș 🧴",
-        [lang.ru]: "гель для душа 🧴",
-        [lang.ua]: "гель для душу 🧴",
-        [lang.sp]: "gel de ducha 🧴",
-        [lang.bg]: "душ гел 🧴",
-        [lang.hi]: "बॉडी वॉश 🧴",
+        [lang.ro]: {
+          name: "gel de duș 🧴",
+          transcription: "bo-di wosh",
+        },
+        [lang.ru]: {
+          name: "гель для душа 🧴",
+          transcription: "БО-ди ВОШ",
+        },
+        [lang.ua]: {
+          name: "гель для душу 🧴",
+          transcription: "БО-ді ВОШ",
+        },
+        [lang.es]: {
+          name: "gel de ducha 🧴",
+          transcription: "BO-di wosh",
+        },
+        [lang.bg]: {
+          name: "душ гел 🧴",
+          transcription: "БО-ди уош",
+        },
+        [lang.hi]: {
+          name: "बॉडी वॉश 🧴",
+          transcription: "बॉडी वॉश",
+        },
       },
     },
     {
@@ -231,12 +429,30 @@ const testData = {
       name: "soap",
       categories: [categories.bathroom, categories.supplies],
       translation: {
-        [lang.ro]: "săpun 🧼",
-        [lang.ru]: "мыло 🧼",
-        [lang.ua]: "мило 🧼",
-        [lang.sp]: "jabón 🧼",
-        [lang.bg]: "сапун 🧼",
-        [lang.hi]: "साबुन 🧼",
+        [lang.ro]: {
+          name: "săpun 🧼",
+          transcription: "sop",
+        },
+        [lang.ru]: {
+          name: "мыло 🧼",
+          transcription: "соуп",
+        },
+        [lang.ua]: {
+          name: "мило 🧼",
+          transcription: "соуп",
+        },
+        [lang.es]: {
+          name: "jabón 🧼",
+          transcription: "sop",
+        },
+        [lang.bg]: {
+          name: "сапун 🧼",
+          transcription: "соуп",
+        },
+        [lang.hi]: {
+          name: "साबुन 🧼",
+          transcription: "सोप",
+        },
       },
     },
     {
@@ -244,26 +460,61 @@ const testData = {
       name: "hairdryer",
       categories: [categories.bathroom],
       translation: {
-        [lang.ro]: "uscător de păr 💨",
-        [lang.ru]: "фен 💨",
-        [lang.ua]: "фен 💨",
-        [lang.sp]: "secador de pelo 💨",
-        [lang.bg]: "сешоар 💨",
-        [lang.hi]: "हेयर ड्रायर 💨",
+        [lang.ro]: {
+          name: "uscător de păr 💨",
+          transcription: "hair-dry-ăr",
+        },
+        [lang.ru]: {
+          name: "фен 💨",
+          transcription: "хэа-драй-эр",
+        },
+        [lang.ua]: {
+          name: "фен 💨",
+          transcription: "хэа-драй-ер",
+        },
+        [lang.es]: {
+          name: "secador de pelo 💨",
+          transcription: "hair-dry-er",
+        },
+        [lang.bg]: {
+          name: "сешоар 💨",
+          transcription: "хэа-драй-ър",
+        },
+        [lang.hi]: {
+          name: "हेयर ड्रायर 💨",
+          transcription: "हेयर ड्रायर",
+        },
       },
     },
-    // Bedroom items
     {
       id: 13,
       name: "bed",
       categories: [categories.bedroom, categories.cleaning],
       translation: {
-        [lang.ro]: "pat 🛏️",
-        [lang.ru]: "кровать 🛏️",
-        [lang.ua]: "ліжко 🛏️",
-        [lang.sp]: "cama 🛏️",
-        [lang.bg]: "легло 🛏️",
-        [lang.hi]: "बिस्तर 🛏️",
+        [lang.ro]: {
+          name: "pat 🛏️",
+          transcription: "bed",
+        },
+        [lang.ru]: {
+          name: "кровать 🛏️",
+          transcription: "бэд",
+        },
+        [lang.ua]: {
+          name: "ліжко 🛏️",
+          transcription: "бэд",
+        },
+        [lang.es]: {
+          name: "cama 🛏️",
+          transcription: "bed",
+        },
+        [lang.bg]: {
+          name: "легло 🛏️",
+          transcription: "бэд",
+        },
+        [lang.hi]: {
+          name: "बिस्तर 🛏️",
+          transcription: "बेड",
+        },
       },
     },
     {
@@ -271,12 +522,30 @@ const testData = {
       name: "sheets",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "cearceafuri 🛌",
-        [lang.ru]: "простыни 🛌",
-        [lang.ua]: "простирадла 🛌",
-        [lang.sp]: "sábanas 🛌",
-        [lang.bg]: "чаршафи 🛌",
-        [lang.hi]: "चादरें 🛌",
+        [lang.ro]: {
+          name: "cearceafuri 🛌",
+          transcription: "sheets",
+        },
+        [lang.ru]: {
+          name: "простыни 🛌",
+          transcription: "шитс",
+        },
+        [lang.ua]: {
+          name: "простирадла 🛌",
+          transcription: "шитс",
+        },
+        [lang.es]: {
+          name: "sábanas 🛌",
+          transcription: "sheets",
+        },
+        [lang.bg]: {
+          name: "чаршафи 🛌",
+          transcription: "шиитс",
+        },
+        [lang.hi]: {
+          name: "चादरें 🛌",
+          transcription: "शीट्स",
+        },
       },
     },
     {
@@ -284,12 +553,30 @@ const testData = {
       name: "pillow",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "pernă 🛏️",
-        [lang.ru]: "подушка 🛏️",
-        [lang.ua]: "подушка 🛏️",
-        [lang.sp]: "almohada 🛏️",
-        [lang.bg]: "възглавница 🛏️",
-        [lang.hi]: "तकिया 🛏️",
+        [lang.ro]: {
+          name: "pernă 🛏️",
+          transcription: "pi-lo",
+        },
+        [lang.ru]: {
+          name: "подушка 🛏️",
+          transcription: "пи-лоу",
+        },
+        [lang.ua]: {
+          name: "подушка 🛏️",
+          transcription: "пи-лоу",
+        },
+        [lang.es]: {
+          name: "almohada 🛏️",
+          transcription: "pi-lou",
+        },
+        [lang.bg]: {
+          name: "възглавница 🛏️",
+          transcription: "пи-лоу",
+        },
+        [lang.hi]: {
+          name: "तकिया 🛏️",
+          transcription: "पिलो",
+        },
       },
     },
     {
@@ -297,12 +584,30 @@ const testData = {
       name: "pillowcase",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "față de pernă 🛏️",
-        [lang.ru]: "наволочка 🛏️",
-        [lang.ua]: "наволочка 🛏️",
-        [lang.sp]: "funda de almohada 🛏️",
-        [lang.bg]: "калъфка за възглавница 🛏️",
-        [lang.hi]: "तकिया कवर 🛏️",
+        [lang.ro]: {
+          name: "față de pernă 🛏️",
+          transcription: "pi-lo-keis",
+        },
+        [lang.ru]: {
+          name: "наволочка 🛏️",
+          transcription: "пи-лоу-кейс",
+        },
+        [lang.ua]: {
+          name: "наволочка 🛏️",
+          transcription: "пи-лоу-кейс",
+        },
+        [lang.es]: {
+          name: "funda de almohada 🛏️",
+          transcription: "pi-lou-keis",
+        },
+        [lang.bg]: {
+          name: "калъфка за възглавница 🛏️",
+          transcription: "пи-лоу-кейс",
+        },
+        [lang.hi]: {
+          name: "तकिया कवर 🛏️",
+          transcription: "पिलो केस",
+        },
       },
     },
     {
@@ -310,12 +615,30 @@ const testData = {
       name: "blanket",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "pătură 🛌",
-        [lang.ru]: "одеяло 🛌",
-        [lang.ua]: "ковдра 🛌",
-        [lang.sp]: "manta 🛌",
-        [lang.bg]: "одеяло 🛌",
-        [lang.hi]: "कंबल 🛌",
+        [lang.ro]: {
+          name: "pătură 🛌",
+          transcription: "blan-ket",
+        },
+        [lang.ru]: {
+          name: "одеяло 🛌",
+          transcription: "бланкет",
+        },
+        [lang.ua]: {
+          name: "ковдра 🛌",
+          transcription: "бланкет",
+        },
+        [lang.es]: {
+          name: "manta 🛌",
+          transcription: "blan-ket",
+        },
+        [lang.bg]: {
+          name: "одеяло 🛌",
+          transcription: "бланкет",
+        },
+        [lang.hi]: {
+          name: "कंबल 🛌",
+          transcription: "ब्लैंकेट",
+        },
       },
     },
     {
@@ -323,12 +646,30 @@ const testData = {
       name: "duvet",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "plapumă ☁️",
-        [lang.ru]: "пуховое одеяло ☁️",
-        [lang.ua]: "пухова ковдра ☁️",
-        [lang.sp]: "edredón ☁️",
-        [lang.bg]: "юрган ☁️",
-        [lang.hi]: "रजाई ☁️",
+        [lang.ro]: {
+          name: "plapumă ☁️",
+          transcription: "du-vei",
+        },
+        [lang.ru]: {
+          name: "пуховое одеяло ☁️",
+          transcription: "ду-вэй",
+        },
+        [lang.ua]: {
+          name: "пухова ковдра ☁️",
+          transcription: "ду-вей",
+        },
+        [lang.es]: {
+          name: "edredón ☁️",
+          transcription: "du-vet",
+        },
+        [lang.bg]: {
+          name: "юрган ☁️",
+          transcription: "ду-вей",
+        },
+        [lang.hi]: {
+          name: "रजाई ☁️",
+          transcription: "दूवेट",
+        },
       },
     },
     {
@@ -336,12 +677,30 @@ const testData = {
       name: "duvet cover",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "husă de plapumă 🛌",
-        [lang.ru]: "пододеяльник 🛌",
-        [lang.ua]: "підковдра 🛌",
-        [lang.sp]: "funda de edredón 🛌",
-        [lang.bg]: "плик за завивка 🛌",
-        [lang.hi]: "कंबल का कवर 🛌",
+        [lang.ro]: {
+          name: "husă de plapumă 🛌",
+          transcription: "du-vei kuv-ăr",
+        },
+        [lang.ru]: {
+          name: "пододеяльник 🛌",
+          transcription: "ду-вэй КАВ-эр",
+        },
+        [lang.ua]: {
+          name: "підковдра 🛌",
+          transcription: "ду-вей КАВ-ер",
+        },
+        [lang.es]: {
+          name: "funda de edredón 🛌",
+          transcription: "du-vet cov-er",
+        },
+        [lang.bg]: {
+          name: "плик за завивка 🛌",
+          transcription: "ду-вей КАВ-ър",
+        },
+        [lang.hi]: {
+          name: "कंबल का कवर 🛌",
+          transcription: "दूवेट कवर",
+        },
       },
     },
     {
@@ -349,12 +708,30 @@ const testData = {
       name: "mattress",
       categories: [categories.bedroom],
       translation: {
-        [lang.ro]: "saltea 🛏️",
-        [lang.ru]: "матрас 🛏️",
-        [lang.ua]: "матрац 🛏️",
-        [lang.sp]: "colchón 🛏️",
-        [lang.bg]: "матрак 🛏️",
-        [lang.hi]: "गद्दा 🛏️",
+        [lang.ro]: {
+          name: "saltea 🛏️",
+          transcription: "ma-tres",
+        },
+        [lang.ru]: {
+          name: "матрас 🛏️",
+          transcription: "ма-трас",
+        },
+        [lang.ua]: {
+          name: "матрац 🛏️",
+          transcription: "ма-трац",
+        },
+        [lang.es]: {
+          name: "colchón 🛏️",
+          transcription: "ma-tres",
+        },
+        [lang.bg]: {
+          name: "матрак 🛏️",
+          transcription: "ма-трак",
+        },
+        [lang.hi]: {
+          name: "गद्दा 🛏️",
+          transcription: "मैट्रेस",
+        },
       },
     },
     {
@@ -362,12 +739,30 @@ const testData = {
       name: "mattress protector",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "protecție de saltea 🛡️",
-        [lang.ru]: "наматрасник 🛡️",
-        [lang.ua]: "наматрацник 🛡️",
-        [lang.sp]: "protector de colchón 🛡️",
-        [lang.bg]: "протектор за матрак 🛡️",
-        [lang.hi]: "गद्दा रक्षक 🛡️",
+        [lang.ro]: {
+          name: "protecție de saltea 🛡️",
+          transcription: "ma-tres pruh-tek-tur",
+        },
+        [lang.ru]: {
+          name: "наматрасник 🛡️",
+          transcription: "МЭТ-pэс про-ТЭК-тэр",
+        },
+        [lang.ua]: {
+          name: "наматрацник 🛡️",
+          transcription: "МЕТ-рес про-ТЕК-тер",
+        },
+        [lang.es]: {
+          name: "protector de colchón 🛡️",
+          transcription: "ma-tres pruh-tec-tor",
+        },
+        [lang.bg]: {
+          name: "протектор за матрак 🛡️",
+          transcription: "МЭТ-рес про-ТЕК-тър",
+        },
+        [lang.hi]: {
+          name: "गद्दा रक्षक 🛡️",
+          transcription: "मैट्रेस प्रोटेक्टर",
+        },
       },
     },
     {
@@ -375,12 +770,30 @@ const testData = {
       name: "extra blanket",
       categories: [categories.bedroom, categories.requests],
       translation: {
-        [lang.ro]: "pătură suplimentară ➕🛌",
-        [lang.ru]: "дополнительное одеяло ➕🛌",
-        [lang.ua]: "додаткова ковдра ➕🛌",
-        [lang.sp]: "manta adicional ➕🛌",
-        [lang.bg]: "допълнително одеяло ➕🛌",
-        [lang.hi]: "अतिरिक्त कंबल ➕🛌",
+        [lang.ro]: {
+          name: "pătură suplimentară ➕🛌",
+          transcription: "ek-struh blang-ket",
+        },
+        [lang.ru]: {
+          name: "дополнительное одеяло ➕🛌",
+          transcription: "ЭКСТРА БЛЭН-кит",
+        },
+        [lang.ua]: {
+          name: "додаткова ковдра ➕🛌",
+          transcription: "ЕКСТРА БЛЕН-кет",
+        },
+        [lang.es]: {
+          name: "manta adicional ➕🛌",
+          transcription: "ek-stra blan-ket",
+        },
+        [lang.bg]: {
+          name: "допълнително одеяло ➕🛌",
+          transcription: "ЕКСТРА БЛЕН-кет",
+        },
+        [lang.hi]: {
+          name: "अतिरिक्त कंबल ➕🛌",
+          transcription: "एक्स्ट्रा ब्लैंकेट",
+        },
       },
     },
     {
@@ -388,26 +801,61 @@ const testData = {
       name: "extra pillow",
       categories: [categories.bedroom, categories.requests],
       translation: {
-        [lang.ro]: "pernă suplimentară ➕🛏️",
-        [lang.ru]: "дополнительная подушка ➕🛏️",
-        [lang.ua]: "додаткова подушка ➕🛏️",
-        [lang.sp]: "almohada adicional ➕🛏️",
-        [lang.bg]: "допълнителна възглавница ➕🛏️",
-        [lang.hi]: "अतिरिक्त तकिया ➕🛏️",
+        [lang.ro]: {
+          name: "pernă suplimentară ➕🛏️",
+          transcription: "ek-struh pi-lo",
+        },
+        [lang.ru]: {
+          name: "дополнительная подушка ➕🛏️",
+          transcription: "ЭКСТРА ПИ-лоу",
+        },
+        [lang.ua]: {
+          name: "додаткова подушка ➕🛏️",
+          transcription: "ЕКСТРА ПІ-лоу",
+        },
+        [lang.es]: {
+          name: "almohada adicional ➕🛏️",
+          transcription: "ek-stra pi-lou",
+        },
+        [lang.bg]: {
+          name: "допълнителна възглавница ➕🛏️",
+          transcription: "ЕКСТРА ПИ-лоу",
+        },
+        [lang.hi]: {
+          name: "अतिरिक्त तकिया ➕🛏️",
+          transcription: "एक्स्ट्रा पिलो",
+        },
       },
     },
-    // Cleaning items and terminology
     {
       id: 24,
       name: "vacuum cleaner",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "aspirator 💨",
-        [lang.ru]: "пылесос 💨",
-        [lang.ua]: "пилосос 💨",
-        [lang.sp]: "aspiradora 💨",
-        [lang.bg]: "прахосмукачка 💨",
-        [lang.hi]: "वैक्यूम क्लीनर 💨",
+        [lang.ro]: {
+          name: "aspirator 💨",
+          transcription: "vak-yuum klee-năr",
+        },
+        [lang.ru]: {
+          name: "пылесос 💨",
+          transcription: "ВЭК-йуум КЛИ-нэр",
+        },
+        [lang.ua]: {
+          name: "пилосос 💨",
+          transcription: "ВЕК-йум КЛІ-нер",
+        },
+        [lang.es]: {
+          name: "aspiradora 💨",
+          transcription: "vak-juum klee-ner",
+        },
+        [lang.bg]: {
+          name: "прахосмукачка 💨",
+          transcription: "ВЕК-юум КЛИ-нър",
+        },
+        [lang.hi]: {
+          name: "वैक्यूम क्लीनर 💨",
+          transcription: "वैक्यूम क्लीनर",
+        },
       },
     },
     {
@@ -415,12 +863,30 @@ const testData = {
       name: "mop",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "mop 🧹",
-        [lang.ru]: "швабра 🧹",
-        [lang.ua]: "швабра 🧹",
-        [lang.sp]: "trapeador 🧹",
-        [lang.bg]: "моп 🧹",
-        [lang.hi]: "पोंछा 🧹",
+        [lang.ro]: {
+          name: "mop 🧹",
+          transcription: "mop",
+        },
+        [lang.ru]: {
+          name: "швабра 🧹",
+          transcription: "моп",
+        },
+        [lang.ua]: {
+          name: "швабра 🧹",
+          transcription: "моп",
+        },
+        [lang.es]: {
+          name: "trapeador 🧹",
+          transcription: "mop",
+        },
+        [lang.bg]: {
+          name: "моп 🧹",
+          transcription: "моп",
+        },
+        [lang.hi]: {
+          name: "पोंछा 🧹",
+          transcription: "मोप",
+        },
       },
     },
     {
@@ -428,12 +894,30 @@ const testData = {
       name: "broom",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "mătură 🧹",
-        [lang.ru]: "метла 🧹",
-        [lang.ua]: "мітла 🧹",
-        [lang.sp]: "escoba 🧹",
-        [lang.bg]: "метла 🧹",
-        [lang.hi]: "झाड़ू 🧹",
+        [lang.ro]: {
+          name: "mătură 🧹",
+          transcription: "broom",
+        },
+        [lang.ru]: {
+          name: "метла 🧹",
+          transcription: "брум",
+        },
+        [lang.ua]: {
+          name: "мітла 🧹",
+          transcription: "брум",
+        },
+        [lang.es]: {
+          name: "escoba 🧹",
+          transcription: "broom",
+        },
+        [lang.bg]: {
+          name: "метла 🧹",
+          transcription: "брум",
+        },
+        [lang.hi]: {
+          name: "झाड़ू 🧹",
+          transcription: "ब्रूम",
+        },
       },
     },
     {
@@ -441,12 +925,30 @@ const testData = {
       name: "dustpan",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "făraș 🗑️",
-        [lang.ru]: "совок 🗑️",
-        [lang.ua]: "совок 🗑️",
-        [lang.sp]: "recogedor 🗑️",
-        [lang.bg]: "лопатка за боклук 🗑️",
-        [lang.hi]: "धूलदान 🗑️",
+        [lang.ro]: {
+          name: "făraș 🗑️",
+          transcription: "dust-pan",
+        },
+        [lang.ru]: {
+          name: "совок 🗑️",
+          transcription: "ДАСТ-пэн",
+        },
+        [lang.ua]: {
+          name: "совок 🗑️",
+          transcription: "ДАСТ-пен",
+        },
+        [lang.es]: {
+          name: "recogedor 🗑️",
+          transcription: "dust-pan",
+        },
+        [lang.bg]: {
+          name: "лопатка за боклук 🗑️",
+          transcription: "ДАСТ-пен",
+        },
+        [lang.hi]: {
+          name: "धूलदान 🗑️",
+          transcription: "डस्ट पैन",
+        },
       },
     },
     {
@@ -454,25 +956,61 @@ const testData = {
       name: "duster",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "pămătuf de praf 🧹",
-        [lang.ru]: "метелка для пыли 🧹",
-        [lang.ua]: "щітка для пилу 🧹",
-        [lang.sp]: "plumero 🧹",
-        [lang.bg]: "прахова кърпа 🧹",
-        [lang.hi]: "डस्टर 🧹",
+        [lang.ro]: {
+          name: "pămătuf de praf 🧹",
+          transcription: "dust-ăr",
+        },
+        [lang.ru]: {
+          name: "метелка для пыли 🧹",
+          transcription: "ДАСТ-эр",
+        },
+        [lang.ua]: {
+          name: "щітка для пилу �",
+          transcription: "ДАСТ-ер",
+        },
+        [lang.es]: {
+          name: "plumero 🧹",
+          transcription: "dust-er",
+        },
+        [lang.bg]: {
+          name: "прахова кърпа 🧹",
+          transcription: "ДАСТ-ър",
+        },
+        [lang.hi]: {
+          name: "डस्टर 🧹",
+          transcription: "डस्टर",
+        },
       },
     },
     {
       id: 29,
-      name: "cleaning spray",
+      name: "cleaning esray",
       categories: [categories.cleaning, categories.supplies],
       translation: {
-        [lang.ro]: "spray de curățare 🧴",
-        [lang.ru]: "чистящий спрей 🧴",
-        [lang.ua]: "чистячий спрей 🧴",
-        [lang.sp]: "spray de limpieza 🧴",
-        [lang.bg]: "спрей за почистване 🧴",
-        [lang.hi]: "सफाई स्प्रे 🧴",
+        [lang.ro]: {
+          name: "esray de curățare 🧴",
+          transcription: "klee-ning sprei",
+        },
+        [lang.ru]: {
+          name: "чистящий спрей 🧴",
+          transcription: "КЛИ-нинг СПРЭЙ",
+        },
+        [lang.ua]: {
+          name: "чистячий спрей 🧴",
+          transcription: "КЛІ-нінг СПРЕЙ",
+        },
+        [lang.es]: {
+          name: "esray de limpieza 🧴",
+          transcription: "klee-ning sprei",
+        },
+        [lang.bg]: {
+          name: "спрей за почистване 🧴",
+          transcription: "КЛИЙ-нинг СПРЕЙ",
+        },
+        [lang.hi]: {
+          name: "सफाई स्प्रे 🧴",
+          transcription: "क्लीनिंग स्प्रे",
+        },
       },
     },
     {
@@ -480,12 +1018,30 @@ const testData = {
       name: "disinfectant",
       categories: [categories.cleaning, categories.supplies],
       translation: {
-        [lang.ro]: "dezinfectant 🧪",
-        [lang.ru]: "дезинфицирующее средство 🧪",
-        [lang.ua]: "дезінфікуючий засіб 🧪",
-        [lang.sp]: "desinfectante 🧪",
-        [lang.bg]: "дезинфектант 🧪",
-        [lang.hi]: "डिसइंफेक्टेंट 🧪",
+        [lang.ro]: {
+          name: "dezinfectant 🧪",
+          transcription: "dis-in-fek-tănt",
+        },
+        [lang.ru]: {
+          name: "дезинфицирующее средство 🧪",
+          transcription: "ДИС-ин-ФЕК-тант",
+        },
+        [lang.ua]: {
+          name: "дезінфікуючий засіб 🧪",
+          transcription: "ДИС-ін-ФЕК-тант",
+        },
+        [lang.es]: {
+          name: "desinfectante 🧪",
+          transcription: "dis-in-fec-tan-te",
+        },
+        [lang.bg]: {
+          name: "дезинфектант 🧪",
+          transcription: "ДИС-ин-ФЕК-тант",
+        },
+        [lang.hi]: {
+          name: "डिसइंफेक्टेंट 🧪",
+          transcription: "डिसइन्फेक्टेंट",
+        },
       },
     },
     {
@@ -493,26 +1049,61 @@ const testData = {
       name: "glass cleaner",
       categories: [categories.cleaning, categories.supplies],
       translation: {
-        [lang.ro]: "soluție de curățat geamuri 🧴",
-        [lang.ru]: "средство для чистки стекол 🧴",
-        [lang.ua]: "засіб для чищення скла 🧴",
-        [lang.sp]: "limpiacristales 🧴",
-        [lang.bg]: "препарат за почистване на стъкла 🧴",
-        [lang.hi]: "कांच क्लीनर 🧴",
+        [lang.ro]: {
+          name: "soluție de curățat geamuri 🧴",
+          transcription: "glas klee-năr",
+        },
+        [lang.ru]: {
+          name: "средство для чистки стекол 🧴",
+          transcription: "ГЛАС КЛИ-нэр",
+        },
+        [lang.ua]: {
+          name: "засіб для чищення скла 🧴",
+          transcription: "ГЛАС КЛІ-нер",
+        },
+        [lang.es]: {
+          name: "limpiacristales 🧴",
+          transcription: "glas klee-ner",
+        },
+        [lang.bg]: {
+          name: "препарат за почистване на стъкла 🧴",
+          transcription: "ГЛАС КЛИЙ-нър",
+        },
+        [lang.hi]: {
+          name: "कांच क्लीनर 🧴",
+          transcription: "ग्लास क्लीनर",
+        },
       },
     },
-    // Common phrases and requests
     {
       id: 32,
       name: "do not disturb",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "nu deranjați 🤫",
-        [lang.ru]: "не беспокоить 🤫",
-        [lang.ua]: "не турбувати 🤫",
-        [lang.sp]: "no molestar 🤫",
-        [lang.bg]: "не безпокойте 🤫",
-        [lang.hi]: "परेशान न करें 🤫",
+        [lang.ro]: {
+          name: "nu deranjați 🤫",
+          transcription: "doo not dis-turb",
+        },
+        [lang.ru]: {
+          name: "не беспокоить 🤫",
+          transcription: "ДУ НОТ ДИС-тёб",
+        },
+        [lang.ua]: {
+          name: "не турбувати 🤫",
+          transcription: "ДУ НОТ ДІС-тьорб",
+        },
+        [lang.es]: {
+          name: "no molestar 🤫",
+          transcription: "du not dis-turb",
+        },
+        [lang.bg]: {
+          name: "не безпокойте 🤫",
+          transcription: "ДУ НОТ ДИС-търб",
+        },
+        [lang.hi]: {
+          name: "परेशान न करें 🤫",
+          transcription: "डू नॉट डिस्टर्ब",
+        },
       },
     },
     {
@@ -520,12 +1111,30 @@ const testData = {
       name: "please clean my room",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "vă rog să-mi curățați camera 🙏🧹",
-        [lang.ru]: "пожалуйста, уберите мою комнату 🙏🧹",
-        [lang.ua]: "будь ласка, приберіть мою кімнату 🙏🧹",
-        [lang.sp]: "por favor, limpie mi habitación 🙏🧹",
-        [lang.bg]: "моля, почистете стаята ми 🙏🧹",
-        [lang.hi]: "कृपया मेरा कमरा साफ करें 🙏🧹",
+        [lang.ro]: {
+          name: "vă rog să-mi curățați camera 🙏🧹",
+          transcription: "pleez kleen mai room",
+        },
+        [lang.ru]: {
+          name: "пожалуйста, уберите мою комнату 🙏🧹",
+          transcription: "ПЛИЗ КЛИН МАЙ РУМ",
+        },
+        [lang.ua]: {
+          name: "будь ласка, приберіть мою кімнату 🙏🧹",
+          transcription: "ПЛІЗ КЛІН МАЙ РУМ",
+        },
+        [lang.es]: {
+          name: "por favor, limpie mi habitación 🙏🧹",
+          transcription: "plees kleen mai ruum",
+        },
+        [lang.bg]: {
+          name: "моля, почистете стаята ми 🙏🧹",
+          transcription: "ПЛИЙЗ КЛИЙН МАЙ РУМ",
+        },
+        [lang.hi]: {
+          name: "कृपया मेरा कमरा साफ करें 🙏🧹",
+          transcription: "प्लीज क्लीन माय रूम",
+        },
       },
     },
     {
@@ -533,12 +1142,30 @@ const testData = {
       name: "need more towels",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "am nevoie de mai multe prosoape ➕🧖‍♀️",
-        [lang.ru]: "нужны дополнительные полотенца ➕🧖‍♀️",
-        [lang.ua]: "потрібні додаткові рушники ➕🧖‍♀️",
-        [lang.sp]: "necesito más toallas ➕🧖‍♀️",
-        [lang.bg]: "трябват ми още кърпи ➕🧖‍♀️",
-        [lang.hi]: "मुझे और तौलिये चाहिए ➕🧖‍♀️",
+        [lang.ro]: {
+          name: "am nevoie de mai multe prosoape ➕🧖‍♀️",
+          transcription: "need mor ta-uălz",
+        },
+        [lang.ru]: {
+          name: "нужны дополнительные полотенца ➕🧖‍♀️",
+          transcription: "НИД МОР ТАУ-элз",
+        },
+        [lang.ua]: {
+          name: "потрібні додаткові рушники ➕🧖‍♀️",
+          transcription: "НІД МОР ТАУ-елз",
+        },
+        [lang.es]: {
+          name: "necesito más toallas ➕🧖‍♀️",
+          transcription: "need mor tau-els",
+        },
+        [lang.bg]: {
+          name: "трябват ми още кърпи ➕🧖‍♀️",
+          transcription: "НИЙД МОР ТАУ-ълз",
+        },
+        [lang.hi]: {
+          name: "मुझे और तौलिये चाहिए ➕🧖‍♀️",
+          transcription: "नीड मोर टावल्स",
+        },
       },
     },
     {
@@ -546,12 +1173,30 @@ const testData = {
       name: "need more toilet paper",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "am nevoie de mai multă hârtie igienică ➕🧻",
-        [lang.ru]: "нужна туалетная бумага ➕🧻",
-        [lang.ua]: "потрібен туалетний папір ➕🧻",
-        [lang.sp]: "necesito más papel higiénico ➕🧻",
-        [lang.bg]: "трябва ми още тоалетна хартия ➕🧻",
-        [lang.hi]: "मुझे और टॉयलेट पेपर चाहिए ➕🧻",
+        [lang.ro]: {
+          name: "am nevoie de mai multă hârtie igienică ➕🧻",
+          transcription: "need mor toi-let pei-păr",
+        },
+        [lang.ru]: {
+          name: "нужна туалетная бумага ➕🧻",
+          transcription: "НИД МОР ТОЙ-лет ПЕЙ-пэр",
+        },
+        [lang.ua]: {
+          name: "потрібен туалетний папір ➕🧻",
+          transcription: "НІД МОР ТОЙ-лет ПЕЙ-пер",
+        },
+        [lang.es]: {
+          name: "necesito más papel higiénico ➕🧻",
+          transcription: "need mor toi-let pei-per",
+        },
+        [lang.bg]: {
+          name: "трябва ми още тоалетна хартия ➕🧻",
+          transcription: "НИЙД МОР ТОЙ-лет ПЕЙ-пър",
+        },
+        [lang.hi]: {
+          name: "मुझे और टॉयलेट पेपर चाहिए ➕🧻",
+          transcription: "नीड मोर टॉयलेट पेपर",
+        },
       },
     },
     {
@@ -559,12 +1204,30 @@ const testData = {
       name: "clean",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "curat ✨",
-        [lang.ru]: "чистый ✨",
-        [lang.ua]: "чистий ✨",
-        [lang.sp]: "limpio ✨",
-        [lang.bg]: "чист ✨",
-        [lang.hi]: "साफ ✨",
+        [lang.ro]: {
+          name: "curat ✨",
+          transcription: "kleen",
+        },
+        [lang.ru]: {
+          name: "чистый ✨",
+          transcription: "клин",
+        },
+        [lang.ua]: {
+          name: "чистий ✨",
+          transcription: "клін",
+        },
+        [lang.es]: {
+          name: "limpio ✨",
+          transcription: "clean",
+        },
+        [lang.bg]: {
+          name: "чист ✨",
+          transcription: "клин",
+        },
+        [lang.hi]: {
+          name: "साफ ✨",
+          transcription: "क्लीन",
+        },
       },
     },
     {
@@ -572,12 +1235,30 @@ const testData = {
       name: "dirty",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "murdar 汚",
-        [lang.ru]: "грязный 汚",
-        [lang.ua]: "брудний 汚",
-        [lang.sp]: "sucio 汚",
-        [lang.bg]: "мръсен 汚",
-        [lang.hi]: "गंदा 汚",
+        [lang.ro]: {
+          name: "murdar 汚",
+          transcription: "dur-tee",
+        },
+        [lang.ru]: {
+          name: "грязный 汚",
+          transcription: "ДЁР-ти",
+        },
+        [lang.ua]: {
+          name: "брудний 汚",
+          transcription: "ДЬОР-ті",
+        },
+        [lang.es]: {
+          name: "sucio 汚",
+          transcription: "dir-ti",
+        },
+        [lang.bg]: {
+          name: "мръсен 汚",
+          transcription: "ДЪР-ти",
+        },
+        [lang.hi]: {
+          name: "गंदा 汚",
+          transcription: "डर्टी",
+        },
       },
     },
     {
@@ -585,12 +1266,30 @@ const testData = {
       name: "stain",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "pată 🔴",
-        [lang.ru]: "пятно 🔴",
-        [lang.ua]: "пляма 🔴",
-        [lang.sp]: "mancha 🔴",
-        [lang.bg]: "петно 🔴",
-        [lang.hi]: "धब्बा 🔴",
+        [lang.ro]: {
+          name: "pată 🔴",
+          transcription: "stein",
+        },
+        [lang.ru]: {
+          name: "пятно 🔴",
+          transcription: "стейн",
+        },
+        [lang.ua]: {
+          name: "пляма 🔴",
+          transcription: "стейн",
+        },
+        [lang.es]: {
+          name: "mancha 🔴",
+          transcription: "stein",
+        },
+        [lang.bg]: {
+          name: "петно 🔴",
+          transcription: "стейн",
+        },
+        [lang.hi]: {
+          name: "धब्बा 🔴",
+          transcription: "स्टेन",
+        },
       },
     },
     {
@@ -598,12 +1297,30 @@ const testData = {
       name: "trash",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "gunoi 🗑️",
-        [lang.ru]: "мусор 🗑️",
-        [lang.ua]: "сміття 🗑️",
-        [lang.sp]: "basura 🗑️",
-        [lang.bg]: "боклук 🗑️",
-        [lang.hi]: "कचरा 🗑️",
+        [lang.ro]: {
+          name: "gunoi 🗑️",
+          transcription: "trash",
+        },
+        [lang.ru]: {
+          name: "мусор 🗑️",
+          transcription: "трэш",
+        },
+        [lang.ua]: {
+          name: "сміття 🗑️",
+          transcription: "треш",
+        },
+        [lang.es]: {
+          name: "basura 🗑️",
+          transcription: "trash",
+        },
+        [lang.bg]: {
+          name: "боклук 🗑️",
+          transcription: "траш",
+        },
+        [lang.hi]: {
+          name: "कचरा 🗑️",
+          transcription: "ट्रैश",
+        },
       },
     },
     {
@@ -611,26 +1328,61 @@ const testData = {
       name: "trash bin",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "coș de gunoi 🗑️",
-        [lang.ru]: "мусорное ведро 🗑️",
-        [lang.ua]: "смітник 🗑️",
-        [lang.sp]: "papelera 🗑️",
-        [lang.bg]: "кошче за боклук 🗑️",
-        [lang.hi]: "कूड़ेदान 🗑️",
+        [lang.ro]: {
+          name: "coș de gunoi 🗑️",
+          transcription: "trash bin",
+        },
+        [lang.ru]: {
+          name: "мусорное ведро 🗑️",
+          transcription: "ТРЭШ БИН",
+        },
+        [lang.ua]: {
+          name: "смітник 🗑️",
+          transcription: "ТРЕШ БІН",
+        },
+        [lang.es]: {
+          name: "papelera 🗑️",
+          transcription: "trash bin",
+        },
+        [lang.bg]: {
+          name: "кошче за боклук 🗑️",
+          transcription: "ТРАШ БИН",
+        },
+        [lang.hi]: {
+          name: "कूड़ेदान 🗑️",
+          transcription: "ट्रैश बिन",
+        },
       },
     },
-    // Additional words
     {
       id: 41,
       name: "pillowcase",
       categories: [categories.bedroom, categories.supplies],
       translation: {
-        [lang.ro]: "față de pernă 🛏️",
-        [lang.ru]: "наволочка 🛏️",
-        [lang.ua]: "наволочка 🛏️",
-        [lang.sp]: "funda de almohada 🛏️",
-        [lang.bg]: "калъфка за възглавница 🛏️",
-        [lang.hi]: "तकिया का खोल 🛏️",
+        [lang.ro]: {
+          name: "față de pernă 🛏️",
+          transcription: "pi-lo-keis",
+        },
+        [lang.ru]: {
+          name: "наволочка 🛏️",
+          transcription: "ПИ-лоу-кейс",
+        },
+        [lang.ua]: {
+          name: "наволочка 🛏️",
+          transcription: "ПІ-лоу-кейс",
+        },
+        [lang.es]: {
+          name: "funda de almohada 🛏️",
+          transcription: "pi-lou-keis",
+        },
+        [lang.bg]: {
+          name: "калъфка за възглавница 🛏️",
+          transcription: "ПИ-лоу-кейс",
+        },
+        [lang.hi]: {
+          name: "तकिया का खोल 🛏️",
+          transcription: "पिलो केस",
+        },
       },
     },
     {
@@ -638,12 +1390,30 @@ const testData = {
       name: "remote control",
       categories: [categories.bedroom],
       translation: {
-        [lang.ro]: "telecomandă 🕹️",
-        [lang.ru]: "пульт дистанционного управления 🕹️",
-        [lang.ua]: "пульт дистанційного керування 🕹️",
-        [lang.sp]: "mando a distancia 🕹️",
-        [lang.bg]: "дистанционно управление 🕹️",
-        [lang.hi]: "रिमोट कंट्रोल 🕹️",
+        [lang.ro]: {
+          name: "telecomandă 🕹️",
+          transcription: "ri-moht kon-trohl",
+        },
+        [lang.ru]: {
+          name: "пульт дистанционного управления 🕹️",
+          transcription: "РИ-моут конт-РОЛ",
+        },
+        [lang.ua]: {
+          name: "пульт дистанційного керування 🕹️",
+          transcription: "РІ-моут конт-РОЛ",
+        },
+        [lang.es]: {
+          name: "mando a distancia 🕹️",
+          transcription: "ri-moot con-trol",
+        },
+        [lang.bg]: {
+          name: "дистанционно управление 🕹️",
+          transcription: "РИ-моут конт-РОЛ",
+        },
+        [lang.hi]: {
+          name: "रिमोट कंट्रोल 🕹️",
+          transcription: "रिमोट कंट्रोल",
+        },
       },
     },
     {
@@ -651,12 +1421,30 @@ const testData = {
       name: "air conditioning",
       categories: [categories.bedroom],
       translation: {
-        [lang.ro]: "aer condiționat ❄️",
-        [lang.ru]: "кондиционер ❄️",
-        [lang.ua]: "кондиціонер ❄️",
-        [lang.sp]: "aire acondicionado ❄️",
-        [lang.bg]: "климатик ❄️",
-        [lang.hi]: "वातानुकूलन ❄️",
+        [lang.ro]: {
+          name: "aer condiționat ❄️",
+          transcription: "air con-di-shun-ing",
+        },
+        [lang.ru]: {
+          name: "кондиционер ❄️",
+          transcription: "эир кон-ди-шни-нг",
+        },
+        [lang.ua]: {
+          name: "кондиціонер ❄️",
+          transcription: "еир кон-ди-шни-нг",
+        },
+        [lang.es]: {
+          name: "aire acondicionado ❄️",
+          transcription: "air con-di-shun-ing",
+        },
+        [lang.bg]: {
+          name: "климатик ❄️",
+          transcription: "еър кон-ди-шъ-нинг",
+        },
+        [lang.hi]: {
+          name: "वातानुकूलन ❄️",
+          transcription: "एयर कंडीशनिंग",
+        },
       },
     },
     {
@@ -664,12 +1452,30 @@ const testData = {
       name: "hanger",
       categories: [categories.bedroom],
       translation: {
-        [lang.ro]: "umeras 🧥",
-        [lang.ru]: "вешалка 🧥",
-        [lang.ua]: "вішалка 🧥",
-        [lang.sp]: "percha 🧥",
-        [lang.bg]: "закачалка 🧥",
-        [lang.hi]: "हैंगर 🧥",
+        [lang.ro]: {
+          name: "umeras 🧥",
+          transcription: "hang-ăr",
+        },
+        [lang.ru]: {
+          name: "вешалка 🧥",
+          transcription: "хэнг-ер",
+        },
+        [lang.ua]: {
+          name: "вішалка 🧥",
+          transcription: "хенгер",
+        },
+        [lang.es]: {
+          name: "percha 🧥",
+          transcription: "hang-er",
+        },
+        [lang.bg]: {
+          name: "закачалка 🧥",
+          transcription: "хенг-ър",
+        },
+        [lang.hi]: {
+          name: "हैंगर 🧥",
+          transcription: "हैंगर",
+        },
       },
     },
     {
@@ -677,12 +1483,30 @@ const testData = {
       name: "luggage rack",
       categories: [categories.bedroom],
       translation: {
-        [lang.ro]: "suport pentru bagaje 💼",
-        [lang.ru]: "подставка для багажа 💼",
-        [lang.ua]: "підставка для багажу 💼",
-        [lang.sp]: "portamaletas 💼",
-        [lang.bg]: "багажник 💼",
-        [lang.hi]: "सामान रखने का रैक 💼",
+        [lang.ro]: {
+          name: "suport pentru bagaje 💼",
+          transcription: "lug-ij rak",
+        },
+        [lang.ru]: {
+          name: "подставка для багажа 💼",
+          transcription: "лаг-эдж рэк",
+        },
+        [lang.ua]: {
+          name: "підставка для багажу 💼",
+          transcription: "лаг-едж рек",
+        },
+        [lang.es]: {
+          name: "portamaletas 💼",
+          transcription: "lug-gej rak",
+        },
+        [lang.bg]: {
+          name: "багажник 💼",
+          transcription: "лаг-едж рак",
+        },
+        [lang.hi]: {
+          name: "सामान रखने का रैक 💼",
+          transcription: "लगैज रैक",
+        },
       },
     },
     {
@@ -690,12 +1514,30 @@ const testData = {
       name: "make the bed",
       categories: [categories.cleaning, categories.requests],
       translation: {
-        [lang.ro]: "fă patul 🛏️",
-        [lang.ru]: "заправить кровать 🛏️",
-        [lang.ua]: "застелити ліжко 🛏️",
-        [lang.sp]: "hacer la cama 🛏️",
-        [lang.bg]: "оправям леглото 🛏️",
-        [lang.hi]: "बिस्तर बनाना 🛏️",
+        [lang.ro]: {
+          name: "fă patul 🛏️",
+          transcription: "meik dhə bed",
+        },
+        [lang.ru]: {
+          name: "заправить кровать 🛏️",
+          transcription: "мейк зе бед",
+        },
+        [lang.ua]: {
+          name: "застелити ліжко 🛏️",
+          transcription: "мейк зе бед",
+        },
+        [lang.es]: {
+          name: "hacer la cama 🛏️",
+          transcription: "meik the bed",
+        },
+        [lang.bg]: {
+          name: "оправям леглото 🛏️",
+          transcription: "мейк дъ бед",
+        },
+        [lang.hi]: {
+          name: "बिस्तर बनाना 🛏️",
+          transcription: "मेक द बेड",
+        },
       },
     },
     {
@@ -703,12 +1545,30 @@ const testData = {
       name: "dust",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "praf 💨",
-        [lang.ru]: "пыль 💨",
-        [lang.ua]: "пил 💨",
-        [lang.sp]: "polvo 💨",
-        [lang.bg]: "прах 💨",
-        [lang.hi]: "धूल 💨",
+        [lang.ro]: {
+          name: "praf 💨",
+          transcription: "dast",
+        },
+        [lang.ru]: {
+          name: "пыль 💨",
+          transcription: "даст",
+        },
+        [lang.ua]: {
+          name: "пил 💨",
+          transcription: "даст",
+        },
+        [lang.es]: {
+          name: "polvo 💨",
+          transcription: "dast",
+        },
+        [lang.bg]: {
+          name: "прах 💨",
+          transcription: "дъст",
+        },
+        [lang.hi]: {
+          name: "धूल 💨",
+          transcription: "डस्ट",
+        },
       },
     },
     {
@@ -716,12 +1576,30 @@ const testData = {
       name: "polish",
       categories: [categories.cleaning, categories.supplies],
       translation: {
-        [lang.ro]: "lustru ✨",
-        [lang.ru]: "полироль ✨",
-        [lang.ua]: "поліроль ✨",
-        [lang.sp]: "lustre ✨",
-        [lang.bg]: "полир ✨",
-        [lang.hi]: "पॉलिश ✨",
+        [lang.ro]: {
+          name: "lustru ✨",
+          transcription: "po-lish",
+        },
+        [lang.ru]: {
+          name: "полироль ✨",
+          transcription: "по-лиш",
+        },
+        [lang.ua]: {
+          name: "поліроль ✨",
+          transcription: "по-ліш",
+        },
+        [lang.es]: {
+          name: "lustre ✨",
+          transcription: "po-lish",
+        },
+        [lang.bg]: {
+          name: "полир ✨",
+          transcription: "по-лиш",
+        },
+        [lang.hi]: {
+          name: "पॉलिश ✨",
+          transcription: "पॉलिश",
+        },
       },
     },
     {
@@ -729,12 +1607,30 @@ const testData = {
       name: "stains on the carpet",
       categories: [categories.requests, categories.cleaning],
       translation: {
-        [lang.ro]: "pete pe covor 🔴",
-        [lang.ru]: "пятна на ковре 🔴",
-        [lang.ua]: "плями на килимі 🔴",
-        [lang.sp]: "manchas en la alfombra 🔴",
-        [lang.bg]: "петна по килима 🔴",
-        [lang.hi]: "कालीन पर दाग 🔴",
+        [lang.ro]: {
+          name: "pete pe covor 🔴",
+          transcription: "steinz on dhə kar-pet",
+        },
+        [lang.ru]: {
+          name: "пятна на ковре 🔴",
+          transcription: "стэйнз он зэ кар-пет",
+        },
+        [lang.ua]: {
+          name: "плями на килимі 🔴",
+          transcription: "стейнз он зе кар-пет",
+        },
+        [lang.es]: {
+          name: "manchas en la alfombra 🔴",
+          transcription: "stains on the car-pet",
+        },
+        [lang.bg]: {
+          name: "петна по килима 🔴",
+          transcription: "стейнз он дъ кар-пет",
+        },
+        [lang.hi]: {
+          name: "कालीन पर दाग 🔴",
+          transcription: "स्टेन्स ऑन द कारपेट",
+        },
       },
     },
     {
@@ -742,12 +1638,30 @@ const testData = {
       name: "change the sheets",
       categories: [categories.requests, categories.cleaning],
       translation: {
-        [lang.ro]: "schimbă cearceafurile 🔄🛌",
-        [lang.ru]: "поменять простыни 🔄🛌",
-        [lang.ua]: "поміняти простирадла 🔄🛌",
-        [lang.sp]: "cambiar las sábanas 🔄🛌",
-        [lang.bg]: "сменете чаршафите 🔄🛌",
-        [lang.hi]: "चादरें बदलें 🔄🛌",
+        [lang.ro]: {
+          name: "schimbă cearceafurile 🔄🛌",
+          transcription: "cheinj dhə sheets",
+        },
+        [lang.ru]: {
+          name: "поменять простыни 🔄🛌",
+          transcription: "чейндж зе шитс",
+        },
+        [lang.ua]: {
+          name: "поміняти простирадла 🔄🛌",
+          transcription: "чейндж зе шитс",
+        },
+        [lang.es]: {
+          name: "cambiar las sábanas 🔄🛌",
+          transcription: "cheinj the sheets",
+        },
+        [lang.bg]: {
+          name: "сменете чаршафите 🔄🛌",
+          transcription: "чейндж дъ шийтс",
+        },
+        [lang.hi]: {
+          name: "चादरें बदलें 🔄🛌",
+          transcription: "चेंज द शीट्स",
+        },
       },
     },
     {
@@ -755,12 +1669,30 @@ const testData = {
       name: "restock supplies",
       categories: [categories.requests, categories.supplies],
       translation: {
-        [lang.ro]: "reumple proviziile ➕🧴",
-        [lang.ru]: "пополнить запасы ➕🧴",
-        [lang.ua]: "поповнити запаси ➕🧴",
-        [lang.sp]: "reponer suministros ➕🧴",
-        [lang.bg]: "заредете консумативите ➕🧴",
-        [lang.hi]: "आपूर्ति फिर से भरें ➕🧴",
+        [lang.ro]: {
+          name: "reumple proviziile ➕🧴",
+          transcription: "ree-stok suh-plai-z",
+        },
+        [lang.ru]: {
+          name: "пополнить запасы ➕🧴",
+          transcription: "ри-сток сап-лайз",
+        },
+        [lang.ua]: {
+          name: "поповнити запаси ➕🧴",
+          transcription: "рі-сток сап-лайз",
+        },
+        [lang.es]: {
+          name: "reponer suministros ➕🧴",
+          transcription: "ree-stock sup-pli-es",
+        },
+        [lang.bg]: {
+          name: "заредете консумативите ➕🧴",
+          transcription: "рий-сток съп-лайз",
+        },
+        [lang.hi]: {
+          name: "आपूर्ति फिर से भरें ➕🧴",
+          transcription: "रीस्टॉक सप्लाइज",
+        },
       },
     },
     {
@@ -768,12 +1700,30 @@ const testData = {
       name: "empty the trash",
       categories: [categories.requests, categories.cleaning],
       translation: {
-        [lang.ro]: "golește gunoiul 🗑️",
-        [lang.ru]: "вынести мусор 🗑️",
-        [lang.ua]: "винести сміття 🗑️",
-        [lang.sp]: "vaciar la basura 🗑️",
-        [lang.bg]: "изхвърлете боклука 🗑️",
-        [lang.hi]: "कचरा खाली करें 🗑️",
+        [lang.ro]: {
+          name: "golește gunoiul 🗑️",
+          transcription: "emp-tee dhə trash",
+        },
+        [lang.ru]: {
+          name: "вынести мусор 🗑️",
+          transcription: "эмп-ти зэ трэш",
+        },
+        [lang.ua]: {
+          name: "винести сміття 🗑️",
+          transcription: "емпті зе треш",
+        },
+        [lang.es]: {
+          name: "vaciar la basura 🗑️",
+          transcription: "emp-tee the trash",
+        },
+        [lang.bg]: {
+          name: "изхвърлете боклука 🗑️",
+          transcription: "емп-ти дъ траш",
+        },
+        [lang.hi]: {
+          name: "कचरा खाली करें 🗑️",
+          transcription: "एम्प्टी द ट्रैश",
+        },
       },
     },
     {
@@ -781,12 +1731,30 @@ const testData = {
       name: "broken",
       categories: [],
       translation: {
-        [lang.ro]: "stricat 💔",
-        [lang.ru]: "сломанный 💔",
-        [lang.ua]: "зламаний 💔",
-        [lang.sp]: "roto 💔",
-        [lang.bg]: "счупен 💔",
-        [lang.hi]: "टूटा हुआ 💔",
+        [lang.ro]: {
+          name: "stricat 💔",
+          transcription: "bro-kăn",
+        },
+        [lang.ru]: {
+          name: "сломанный 💔",
+          transcription: "бро-кен",
+        },
+        [lang.ua]: {
+          name: "зламаний 💔",
+          transcription: "броукен",
+        },
+        [lang.es]: {
+          name: "roto 💔",
+          transcription: "bro-ken",
+        },
+        [lang.bg]: {
+          name: "счупен 💔",
+          transcription: "бро-кън",
+        },
+        [lang.hi]: {
+          name: "टूटा हुआ 💔",
+          transcription: "ब्रोकेन",
+        },
       },
     },
     {
@@ -794,12 +1762,30 @@ const testData = {
       name: "report a problem",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "raportează o problemă ⚠️",
-        [lang.ru]: "сообщить о проблеме ⚠️",
-        [lang.ua]: "повідомити про проблему ⚠️",
-        [lang.sp]: "reportar un problema ⚠️",
-        [lang.bg]: "докладвайте проблем ⚠️",
-        [lang.hi]: "एक समस्या की रिपोर्ट करें ⚠️",
+        [lang.ro]: {
+          name: "raportează o problemă ⚠️",
+          transcription: "ri-port ə pro-bləm",
+        },
+        [lang.ru]: {
+          name: "сообщить о проблеме ⚠️",
+          transcription: "ри-порт э про-блем",
+        },
+        [lang.ua]: {
+          name: "повідомити про проблему ⚠️",
+          transcription: "рі-порт е про-блем",
+        },
+        [lang.es]: {
+          name: "reportar un problema ⚠️",
+          transcription: "ri-port a prob-lem",
+        },
+        [lang.bg]: {
+          name: "докладвайте проблем ⚠️",
+          transcription: "ри-порт ъ проблем",
+        },
+        [lang.hi]: {
+          name: "एक समस्या की रिपोर्ट करें ⚠️",
+          transcription: "रिपोर्ट अ प्रॉब्लम",
+        },
       },
     },
     {
@@ -807,12 +1793,30 @@ const testData = {
       name: "light",
       categories: [],
       translation: {
-        [lang.ro]: "lumină 💡",
-        [lang.ru]: "свет 💡",
-        [lang.ua]: "світло 💡",
-        [lang.sp]: "luz 💡",
-        [lang.bg]: "светлина 💡",
-        [lang.hi]: "रोशनी 💡",
+        [lang.ro]: {
+          name: "lumină 💡",
+          transcription: "lait",
+        },
+        [lang.ru]: {
+          name: "свет 💡",
+          transcription: "лайт",
+        },
+        [lang.ua]: {
+          name: "світло 💡",
+          transcription: "лайт",
+        },
+        [lang.es]: {
+          name: "luz 💡",
+          transcription: "lait",
+        },
+        [lang.bg]: {
+          name: "светлина �",
+          transcription: "лайт",
+        },
+        [lang.hi]: {
+          name: "रोशनी 💡",
+          transcription: "लाइट",
+        },
       },
     },
     {
@@ -820,12 +1824,30 @@ const testData = {
       name: "tidy up",
       categories: [categories.cleaning],
       translation: {
-        [lang.ro]: "fă ordine 🧹",
-        [lang.ru]: "прибраться 🧹",
-        [lang.ua]: "прибрати 🧹",
-        [lang.sp]: "ordenar 🧹",
-        [lang.bg]: "подреждам 🧹",
-        [lang.hi]: "साफ सुथरा करना 🧹",
+        [lang.ro]: {
+          name: "fă ordine 🧹",
+          transcription: "tai-dee up",
+        },
+        [lang.ru]: {
+          name: "прибраться 🧹",
+          transcription: "тай-ди ап",
+        },
+        [lang.ua]: {
+          name: "прибрати 🧹",
+          transcription: "тайді ап",
+        },
+        [lang.es]: {
+          name: "ordenar 🧹",
+          transcription: "tai-di ap",
+        },
+        [lang.bg]: {
+          name: "подреждам 🧹",
+          transcription: "тай-ди ъп",
+        },
+        [lang.hi]: {
+          name: "साफ सुथरा करना 🧹",
+          transcription: "टाइडी अप",
+        },
       },
     },
     {
@@ -833,25 +1855,61 @@ const testData = {
       name: "stains on the linen",
       categories: [categories.requests, categories.cleaning],
       translation: {
-        [lang.ro]: "pete pe lenjerie 🔴",
-        [lang.ru]: "пятна на белье 🔴",
-        [lang.ua]: "плями на білизні 🔴",
-        [lang.sp]: "manchas en la ropa de cama 🔴",
-        [lang.bg]: "петна по спалното бельо 🔴",
-        [lang.hi]: "लिनेन पर दाग 🔴",
+        [lang.ro]: {
+          name: "pete pe lenjerie 🔴",
+          transcription: "steinz on dhə li-nən",
+        },
+        [lang.ru]: {
+          name: "пятна на белье 🔴",
+          transcription: "стэйнз он зэ ли-нэн",
+        },
+        [lang.ua]: {
+          name: "плями на білизні 🔴",
+          transcription: "стейнз он зе лінен",
+        },
+        [lang.es]: {
+          name: "manchas en la ropa de cama 🔴",
+          transcription: "stains on the li-nen",
+        },
+        [lang.bg]: {
+          name: "петна по спалното бельо 🔴",
+          transcription: "стейнз он дъ ли-нън",
+        },
+        [lang.hi]: {
+          name: "लिनेन पर दाग 🔴",
+          transcription: "स्टेन्स ऑन द लिनेन",
+        },
       },
     },
     {
       id: 58,
-      name: "refill soap dispenser",
+      name: "refill soap diesenser",
       categories: [categories.requests, categories.supplies],
       translation: {
-        [lang.ro]: "reumple dozatorul de săpun 🧴",
-        [lang.ru]: "пополнить диспенсер для мыла 🧴",
-        [lang.ua]: "поповнити диспенсер для мила 🧴",
-        [lang.sp]: "rellenar el dispensador de jabón 🧴",
-        [lang.bg]: "напълнете дозатора за сапун 🧴",
-        [lang.hi]: "साबुन डिस्पेंसर फिर से भरें 🧴",
+        [lang.ro]: {
+          name: "reumple dozatorul de săpun 🧴",
+          transcription: "ree-fil soup di-spen-săr",
+        },
+        [lang.ru]: {
+          name: "пополнить диспенсер для мыла 🧴",
+          transcription: "ри-фил соуп дис-пен-сер",
+        },
+        [lang.ua]: {
+          name: "поповнити диспенсер для мила 🧴",
+          transcription: "рі-філ соуп діспенсер",
+        },
+        [lang.es]: {
+          name: "rellenar el diesensador de jabón 🧴",
+          transcription: "ree-fil soup di-spen-ser",
+        },
+        [lang.bg]: {
+          name: "напълнете дозатора за сапун 🧴",
+          transcription: "рий-фийл соуп диспенсър",
+        },
+        [lang.hi]: {
+          name: "साबुन डिस्पेंसर फिर से भरें 🧴",
+          transcription: "रीफिल सोप डिस्पेंसर",
+        },
       },
     },
     {
@@ -859,12 +1917,30 @@ const testData = {
       name: "check out",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "verificare finală ➡️",
-        [lang.ru]: "выезд ➡️",
-        [lang.ua]: "виїзд ➡️",
-        [lang.sp]: "salida ➡️",
-        [lang.bg]: "напускане ➡️",
-        [lang.hi]: "चेक आउट ➡️",
+        [lang.ro]: {
+          name: "verificare finală ➡️",
+          transcription: "chek aut",
+        },
+        [lang.ru]: {
+          name: "выезд ➡️",
+          transcription: "чек аут",
+        },
+        [lang.ua]: {
+          name: "виїзд ➡️",
+          transcription: "чек аут",
+        },
+        [lang.es]: {
+          name: "salida ➡️",
+          transcription: "chek aut",
+        },
+        [lang.bg]: {
+          name: "напускане ➡️",
+          transcription: "чек-аут",
+        },
+        [lang.hi]: {
+          name: "चेक आउट ➡️",
+          transcription: "चेक आउट",
+        },
       },
     },
     {
@@ -872,12 +1948,30 @@ const testData = {
       name: "check in",
       categories: [categories.requests],
       translation: {
-        [lang.ro]: "înregistrare ⬅️",
-        [lang.ru]: "заезд ⬅️",
-        [lang.ua]: "заїзд ⬅️",
-        [lang.sp]: "entrada ⬅️",
-        [lang.bg]: "настаняване ⬅️",
-        [lang.hi]: "चेक इन ⬅️",
+        [lang.ro]: {
+          name: "înregistrare ⬅️",
+          transcription: "chek in",
+        },
+        [lang.ru]: {
+          name: "заезд ⬅️",
+          transcription: "чек ин",
+        },
+        [lang.ua]: {
+          name: "заїзд ⬅️",
+          transcription: "чек ін",
+        },
+        [lang.es]: {
+          name: "entrada ⬅️",
+          transcription: "chek in",
+        },
+        [lang.bg]: {
+          name: "настаняване ⬅️",
+          transcription: "чек-ин",
+        },
+        [lang.hi]: {
+          name: "चेक इन ⬅️",
+          transcription: "चेक इन",
+        },
       },
     },
   ],
@@ -888,6 +1982,7 @@ function Database(testData) {
 
   return {
     get All() {
+      // console.log(data.list.map((el) => el.translation))
       return data.list
     },
     ById: (id) => {

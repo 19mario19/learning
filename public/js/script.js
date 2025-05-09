@@ -12,24 +12,24 @@ const storeCategory = store.currentCategory
 // top subscribtions
 storeLang.subscribe((data) => {
   document.title = data + " | " + storeCategory.value
-  console.log(storeLang.getObservables())
-  console.log("Languages was changed to: ", data)
+  // console.log(storeLang.getObservables())
+  // console.log("Languages was changed to: ", data)
 })
 
 storeData.subscribe((data) => {
-  console.log(storeData.getObservables())
-  console.log("Data was changed to: ", data)
+  // console.log(storeData.getObservables())
+  // console.log("Data was changed to: ", data)
 })
 
 storeCategory.subscribe((data) => {
   document.title = storeLang.value + " | " + storeCategory.value
-  console.log("Category was changed to: ", data)
-  console.log(storeCategory.getObservables())
+  // console.log("Category was changed to: ", data)
+  // console.log(storeCategory.getObservables())
 })
 
 // initialisation on load
 storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
-storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all" 
+storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all"
 storeData.value = db.All
 
 // functions
@@ -100,13 +100,76 @@ function displayingData(root) {
     ListWordsComponent(storeData.value)
   })
 
+  storeCategory.subscribe(() => {
+    ListWordsComponent(storeData.value)
+  })
+
   root.insertBefore(container, root.firstChild)
 }
 
 function WordComponent(element, appendTo) {
+  console.log("Element taken in is:", element)
   const li = document.createElement("li")
-  li.textContent = `${element.name} - ${element.translation[storeLang.value]}`
   appendTo.appendChild(li)
+
+  const wrapper = document.createElement("div")
+  wrapper.classList.add("component")
+  li.appendChild(wrapper)
+
+  const top = document.createElement("div")
+  top.classList.add("top")
+  const span = document.createElement("span")
+  const en = document.createElement("p")
+  en.textContent = `${element?.name} / [${
+    element?.translation[storeLang.value]?.transcription ?? element.name
+  }]`
+  const translation = document.createElement("p")
+  translation.textContent = element.translation[storeLang.value].name
+  span.append(en, translation)
+  top.appendChild(span)
+
+  const mid = document.createElement("div")
+  mid.classList.add("mid")
+  // show categories
+  const ul = document.createElement("ul")
+  ul.classList.add("category")
+  mid.appendChild(ul)
+  for (let category of element.categories) {
+    const li = document.createElement("li")
+    li.textContent = category.name
+    ul.appendChild(li)
+
+    li.addEventListener("click", () => (storeCategory.value = category.name))
+  }
+
+  const bot = document.createElement("div")
+  bot.classList.add("bot")
+
+  const googleLink = document.createElement("a")
+  googleLink.classList.add("google")
+  googleLink.textContent = `google`
+  googleLink.href = `https://translate.google.co.uk/?sl=auto&tl=${storeLang.value}&text=${element.name}&op=translate`
+  googleLink.target = "_blank"
+  googleLink.rel = "noopener noreferrer"
+  googleLink.setAttribute(
+    "aria-label",
+    `View ${element.name} in Google Translate`,
+  )
+
+  const merriamLink = document.createElement("a")
+  merriamLink.classList.add("merriam")
+  merriamLink.textContent = `merriam-webster`
+  merriamLink.href = `https://www.merriam-webster.com/dictionary/${element.name}`
+  merriamLink.target = "_blank"
+  merriamLink.rel = "noopener noreferrer"
+  merriamLink.setAttribute(
+    "aria-label",
+    `View ${element.name} in Merriam Webster`,
+  )
+
+  bot.append(googleLink, merriamLink)
+
+  wrapper.append(top, mid, bot)
 }
 
 function ListWordsComponent(list) {

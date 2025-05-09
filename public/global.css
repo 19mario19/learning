@@ -191,6 +191,9 @@ input {
     --border-color: #a6836c;
     --border-color-darker: #92674a;
 
+    --meriam-blue: #0f3850;
+    --google-blue: #1b66c9;
+
     --pad-large: 5rem;
     --pad-med: 2.5rem;
     --pad-small: 1rem;
@@ -296,6 +299,10 @@ li {
 
                 li {
                     font-size: 22px;
+
+                    &.active {
+                        background-color: #5f5348;
+                    }
                 }
             }
 
@@ -313,14 +320,80 @@ li {
         ul {
             display: flex;
             flex-direction: column;
-            gap: .5rem;
-            padding: 1rem;
+            gap: 1rem;
 
             li {
-                font-size: 20px;
-                padding: .5rem;
-                margin-bottom: 1rem;
+                margin: .5rem;
             }
+        }
+    }
+
+    .component {
+        /* text-align: center; */
+
+        border: .5px solid var(--border-color-darker);
+        outline: 1px solid var(--border-color);
+
+        background-color: white;
+
+        border-radius: 12px;
+        padding: 2.5rem;
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .top {
+            span {
+                font-size: 22px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                >p {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .mid {
+            ul.category {
+                display: flex;
+                flex-direction: row;
+                gap: .25rem;
+
+
+                li {
+                    padding: .15rem .225rem;
+                    border-radius: 3px;
+                    margin: 0;
+                    background-color: rgba(128, 128, 128, 0.18);
+
+                }
+            }
+        }
+
+        .bot {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                padding: .15rem .225rem;
+                border-radius: 3px;
+                color: white;
+
+                &.google {
+                    background-color: var(--google-blue);
+                }
+
+                &.merriam {
+                    background-color: var(--meriam-blue);
+
+                }
+            }
+
         }
     }
 }
