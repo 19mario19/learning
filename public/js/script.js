@@ -138,8 +138,11 @@ function WordComponent(element, appendTo) {
     const li = document.createElement("li")
     li.textContent = category.name
     ul.appendChild(li)
-
-    li.addEventListener("click", () => (storeCategory.value = category.name))
+    // set store category value
+    li.addEventListener("click", () => {
+      storeCategory.value = category.name
+      storeData.value = db.ByCategory(category)
+    })
   }
 
   const bot = document.createElement("div")

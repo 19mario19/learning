@@ -1974,6 +1974,131 @@ const testData = {
         },
       },
     },
+
+    {
+      id: 61,
+      name: "foam pillow",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: {
+          name: "pernă de spumă",
+          transcription: "fohm pi-lo",
+        },
+        [lang.ru]: {
+          name: "поролоновая подушка",
+          transcription: "фоум пи-лоу",
+        },
+        [lang.ua]: {
+          name: "поролонова подушка",
+          transcription: "фоум пі-лоу",
+        },
+        [lang.es]: {
+          name: "almohada de espuma",
+          transcription: "fohm pi-lou",
+        },
+        [lang.bg]: {
+          name: "възглавница от пяна",
+          transcription: "фоум пи-лоу",
+        },
+        [lang.hi]: {
+          name: "फोम तकिया",
+          transcription: "फोम पिलो",
+        },
+      },
+    },
+    {
+      id: 62,
+      name: "feather pillow",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: {
+          name: "pernă de pene",
+          transcription: "fe-dhăr pi-lo",
+        },
+        [lang.ru]: {
+          name: "перовая подушка",
+          transcription: "фе-зер пи-лоу",
+        },
+        [lang.ua]: {
+          name: "пір'яна подушка",
+          transcription: "фезер пі-лоу",
+        },
+        [lang.es]: {
+          name: "almohada de plumas",
+          transcription: "fe-dher pi-lou",
+        },
+        [lang.bg]: {
+          name: "възглавница от пера",
+          transcription: "фе-дър пи-лоу",
+        },
+        [lang.hi]: {
+          name: "पंख तकिया",
+          transcription: "फ़ेदर पिलो",
+        },
+      },
+    },
+    {
+      id: 63,
+      name: "topper (for the bed)",
+      categories: [categories.bedroom, categories.supplies],
+      translation: {
+        [lang.ro]: {
+          name: "topper (pentru pat)",
+          transcription: "to-păr (for dhə bed)",
+        },
+        [lang.ru]: {
+          name: "топпер (для кровати)",
+          transcription: "топ-пер (фор зэ бэд)",
+        },
+        [lang.ua]: {
+          name: "топпер (для ліжка)",
+          transcription: "топпер (фор зе бед)",
+        },
+        [lang.es]: {
+          name: "topper (para la cama)",
+          transcription: "to-per (for de bed)",
+        },
+        [lang.bg]: {
+          name: "топер (за легло)",
+          transcription: "топър (фор дъ бед)",
+        },
+        [lang.hi]: {
+          name: "तोपर (बिस्तर के लिए)",
+          transcription: "टॉपर (फॉर द बेड)",
+        },
+      },
+    },
+    {
+      id: 64,
+      name: "hole (in the linen)",
+      categories: [categories.requests, categories.cleaning],
+      translation: {
+        [lang.ro]: {
+          name: "gaură (în lenjerie)",
+          transcription: "houl (in dhə li-nən)",
+        },
+        [lang.ru]: {
+          name: "дыра (в белье)",
+          transcription: "хоул (ин зэ ли-нен)",
+        },
+        [lang.ua]: {
+          name: "дірка (в білизні)",
+          transcription: "хоул (ін зе лінен)",
+        },
+        [lang.es]: {
+          name: "agujero (en la ropa de cama)",
+          transcription: "houl (in the li-nen)",
+        },
+        [lang.bg]: {
+          name: "дупка (в спалното бельо)",
+          transcription: "хоул (ин дъ ли-нън)",
+        },
+        [lang.hi]: {
+          name: "छेद (लिनेन में)",
+          transcription: "होल (इन द लिनेन)",
+        },
+      },
+    },
   ],
 }
 
