@@ -30,7 +30,7 @@ storeCategory.subscribe((data) => {
 // initialisation on load
 storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
 storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all"
-storeData.value = db.All
+storeData.value = storeCategory.value ? db.ByCategory(storeCategory.value) :db.All
 
 // functions
 function navbar(root) {
