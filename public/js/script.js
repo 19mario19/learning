@@ -132,12 +132,17 @@ function WordComponent(element, appendTo) {
   top.classList.add("top")
   const span = document.createElement("span")
   const en = document.createElement("p")
-  en.textContent = `${element?.name} / [${
+  en.textContent = element?.name
+
+  const transcription = document.createElement("p")
+  transcription.classList.add("transcription")
+  transcription.textContent = `${
     element?.translation[storeLang.value]?.transcription ?? element.name
-  }]`
+  }`
+
   const translation = document.createElement("p")
   translation.textContent = element.translation[storeLang.value].name
-  span.append(en, translation)
+  span.append(en, transcription, translation)
   top.appendChild(span)
 
   const mid = document.createElement("div")
