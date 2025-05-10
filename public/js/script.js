@@ -30,7 +30,16 @@ storeCategory.subscribe((data) => {
 // initialisation on load
 storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
 storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all"
-storeData.value = storeCategory.value ? db.ByCategory(storeCategory.value) :db.All
+
+console.log("db.all on init", db.All)
+console.log(
+  "db.ByCategory(storeCategory.value) on init [",
+  storeCategory.value,
+  "]",
+  db.ByCategory({ name: "all" }),
+)
+
+storeData.value = db.ByCategory({ name: storeCategory.value }) ?? db.All
 
 // functions
 function navbar(root) {
@@ -123,7 +132,7 @@ function displayingData(root) {
 }
 
 function WordComponent(element, appendTo) {
-  console.log("Element taken in is:", element)
+  // console.log("Element taken in is:", element)
   const li = document.createElement("li")
   appendTo.appendChild(li)
 
