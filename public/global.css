@@ -319,6 +319,7 @@ li {
         ul.categories {
             li {
                 padding: .5rem 1rem;
+
                 &.active {
                     background-color: var(--google-blue);
                     border-radius: 5px;
@@ -329,13 +330,14 @@ li {
     }
 
     main {
+        margin: 1.25rem 1rem;
         ul {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: .1rem;
 
             li {
-                margin: .5rem;
+                margin: .25rem;
             }
         }
     }
@@ -343,7 +345,7 @@ li {
     .component {
         /* text-align: center; */
 
-        border: 3px solid var(--border-color-darker);
+        border: 2px solid var(--border-color-darker);
 
         background-color: white;
 
@@ -373,11 +375,11 @@ li {
             ul.category {
                 display: flex;
                 flex-direction: row;
-                gap: .25rem;
+                gap: .75rem;
 
 
                 li {
-                    padding: .15rem .225rem;
+                    padding: .35rem .75rem;
                     border-radius: 3px;
                     margin: 0;
                     background-color: rgba(128, 128, 128, 0.18);
@@ -391,7 +393,7 @@ li {
             gap: 1rem;
 
             a {
-                padding: .15rem .225rem;
+                padding: .35rem .75rem;
                 border-radius: 3px;
                 color: white;
 

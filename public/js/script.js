@@ -160,7 +160,6 @@ function WordComponent(element, appendTo) {
         ?.classList.remove("active")
 
       const array = Array.from(document.querySelectorAll("ul.categories li"))
-      console.log(array)
       array.forEach((item) => {
         if (item.textContent === category.translation[storeLang.value])
           item.classList.add("active")
