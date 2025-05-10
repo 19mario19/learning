@@ -299,7 +299,7 @@ li {
 
                 li {
                     font-size: 22px;
-                    padding: .75rem;
+                    padding: .25rem;
 
                     &.active {
                         background-color: var(--google-blue);
