@@ -30,15 +30,6 @@ storeCategory.subscribe((data) => {
 // initialisation on load
 storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
 storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all"
-
-console.log("db.all on init", db.All)
-console.log(
-  "db.ByCategory(storeCategory.value) on init [",
-  storeCategory.value,
-  "]",
-  db.ByCategory({ name: "all" }),
-)
-
 storeData.value = db.ByCategory({ name: storeCategory.value }) ?? db.All
 
 // functions
@@ -54,7 +45,6 @@ function navbar(root) {
     ul.appendChild(li)
     li.textContent = language
 
-    console.log(language, storeLang.value)
     if (language === storeLang.value) li.classList.add("active")
 
     // click on the language
@@ -81,7 +71,6 @@ function navbar(root) {
       li.textContent = category.translation[storeLang.value]
     })
 
-    console.log("comparing categories", category, storeCategory.value)
     if (category.name === storeCategory.value) li.classList.add("active")
 
     // click the category
@@ -96,7 +85,6 @@ function navbar(root) {
 
       li.classList.add("active")
 
-      console.log(db.ByCategory(category))
       // this triggers a re-run of subscribed functions
       storeData.value = db.ByCategory(category)
     })
@@ -166,6 +154,17 @@ function WordComponent(element, appendTo) {
     li.addEventListener("click", () => {
       storeCategory.value = category.name
       storeData.value = db.ByCategory(category)
+
+      document
+        .querySelector("ul.categories li.active")
+        ?.classList.remove("active")
+
+      const array = Array.from(document.querySelectorAll("ul.categories li"))
+      console.log(array)
+      array.forEach((item) => {
+        if (item.textContent === category.translation[storeLang.value])
+          item.classList.add("active")
+      })
     })
   }
 

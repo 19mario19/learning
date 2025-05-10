@@ -2114,7 +2114,6 @@ function Database(testData) {
       return data.list.filter((item) => item.id === id)
     },
     ByCategory: (categoryName) => {
-      console.log(categoryName.name, categories.all.name)
       if (categoryName.name === categories.all.name) return data.list
       let filtered = new Set()
       for (let item of data.list) {
