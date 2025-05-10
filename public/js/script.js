@@ -45,16 +45,22 @@ function navbar(root) {
     ul.appendChild(li)
     li.textContent = language
 
+    console.log(language, storeLang.value)
+    if (language === storeLang.value) li.classList.add("active")
+
     // click on the language
     li.addEventListener("click", () => {
       // set value of store language
       storeLang.value = language
+      document.querySelector("ul.lang li.active")?.classList.remove("active")
+      li.classList.add("active")
       localStorage.setItem("lang", JSON.stringify(storeLang.value))
     })
   }
 
   // displaying categories
   const ulCategories = document.createElement("ul")
+  ulCategories.classList.add("categories")
   nav.appendChild(ulCategories)
   for (let category of Object.values(categories)) {
     const li = document.createElement("li")
@@ -66,11 +72,20 @@ function navbar(root) {
       li.textContent = category.translation[storeLang.value]
     })
 
+    console.log("comparing categories", category, storeCategory.value)
+    if (category.name === storeCategory.value) li.classList.add("active")
+
     // click the category
     li.addEventListener("click", () => {
       // triggers store category
       storeCategory.value = category.name
       localStorage.setItem("category", JSON.stringify(category.name))
+
+      document
+        .querySelector("ul.categories li.active")
+        ?.classList.remove("active")
+
+      li.classList.add("active")
 
       console.log(db.ByCategory(category))
       // this triggers a re-run of subscribed functions

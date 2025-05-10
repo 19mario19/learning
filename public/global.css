@@ -299,9 +299,11 @@ li {
 
                 li {
                     font-size: 22px;
+                    padding: .75rem;
 
                     &.active {
-                        background-color: #5f5348;
+                        background-color: var(--google-blue);
+                        border-radius: 5px;
                     }
                 }
             }
@@ -312,6 +314,16 @@ li {
                 padding: .25rem;
             }
 
+        }
+
+        ul.categories {
+            li {
+                padding: .5rem 1rem;
+                &.active {
+                    background-color: var(--google-blue);
+                    border-radius: 5px;
+                }
+            }
         }
 
     }
