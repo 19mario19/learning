@@ -1,6 +1,8 @@
 import { store } from "../reactive/observable.js"
 import { newDatabase, categories, lang as languages } from "../data/data.js"
 
+const local = false
+
 // database
 const db = newDatabase()
 
@@ -47,7 +49,8 @@ function navbar(root) {
     // li.textContent = language
 
     const img = document.createElement("img")
-    img.src = `/public/images/flags/${language}.svg`
+    let addPublic = local ? "/public" : ""
+    img.src = `${addPublic}/images/flags/${language}.svg`
     li.appendChild(img)
 
     span.append(li)
@@ -147,7 +150,8 @@ function WordComponent(element, appendTo) {
   en.textContent = element?.name?.toUpperCase()
 
   const img = document.createElement("img")
-  img.src = "/public/images/flags/gb.svg"
+  let addPublic = local ? "/public" : ""
+  img.src = `${addPublic}/images/flags/gb.svg`
 
   imgWrapper.append(en, img)
 
