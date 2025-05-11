@@ -132,7 +132,8 @@ function WordComponent(element, appendTo) {
   top.classList.add("top")
   const span = document.createElement("span")
   const en = document.createElement("p")
-  en.textContent = element?.name
+  en.classList.add("eng")
+  en.textContent = element?.name?.toUpperCase()
 
   const transcription = document.createElement("p")
   transcription.classList.add("transcription")
@@ -153,7 +154,7 @@ function WordComponent(element, appendTo) {
   mid.appendChild(ul)
   for (let category of element.categories) {
     const li = document.createElement("li")
-    li.textContent = category.name
+    li.textContent = category.translation[storeLang.value]
     ul.appendChild(li)
     // set store category value
     li.addEventListener("click", () => {
