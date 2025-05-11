@@ -41,9 +41,16 @@ function navbar(root) {
   ul.className = "lang"
   nav.appendChild(ul)
   for (let language of Object.values(languages)) {
+    const span = document.createElement("span")
+    ul.appendChild(span)
     const li = document.createElement("li")
-    ul.appendChild(li)
-    li.textContent = language
+    // li.textContent = language
+
+    const img = document.createElement("img")
+    img.src = `/public/images/flags/${language}.svg`
+    li.appendChild(img)
+
+    span.append(li)
 
     if (language === storeLang.value) li.classList.add("active")
 
@@ -131,9 +138,18 @@ function WordComponent(element, appendTo) {
   const top = document.createElement("div")
   top.classList.add("top")
   const span = document.createElement("span")
+
+  const imgWrapper = document.createElement("span")
+  imgWrapper.classList.add("img-wrapper")
   const en = document.createElement("p")
+
   en.classList.add("eng")
   en.textContent = element?.name?.toUpperCase()
+
+  const img = document.createElement("img")
+  img.src = "/public/images/flags/gb.svg"
+
+  imgWrapper.append(en, img)
 
   const transcription = document.createElement("p")
   transcription.classList.add("transcription")
@@ -143,7 +159,7 @@ function WordComponent(element, appendTo) {
 
   const translation = document.createElement("p")
   translation.textContent = element.translation[storeLang.value].name
-  span.append(en, transcription, translation)
+  span.append(imgWrapper, transcription, translation)
   top.appendChild(span)
 
   const mid = document.createElement("div")

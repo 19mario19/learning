@@ -12,6 +12,8 @@ const lang = {
   hi: "hi",
 }
 
+
+
 const categories = {
   all: {
     name: "all",
