@@ -3,8 +3,6 @@ import { newDatabase, categories, lang as languages } from "../data/data.js"
 
 import { hasAudio, hasPhonetics } from "../data/dict.js"
 
-console.log(hasAudio, hasPhonetics)
-
 const local = false
 // change to flase when deploying to netlify
 
@@ -156,10 +154,10 @@ function WordComponent(element, appendTo) {
 
   const phonetic = document.createElement("p")
 
+  let has = false
   for (let item of hasPhonetics) {
     if (item.name === element.name) {
-      console.log(item.phonetic)
-
+      has = true
       phonetic.textContent = item.phonetic.replaceAll("/", "").trim()
     }
   }
@@ -168,7 +166,7 @@ function WordComponent(element, appendTo) {
   // let addPublic = local ? "/public" : ""
   // img.src = `${addPublic}/images/flags/gb.svg`
 
-  imgWrapper.append(en, phonetic)
+  imgWrapper.append(en, has ? phonetic : "")
 
   const transcription = document.createElement("p")
   transcription.classList.add("transcription")

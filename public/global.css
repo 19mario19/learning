@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Habibi&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Habibi&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* CSS Reset */
 html,
@@ -293,7 +294,6 @@ li {
 
 
             padding-bottom: 1.25rem;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
 
             &.lang {
@@ -337,9 +337,9 @@ li {
 
             li {
 
-                padding: .5rem 1rem;
+                padding: .5rem;
                 width: 100%;
-                margin: .5rem auto;
+                margin: auto;
 
                 &.active {
                     background-color: var(--google-blue);
@@ -356,21 +356,17 @@ li {
         ul {
             display: flex;
             flex-direction: column;
-            gap: .1rem;
+            gap: 1.25rem;
 
             li {
                 margin: .25rem;
                 border-radius: 12px;
-                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
+            
                 audio {
                     /* height: 100px; */
                     width: 100%;
 
-                    source {
-                    }
+                    source {}
                 }
             }
         }
@@ -393,6 +389,7 @@ li {
 
 
         .top {
+            margin-bottom: 1rem;
             span {
                 font-size: 22px;
                 display: flex;
@@ -401,9 +398,11 @@ li {
 
                 .img-wrapper {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: center;
                     gap: 1rem;
+                    text-align: center;
+
 
                     img {
                         background-color: red;
@@ -414,14 +413,15 @@ li {
 
                 >p {
                     font-size: 35px;
-                    line-height: 35px;
+                    line-height: 40px;
                     padding: .5rem;
 
                 }
 
                 p.eng {
-                    font-weight: 800;
-                    font-family: monospace;
+                    font-weight: bold;
+                    font-family: "Cormorant Garamond", serif;
+                    font-family: "EB Garamond", serif;
                 }
 
                 p.transcription {
@@ -449,7 +449,6 @@ li {
                     padding: .35rem .75rem;
                     border-radius: 3px;
                     margin: 0;
-                    background-color: rgba(128, 128, 128, 0.023);
                     font-size: 21px;
 
                     border: 1px solid var(--accent-color);
@@ -467,7 +466,7 @@ li {
                 justify-content: center;
                 align-items: center;
 
-                padding: .25rem .75rem;
+                padding: .5rem 1.05rem;
                 border-radius: 3px;
                 color: white;
                 border: 1px solid var(--accent-color);
