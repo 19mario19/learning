@@ -1,7 +1,12 @@
 import { store } from "../reactive/observable.js"
 import { newDatabase, categories, lang as languages } from "../data/data.js"
 
+import { hasAudio, hasPhonetics } from "../data/dict.js"
+
+console.log(hasAudio, hasPhonetics)
+
 const local = false
+// change to flase when deploying to netlify
 
 // database
 const db = newDatabase()
@@ -149,11 +154,21 @@ function WordComponent(element, appendTo) {
   en.classList.add("eng")
   en.textContent = element?.name?.toUpperCase()
 
-  const img = document.createElement("img")
-  let addPublic = local ? "/public" : ""
-  img.src = `${addPublic}/images/flags/gb.svg`
+  const phonetic = document.createElement("p")
 
-  imgWrapper.append(en, img)
+  for (let item of hasPhonetics) {
+    if (item.name === element.name) {
+      console.log(item.phonetic)
+
+      phonetic.textContent = item.phonetic.replaceAll("/", "").trim()
+    }
+  }
+
+  // const img = document.createElement("img")
+  // let addPublic = local ? "/public" : ""
+  // img.src = `${addPublic}/images/flags/gb.svg`
+
+  imgWrapper.append(en, phonetic)
 
   const transcription = document.createElement("p")
   transcription.classList.add("transcription")
@@ -218,9 +233,25 @@ function WordComponent(element, appendTo) {
     `View ${element.name} in Merriam Webster`,
   )
 
+  // test the audio
+  const audio = document.createElement("audio")
+  let found = false
+  for (let item of hasAudio) {
+    audio.setAttribute("controls", "")
+    const source = document.createElement("source")
+    if (element.name.split(" ").includes(item.name)) {
+      found = true
+      source.src = item.audio
+      source.type = "audio/mp3"
+      audio.append(source)
+    }
+  }
+  // end test
+
   bot.append(googleLink, merriamLink)
 
   wrapper.append(top, mid, bot)
+  if (found) wrapper.append(audio)
 }
 
 function ListWordsComponent(list) {

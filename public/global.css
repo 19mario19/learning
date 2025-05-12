@@ -303,6 +303,8 @@ li {
                 gap: 1rem;
                 padding: .5rem;
                 background-color: var(--brown-dark);
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
 
                 img {
                     height: 15px;
@@ -311,7 +313,6 @@ li {
                 li {
                     font-size: 22px;
                     padding: .75rem;
-
 
                     &.active {
                         background-color: var(--google-blue);
@@ -331,8 +332,14 @@ li {
         }
 
         ul.categories {
+            padding: 0 1rem;
+            padding-bottom: 1rem;
+
             li {
+
                 padding: .5rem 1rem;
+                width: 100%;
+                margin: .5rem auto;
 
                 &.active {
                     background-color: var(--google-blue);
@@ -357,6 +364,14 @@ li {
                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+                audio {
+                    /* height: 100px; */
+                    width: 100%;
+
+                    source {
+                    }
+                }
             }
         }
     }
@@ -375,6 +390,7 @@ li {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
 
         .top {
             span {
