@@ -12,8 +12,6 @@ const lang = {
   hi: "hi",
 }
 
-
-
 const categories = {
   all: {
     name: "all",
@@ -2109,9 +2107,9 @@ function Database(testData) {
 
   return {
     get All() {
-      // console.log(data.list.map((el) => el.translation))
       return data.list
     },
+    getAllByProperty: (property) => data?.list.map((item) => item[property]),
     ById: (id) => {
       return data.list.filter((item) => item.id === id)
     },
