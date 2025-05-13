@@ -984,7 +984,7 @@ const testData = {
     },
     {
       id: 29,
-      name: "cleaning esray",
+      name: "cleaning spray",
       categories: [categories.cleaning, categories.supplies],
       translation: {
         [lang.ro]: {
@@ -1883,7 +1883,7 @@ const testData = {
     },
     {
       id: 58,
-      name: "refill soap diesenser",
+      name: "refill soap dispenser",
       categories: [categories.requests, categories.supplies],
       translation: {
         [lang.ro]: {
@@ -2101,6 +2101,373 @@ const testData = {
     },
   ],
 }
+const newWordsWithPhonetics = [
+  {
+    name: "towel",
+    phonetic: "/taʊl/",
+  },
+  {
+    name: "hand towel",
+    phonetic: "/hænd ˈtaʊl/",
+  },
+  {
+    name: "bath mat",
+    phonetic: "/bæθ mæt/",
+  },
+  {
+    name: "toilet paper",
+    phonetic: "/ˈtɔɪlət ˈpeɪpər/",
+  },
+  {
+    name: "shower",
+    phonetic: "/ˈʃaʊər/",
+  },
+  {
+    name: "bathtub",
+    phonetic: "/ˈbæθtʌb/",
+  },
+  {
+    name: "toilet",
+    phonetic: "/ˈtɔɪlət/",
+  },
+  {
+    name: "sink",
+    phonetic: "/sɪŋk/",
+  },
+  {
+    name: "shampoo",
+    phonetic: "/ʃæmˈpuː/",
+  },
+  {
+    name: "conditioner",
+    phonetic: "/kənˈdɪʃənər/",
+  },
+  {
+    name: "body wash",
+    phonetic: "/ˈbɒdi wɔʃ/",
+  },
+  {
+    name: "soap",
+    phonetic: "/soʊp/",
+  },
+  {
+    name: "hairdryer",
+    phonetic: "/ˈheərˌdraɪər/",
+  },
+  {
+    name: "bed",
+    phonetic: "/bed/",
+  },
+  {
+    name: "sheets",
+    phonetic: "/ʃiːts/",
+  },
+  {
+    name: "pillow",
+    phonetic: "/ˈpɪloʊ/",
+  },
+  {
+    name: "pillowcase",
+    phonetic: "/ˈpɪloʊkeɪs/",
+  },
+  {
+    name: "blanket",
+    phonetic: "/ˈblæŋkɪt/",
+  },
+  {
+    name: "duvet",
+    phonetic: "/ˈdjuːveɪ/",
+  },
+  {
+    name: "duvet cover",
+    phonetic: "/ˈdjuːveɪ ˈkʌvər/",
+  },
+  {
+    name: "mattress",
+    phonetic: "/ˈmætrɪs/",
+  },
+  {
+    name: "mattress protector",
+    phonetic: "/ˈmætrɪs prəˈtektər/",
+  },
+  {
+    name: "extra blanket",
+    phonetic: "/ˈekstrə ˈblæŋkɪt/",
+  },
+  {
+    name: "extra pillow",
+    phonetic: "/ˈekstrə ˈpɪloʊ/",
+  },
+  {
+    name: "vacuum cleaner",
+    phonetic: "/ˈvækjuːm ˈkliːnər/",
+  },
+  {
+    name: "mop",
+    phonetic: "/mɒp/",
+  },
+  {
+    name: "broom",
+    phonetic: "/bruːm/",
+  },
+  {
+    name: "dustpan",
+    phonetic: "/ˈdʌstˌpæn/",
+  },
+  {
+    name: "duster",
+    phonetic: "/ˈdʌstər/",
+  },
+  {
+    name: "cleaning spray",
+    phonetic: "/ˈkliːnɪŋ spreɪ/",
+  },
+  {
+    name: "disinfectant",
+    phonetic: "/ˌdɪsɪnˈfektənt/",
+  },
+  {
+    name: "glass cleaner",
+    phonetic: "/ɡlæs ˈkliːnər/",
+  },
+  {
+    name: "do not disturb",
+    phonetic: "/duː nɒt dɪˈstɜːb/",
+  },
+  {
+    name: "please clean my room",
+    phonetic: "/pliːz kliːn maɪ ruːm/",
+  },
+  {
+    name: "need more towels",
+    phonetic: "/niːd mɔːr ˈtaʊəlz/",
+  },
+  {
+    name: "need more toilet paper",
+    phonetic: "/niːd mɔːr ˈtɔɪlət ˈpeɪpər/",
+  },
+  {
+    name: "clean",
+    phonetic: "/kliːn/",
+  },
+  {
+    name: "dirty",
+    phonetic: "/ˈdɜːrti/",
+  },
+  {
+    name: "stain",
+    phonetic: "/steɪn/",
+  },
+  {
+    name: "trash",
+    phonetic: "/træʃ/",
+  },
+  {
+    name: "trash bin",
+    phonetic: "/træʃ bɪn/",
+  },
+  {
+    name: "remote control",
+    phonetic: "/rɪˈmoʊt kənˈtroʊl/",
+  },
+  {
+    name: "air conditioning",
+    phonetic: "/er kənˈdɪʃənɪŋ/",
+  },
+  {
+    name: "hanger",
+    phonetic: "/ˈhæŋər/",
+  },
+  {
+    name: "luggage rack",
+    phonetic: "/ˈlʌɡɪdʒ ræk/",
+  },
+  {
+    name: "make the bed",
+    phonetic: "/meɪk ðə bed/",
+  },
+  {
+    name: "dust",
+    phonetic: "/dʌst/",
+  },
+  {
+    name: "polish",
+    phonetic: "/ˈpɒlɪʃ/",
+  },
+  {
+    name: "stains on the carpet",
+    phonetic: "/steɪnz ɒn ðə ˈkɑːrpɪt/",
+  },
+  {
+    name: "change the sheets",
+    phonetic: "/tʃeɪndʒ ðə ʃiːts/",
+  },
+  {
+    name: "restock supplies",
+    phonetic: "/riːˈstɒk səˈplaɪz/",
+  },
+  {
+    name: "empty the trash",
+    phonetic: "/ˈempti ðə træʃ/",
+  },
+  {
+    name: "broken",
+    phonetic: "/ˈbroʊkən/",
+  },
+  {
+    name: "report a problem",
+    phonetic: "/rɪˈpɔːrt ə ˈprɒbləm/",
+  },
+  {
+    name: "light",
+    phonetic: "/laɪt/",
+  },
+  {
+    name: "tidy up",
+    phonetic: "/ˈtaɪdi ʌp/",
+  },
+  {
+    name: "stains on the linen",
+    phonetic: "/steɪnz ɒn ðə ˈlɪnɪn/",
+  },
+  {
+    name: "refill soap dispenser",
+    phonetic: "/riːˈfɪl soʊp dɪˈspensər/",
+  },
+  {
+    name: "check out",
+    phonetic: "/tʃek aʊt/",
+  },
+  {
+    name: "check in",
+    phonetic: "/tʃek ɪn/",
+  },
+  {
+    name: "foam pillow",
+    phonetic: "/foʊm ˈpɪloʊ/",
+  },
+  {
+    name: "feather pillow",
+    phonetic: "/ˈfeðər ˈpɪloʊ/",
+  },
+  {
+    name: "topper (for the bed)",
+    phonetic: "/ˈtɒpər (fɔːr ðə bed)/",
+  },
+  {
+    name: "hole (in the linen)",
+    phonetic: "/hoʊl (ɪn ðə ˈlɪnɪn)/",
+  },
+]
+
+// adding phonetic
+const array = Array.isArray(testData.list)
+  ? testData?.list.map((item) => {
+      for (let word of newWordsWithPhonetics) {
+        if (word.name === item.name) {
+          return { ...item, ...word }
+        }
+      }
+    })
+  : []
+
+console.log(array)
+
+testData.list = array
+
+// adding audio
+const withAudio = [
+  {
+    id: 0,
+    name: "towel",
+    phonetic: "/taʊl/",
+    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/towel-uk.mp3",
+    meaning:
+      "A cloth used for wiping, especially one used for drying anything wet, as a person after a bath.",
+  },
+  {
+    id: 1,
+    name: "shower",
+    phonetic: "",
+    audio:
+      "https://api.dictionaryapi.dev/media/pronunciations/en/shower-1-au.mp3",
+    meaning:
+      "A brief fall of precipitation (spell of rain, or a similar fall of snow, sleet, or cascade).",
+  },
+  {
+    id: 3,
+    name: "toilet",
+    phonetic: "/ˈtɔɪ.lət/",
+    audio:
+      "https://api.dictionaryapi.dev/media/pronunciations/en/toilet-uk.mp3",
+    meaning:
+      "A covering of linen, silk, or tapestry, spread over a dressing table in a chamber or dressing room.",
+  },
+  {
+    id: 4,
+    name: "sink",
+    phonetic: "/sɪŋk/",
+    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/sink-uk.mp3",
+    meaning: "A basin used for holding water for washing.",
+  },
+  {
+    id: 7,
+    name: "body",
+    phonetic: "/ˈbɒdi/",
+    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/body-uk.mp3",
+    meaning: "Physical frame.",
+  },
+  {
+    id: 9,
+    name: "soap",
+    phonetic: "/səʊp/",
+    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/soap-uk.mp3",
+    meaning:
+      "A substance able to mix with both oil and water, used for cleaning, often in the form of a solid bar or in liquid form, derived from fats or made synthetically.",
+  },
+  {
+    id: 13,
+    name: "pillow",
+    phonetic: "/ˈpɪləʊ/",
+    audio:
+      "https://api.dictionaryapi.dev/media/pronunciations/en/pillow-uk.mp3",
+    meaning: "A soft cushion used to support the head in bed.",
+  },
+  {
+    id: 15,
+    name: "blanket",
+    phonetic: "/ˈblæŋkɪt/",
+    audio:
+      "https://api.dictionaryapi.dev/media/pronunciations/en/blanket-uk.mp3",
+    meaning:
+      "A heavy, loosely woven fabric, usually large and woollen, used for warmth while sleeping or resting.",
+  },
+  {
+    id: 16,
+    name: "duvet",
+    phonetic: "/ˈduːveɪ/",
+    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/duvet-uk.mp3",
+    meaning: "A thick, padded quilt used instead of blankets.",
+  },
+]
+
+
+const array2 = Array.isArray(testData.list)
+  ? testData?.list.map((item) => {
+      for (let word of withAudio) {
+        if (word.name === item.name) {
+          return { ...item, ...word }
+        } else return item
+      }
+    })
+  : []
+
+  console.log("array 2: ", array2)
+
+  testData.list = array2
+
+
+
 
 function Database(testData) {
   let data = testData

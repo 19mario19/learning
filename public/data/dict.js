@@ -159,7 +159,12 @@ const dict = [
   },
 ]
 
-const hasAudio = dict.filter((item) => item.audio)
-const hasPhonetics = dict.filter((item) => item.phonetic)
 
-export { dict, hasAudio, hasPhonetics }
+
+
+const hasAudio = dict.filter((item) => item.audio)
+
+console.log(hasAudio)
+
+
+export { dict, hasAudio }

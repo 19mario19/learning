@@ -1,13 +1,17 @@
 import { store } from "../reactive/observable.js"
 import { newDatabase, categories, lang as languages } from "../data/data.js"
 
-import { hasAudio, hasPhonetics } from "../data/dict.js"
+import { hasAudio } from "../data/dict.js"
 
 const local = false
 // change to flase when deploying to netlify
 
 // database
 const db = newDatabase()
+
+// console.log(db.getAllByProperty("name"))
+
+console.log(hasAudio)
 
 // stores
 const storeLang = store.lang
@@ -155,11 +159,10 @@ function WordComponent(element, appendTo) {
   const phonetic = document.createElement("p")
 
   let has = false
-  for (let item of hasPhonetics) {
-    if (item.name === element.name) {
-      has = true
-      phonetic.textContent = item.phonetic.replaceAll("/", "").trim()
-    }
+  if (element.phonetic) {
+    has = true
+    phonetic.textContent = element.phonetic
+    // phonetic.textContent = item.phonetic.replaceAll("/", "").trim()
   }
 
   // const img = document.createElement("img")
@@ -234,16 +237,14 @@ function WordComponent(element, appendTo) {
   // test the audio
   const audio = document.createElement("audio")
   let found = false
-  for (let item of hasAudio) {
-    audio.setAttribute("controls", "")
-    const source = document.createElement("source")
-    if (element.name.split(" ").includes(item.name)) {
-      found = true
-      source.src = item.audio
-      source.type = "audio/mp3"
-      audio.append(source)
-    }
+  audio.setAttribute("controls", "")
+  const source = document.createElement("source")
+  if (element.audio) {
+    found = true
+    source.src = element.audio
+    source.type = "audio/mp3"
   }
+  audio.append(source)
   // end test
 
   bot.append(googleLink, merriamLink)

@@ -1,4 +1,6 @@
-import { words } from "../data/words.js"
+// import { words } from "../data/words.js"
+
+const words = []
 
 // console.log(words)
 
@@ -40,7 +42,6 @@ async function DictService() {
   if (data.length > 0) {
     let id = 0
     for (let item of data) {
-      console.log(item)
 
       let object = item[0]
 
