@@ -2457,8 +2457,9 @@ const array2 = Array.isArray(testData.list)
       for (let word of withAudio) {
         if (word.name === item.name) {
           return { ...item, ...word }
-        } else return item
+        } 
       }
+      return item
     })
   : []
 
