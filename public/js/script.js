@@ -3,7 +3,7 @@ import { newDatabase, categories, lang as languages } from "../data/data.js"
 
 import { hasAudio } from "../data/dict.js"
 
-const local = false
+const local = true
 // change to flase when deploying to netlify
 
 // database
@@ -37,8 +37,8 @@ storeCategory.subscribe((data) => {
 })
 
 // initialisation on load
-storeLang.value = JSON.parse(localStorage.getItem("lang")) || "ro"
-storeCategory.value = JSON.parse(localStorage.getItem("category")) || "all"
+storeLang.value = JSON.parse(localStorage.getItem("lang")) || languages.ro
+storeCategory.value = JSON.parse(localStorage.getItem("category")) || categories.all
 storeData.value = db.ByCategory({ name: storeCategory.value }) ?? db.All
 
 // functions
