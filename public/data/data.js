@@ -2110,6 +2110,37 @@ const testData = {
         },
       },
   },
+  {
+  id: 100,
+  name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
+  categories: [categories.requests],
+  translation: {
+    [lang.ro]: {
+      name: "Bună dimineața [numele oaspetelui], mă numesc [numele dumneavoastră] de la curățenie. Doriți să curăț acum camera sau să revin mai târziu?",
+      transcription: "BOO-nă dee-mee-NEA-tsa [...], mă noo-MESC [...] de la koo-ră-TSE-nie. DO-ree-ts să koo-RĂTS a-KOOM KA-me-ra sau să re-VEEN mai târ-ZIU?",
+    },
+    [lang.ru]: {
+      name: "Доброе утро [имя гостя], меня зовут [ваше имя] из уборки. Хотите, чтобы я убрал(а) комнату сейчас или прийти позже?",
+      transcription: "DO-bra-ye OO-tra [...], mee-NYA za-VOOT [...] iz oo-BOR-ki. Kha-TEE-te, CHTO-by ya oo-BRAL(a) KOM-na-tu see-CHAS ee-li pree-TEE PO-zhe?",
+    },
+    [lang.ua]: {
+      name: "Доброго ранку [ім'я гостя], мене звати [ваше ім'я] з прибирання. Бажаєте, щоб я прибрав(ла) кімнату зараз чи прийти пізніше?",
+      transcription: "DO-bro-ho RAN-ku [...], me-NE ZVA-ty [...] z pry-by-RAN-nya. Ba-ZHA-ye-te, shchob ya pry-BRAV(la) kim-NA-tu ZA-raz chy pry-YTY piz-NI-she?",
+    },
+    [lang.es]: {
+      name: "Buenos días [nombre del huésped], me llamo [tu nombre] del servicio de limpieza. ¿Le gustaría que limpie su habitación ahora o regreso más tarde?",
+      transcription: "BWE-nos DEE-as [...], me YA-mo [...] del ser-BEE-syo de leem-PYE-sa. ¿Le goos-ta-REE-a ke LEEM-pye su a-bi-ta-SYON a-O-ra o re-GRE-so mas TAR-de?",
+    },
+    [lang.bg]: {
+      name: "Добро утро [име на госта], казвам се [вашето име] от почистването. Искате ли да почистя сега стаята или да дойда по-късно?",
+      transcription: "DOB-ro OO-tro [...], KAZ-vam se [...] ot po-CHIST-va-ne-to. IS-ka-te li da po-CHIST-ya SE-ga STA-ya-ta i-li da DOY-da po-KAS-no?",
+    },
+    [lang.hi]: {
+      name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहते हैं कि मैं अभी सफाई कर दूँ या बाद में आऊँ?",
+      transcription: "su-pra-BHAAT [...], me-RA naam [...] hai, main HOUSE-kee-ping se hoon. KYA aap CHAA-te hain ki main ABHI sa-FAA-ee kar doon ya BAAD mein aa-oon?",
+    },
+  },
+}
   ]
 }
 const newWordsWithPhonetics = [
