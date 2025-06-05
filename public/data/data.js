@@ -2110,9 +2110,9 @@ const testData = {
         },
       },
     },{
-    id: 65,
+    id: 100,
     name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
-    categories: [categories.requests],
+    categories: [categories.sentences],
     translation: {
       [lang.ro]: {
         name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
