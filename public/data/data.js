@@ -1,4 +1,4 @@
-=/**
+/**
  * Enum of supported language codes.
  * @readonly
  * @enum {string}

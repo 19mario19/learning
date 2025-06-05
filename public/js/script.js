@@ -3,7 +3,7 @@ import { newDatabase, categories, lang as languages } from "../data/data.js"
 
 import { hasAudio } from "../data/dict.js"
 
-const local = false
+const local = true
 // change to flase when deploying to netlify
 
 // database
