@@ -1,4 +1,4 @@
-/**
+=/**
  * Enum of supported language codes.
  * @readonly
  * @enum {string}
@@ -2781,6 +2781,37 @@ const sentences = [
       [lang.hi]: {
         name: "आपका दिन शुभ हो!",
         transcription: "हैव अ प्लेज-न्ट डे!",
+      },
+    },
+  },
+  {
+    id: 75,
+    name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
+    categories: [categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
+        transcription: "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
+      },
+      [lang.ru]: {
+        name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
+        transcription: "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
+      },
+      [lang.ua]: {
+        name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
+        transcription: "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
+      },
+      [lang.es]: {
+        name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
+        transcription: "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
+      },
+      [lang.bg]: {
+        name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
+        transcription: "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
+      },
+      [lang.hi]: {
+        name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
+        transcription: "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
       },
     },
   },
