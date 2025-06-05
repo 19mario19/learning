@@ -2140,7 +2140,7 @@ const testData = {
       },
     },
   },
-  ],
+  ]
 }
 const newWordsWithPhonetics = [
   {
