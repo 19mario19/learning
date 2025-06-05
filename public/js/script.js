@@ -9,6 +9,8 @@ const local = true
 // database
 const db = newDatabase()
 
+console.log(db.All)
+
 // console.log(db.getAllByProperty("name"))
 
 console.log(hasAudio)
@@ -154,7 +156,7 @@ function WordComponent(element, appendTo) {
   const en = document.createElement("p")
 
   en.classList.add("eng")
-  en.textContent = element?.name?.toUpperCase()
+  en.textContent = element?.name[0]?.toUpperCase() + element?.name?.slice(1)
 
   const phonetic = document.createElement("p")
 
@@ -247,7 +249,8 @@ function WordComponent(element, appendTo) {
   audio.append(source)
   // end test
 
-  bot.append(googleLink, merriamLink)
+  // add if needed, now will be removed
+  // bot.append(googleLink, merriamLink)
 
   wrapper.append(top, mid, bot)
   if (found) wrapper.append(audio)

@@ -2474,355 +2474,74 @@ const array2 = Array.isArray(testData.list)
 testData.list = array2
 
 const sentences = [
-  [
-    {
-      id: 75,
-      name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
-      categories: [categories.sentences, categories.requests],
-      translation: {
-        [lang.ro]: {
-          name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
-          transcription:
-            "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
-        },
-        [lang.ru]: {
-          name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
-          transcription:
-            "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
-        },
-        [lang.ua]: {
-          name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
-          transcription:
-            "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
-        },
-        [lang.es]: {
-          name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
-          transcription:
-            "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
-        },
-        [lang.bg]: {
-          name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
-          transcription:
-            "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
-        },
-        [lang.hi]: {
-          name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
-          transcription:
-            "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
-        },
+  {
+    id: 75,
+    name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
+    categories: [categories.requests, categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
+        transcription:
+          "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
+      },
+      [lang.ru]: {
+        name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
+        transcription:
+          "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
+      },
+      [lang.ua]: {
+        name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
+        transcription:
+          "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
+      },
+      [lang.es]: {
+        name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
+        transcription:
+          "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
+      },
+      [lang.bg]: {
+        name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
+        transcription:
+          "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
+      },
+      [lang.hi]: {
+        name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
+        transcription:
+          "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
       },
     },
-    {
-      id: 65,
-      name: "Good morning! May I clean your room now?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Bună dimineața! Pot să vă curăț camera acum?",
-          transcription: "gud mor-ning! mei ai klin yur rum nau?",
-        },
-        [lang.ru]: {
-          name: "Доброе утро! Могу я убрать вашу комнату сейчас?",
-          transcription: "гуд мо-рнинг! мэй ай клин юр рум нау?",
-        },
-        [lang.ua]: {
-          name: "Доброго ранку! Чи можу я прибрати вашу кімнату зараз?",
-          transcription: "гуд мо-рнінг! мей ай клін юр рум нау?",
-        },
-        [lang.es]: {
-          name: "¡Buenos días! ¿Puedo limpiar su habitación ahora?",
-          transcription: "gud mor-ning! mei ai clin yur rum nau?",
-        },
-        [lang.bg]: {
-          name: "Добро утро! Мога ли да почистя стаята ви сега?",
-          transcription: "гуд мор-нинг! мей ай клин юр рум нау?",
-        },
-        [lang.hi]: {
-          name: "सुप्रभात! क्या मैं अभी आपका कमरा साफ कर सकता हूँ?",
-          transcription: "गुड मोर-निंग! मे आई क्लीन योर रूम नाउ?",
-        },
+  },
+  {
+    id: 65,
+    name: "Good morning! May I clean your room now?",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Bună dimineața! Pot să vă curăț camera acum?",
+        transcription: "gud mor-ning! mei ai klin yur rum nau?",
+      },
+      [lang.ru]: {
+        name: "Доброе утро! Могу я убрать вашу комнату сейчас?",
+        transcription: "гуд мо-рнинг! мэй ай клин юр рум нау?",
+      },
+      [lang.ua]: {
+        name: "Доброго ранку! Чи можу я прибрати вашу кімнату зараз?",
+        transcription: "гуд мо-рнінг! мей ай клін юр рум нау?",
+      },
+      [lang.es]: {
+        name: "¡Buenos días! ¿Puedo limpiar su habitación ahora?",
+        transcription: "gud mor-ning! mei ai clin yur rum nau?",
+      },
+      [lang.bg]: {
+        name: "Добро утро! Мога ли да почистя стаята ви сега?",
+        transcription: "гуд мор-нинг! мей ай клин юр рум нау?",
+      },
+      [lang.hi]: {
+        name: "सुप्रभात! क्या मैं अभी आपका कमरा साफ कर सकता हूँ?",
+        transcription: "गुड मोर-निंग! मे आई क्लीन योर रूम नाउ?",
       },
     },
-    {
-      id: 66,
-      name: "Good afternoon! Would you like your room serviced?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Bună ziua! Doriți să vă aranjăm camera?",
-          transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
-        },
-        [lang.ru]: {
-          name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
-          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
-        },
-        [lang.ua]: {
-          name: "Добрий день! Бажаєте прибирання кімнати?",
-          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
-        },
-        [lang.es]: {
-          name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
-          transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
-        },
-        [lang.bg]: {
-          name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
-          transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
-        },
-        [lang.hi]: {
-          name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
-          transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
-        },
-      },
-    },
-    {
-      id: 67,
-      name: "Good evening. Do you need fresh towels?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Bună seara. Aveți nevoie de prosoape curate?",
-          transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
-        },
-        [lang.ru]: {
-          name: "Добрый вечер. Вам нужны свежие полотенца?",
-          transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
-        },
-        [lang.ua]: {
-          name: "Добрий вечір. Вам потрібні свіжі рушники?",
-          transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
-        },
-        [lang.es]: {
-          name: "Buenas noches. ¿Necesita toallas limpias?",
-          transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
-        },
-        [lang.bg]: {
-          name: "Добър вечер. Имате ли нужда от чисти хавлии?",
-          transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
-        },
-        [lang.hi]: {
-          name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
-          transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
-        },
-      },
-    },
-    {
-      id: 68,
-      name: "I am here to refresh your room.",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Sunt aici să vă reîmprospătez camera.",
-          transcription: "ai am hir tu ri-fresh yur rum",
-        },
-        [lang.ru]: {
-          name: "Я здесь, чтобы обновить вашу комнату.",
-          transcription: "ай эм хир ту ри-фреш юр рум",
-        },
-        [lang.ua]: {
-          name: "Я тут, щоб оновити вашу кімнату.",
-          transcription: "ай ем хір ту рі-фреш юр рум",
-        },
-        [lang.es]: {
-          name: "Estoy aquí para refrescar su habitación.",
-          transcription: "ai am hir tu ri-fresh yur rum",
-        },
-        [lang.bg]: {
-          name: "Тук съм, за да освежа стаята ви.",
-          transcription: "ай ем хир ту ри-фреш юр рум",
-        },
-        [lang.hi]: {
-          name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
-          transcription: "आई एम हियर टू री-फ्रेश योर रूम",
-        },
-      },
-    },
-    {
-      id: 69,
-      name: "Would you like your bed changed?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Doriți să vă schimbăm lenjeria de pat?",
-          transcription: "wud yoo laik yur bed cheinjd?",
-        },
-        [lang.ru]: {
-          name: "Хотите, чтобы сменили постельное белье?",
-          transcription: "вуд ю лайк юр бед чейнджд?",
-        },
-        [lang.ua]: {
-          name: "Бажаєте змінити постіль?",
-          transcription: "вуд ю лайк юр бед чейнджд?",
-        },
-        [lang.es]: {
-          name: "¿Le gustaría que le cambiaran la cama?",
-          transcription: "wud yu laik yur bed cheinjd?",
-        },
-        [lang.bg]: {
-          name: "Желаете ли да ви сменим чаршафите?",
-          transcription: "ууд ю лайк юр бед чейнджд?",
-        },
-        [lang.hi]: {
-          name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
-          transcription: "वुड यू लाइक योर बेड चेंज्ड?",
-        },
-      },
-    },
-    {
-      id: 70,
-      name: "Do you need more amenities like soap or shampoo?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
-          transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
-        },
-        [lang.ru]: {
-          name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
-          transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
-        },
-        [lang.ua]: {
-          name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
-          transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
-        },
-        [lang.es]: {
-          name: "¿Necesita más artículos de tocador como jabón o champú?",
-          transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
-        },
-        [lang.bg]: {
-          name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
-          transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
-        },
-        [lang.hi]: {
-          name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
-          transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
-        },
-      },
-    },
-    {
-      id: 71,
-      name: "I can bring you extra pillows/blankets.",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Vă pot aduce perne/pături suplimentare.",
-          transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
-        },
-        [lang.ru]: {
-          name: "Я могу принести вам дополнительные подушки/одеяла.",
-          transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
-        },
-        [lang.ua]: {
-          name: "Я можу принести вам додаткові подушки/ковдри.",
-          transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
-        },
-        [lang.es]: {
-          name: "Puedo traerle almohadas/mantas adicionales.",
-          transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
-        },
-        [lang.bg]: {
-          name: "Мога да ви донеса допълнителни възглавници/одеяла.",
-          transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
-        },
-        [lang.hi]: {
-          name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
-          transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
-        },
-      },
-    },
-    {
-      id: 72,
-      name: "Is there anything else I can get for you?",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Mai este ceva ce vă pot aduce?",
-          transcription: "iz ther en-ee-thing els ai kan get for yoo?",
-        },
-        [lang.ru]: {
-          name: "Могу ли я еще что-нибудь для вас принести?",
-          transcription: "из зер эни-синг элс ай кан гет фор ю?",
-        },
-        [lang.ua]: {
-          name: "Чи є ще щось, що я можу принести для вас?",
-          transcription: "із зер ені-сінг елс ай кан гет фор ю?",
-        },
-        [lang.es]: {
-          name: "¿Hay algo más en lo que pueda ayudarle?",
-          transcription: "iz der en-i-thing els ai kan get for yu?",
-        },
-        [lang.bg]: {
-          name: "Има ли нещо друго, което мога да ви донеса?",
-          transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
-        },
-        [lang.hi]: {
-          name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
-          transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
-        },
-      },
-    },
-    {
-      id: 73,
-      name: "Your room is now clean and tidy.",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Camera dumneavoastră este acum curată și ordonată.",
-          transcription: "yur rum iz nau klin end tai-di",
-        },
-        [lang.ru]: {
-          name: "Ваша комната теперь чистая и опрятная.",
-          transcription: "юр рум из нау клин энд тай-ди",
-        },
-        [lang.ua]: {
-          name: "Ваша кімната тепер чиста і охайна.",
-          transcription: "юр рум із нау клін енд тай-ді",
-        },
-        [lang.es]: {
-          name: "Su habitación está ahora limpia y ordenada.",
-          transcription: "yur rum iz nau clin end tai-di",
-        },
-        [lang.bg]: {
-          name: "Стаята ви вече е чиста и подредена.",
-          transcription: "юр рум из нау клин енд тай-ди",
-        },
-        [lang.hi]: {
-          name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
-          transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
-        },
-      },
-    },
-    {
-      id: 74,
-      name: "Have a pleasant day!",
-      categories: [categories.sentences],
-      translation: {
-        [lang.ro]: {
-          name: "Să aveți o zi plăcută!",
-          transcription: "hav a ple-zant dei!",
-        },
-        [lang.ru]: {
-          name: "Приятного дня!",
-          transcription: "хав э пле-зант дэй!",
-        },
-        [lang.ua]: {
-          name: "Приємного дня!",
-          transcription: "хав а пле-зант дей!",
-        },
-        [lang.es]: {
-          name: "¡Que tenga un día agradable!",
-          transcription: "hav a ple-sant dei!",
-        },
-        [lang.bg]: {
-          name: "Приятен ден!",
-          transcription: "хав а пле-зант дей!",
-        },
-        [lang.hi]: {
-          name: "आपका दिन शुभ हो!",
-          transcription: "हैव अ प्लेज-न्ट डे!",
-        },
-      },
-    },
-  ],
+  },
   {
     id: 66,
     name: "Good afternoon! Would you like your room serviced?",
@@ -3103,43 +2822,285 @@ const sentences = [
     },
   },
   {
-    id: 75,
-    name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
-    categories: [categories.requests],
+    id: 66,
+    name: "Good afternoon! Would you like your room serviced?",
+    categories: [categories.sentences],
     translation: {
       [lang.ro]: {
-        name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
-        transcription:
-          "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
+        name: "Bună ziua! Doriți să vă aranjăm camera?",
+        transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
       },
       [lang.ru]: {
-        name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
-        transcription:
-          "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
+        name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
+        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
       },
       [lang.ua]: {
-        name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
-        transcription:
-          "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
+        name: "Добрий день! Бажаєте прибирання кімнати?",
+        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
       },
       [lang.es]: {
-        name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
-        transcription:
-          "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
+        name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
+        transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
       },
       [lang.bg]: {
-        name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
-        transcription:
-          "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
+        name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
+        transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
       },
       [lang.hi]: {
-        name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
-        transcription:
-          "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
+        name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
+        transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
       },
     },
   },
-]
+  {
+    id: 67,
+    name: "Good evening. Do you need fresh towels?",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Bună seara. Aveți nevoie de prosoape curate?",
+        transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
+      },
+      [lang.ru]: {
+        name: "Добрый вечер. Вам нужны свежие полотенца?",
+        transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
+      },
+      [lang.ua]: {
+        name: "Добрий вечір. Вам потрібні свіжі рушники?",
+        transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
+      },
+      [lang.es]: {
+        name: "Buenas noches. ¿Necesita toallas limpias?",
+        transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
+      },
+      [lang.bg]: {
+        name: "Добър вечер. Имате ли нужда от чисти хавлии?",
+        transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
+      },
+      [lang.hi]: {
+        name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
+        transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
+      },
+    },
+  },
+  {
+    id: 68,
+    name: "I am here to refresh your room.",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Sunt aici să vă reîmprospătez camera.",
+        transcription: "ai am hir tu ri-fresh yur rum",
+      },
+      [lang.ru]: {
+        name: "Я здесь, чтобы обновить вашу комнату.",
+        transcription: "ай эм хир ту ри-фреш юр рум",
+      },
+      [lang.ua]: {
+        name: "Я тут, щоб оновити вашу кімнату.",
+        transcription: "ай ем хір ту рі-фреш юр рум",
+      },
+      [lang.es]: {
+        name: "Estoy aquí para refrescar su habitación.",
+        transcription: "ai am hir tu ri-fresh yur rum",
+      },
+      [lang.bg]: {
+        name: "Тук съм, за да освежа стаята ви.",
+        transcription: "ай ем хир ту ри-фреш юр рум",
+      },
+      [lang.hi]: {
+        name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
+        transcription: "आई एम हियर टू री-फ्रेश योर रूम",
+      },
+    },
+  },
+  {
+    id: 69,
+    name: "Would you like your bed changed?",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Doriți să vă schimbăm lenjeria de pat?",
+        transcription: "wud yoo laik yur bed cheinjd?",
+      },
+      [lang.ru]: {
+        name: "Хотите, чтобы сменили постельное белье?",
+        transcription: "вуд ю лайк юр бед чейнджд?",
+      },
+      [lang.ua]: {
+        name: "Бажаєте змінити постіль?",
+        transcription: "вуд ю лайк юр бед чейнджд?",
+      },
+      [lang.es]: {
+        name: "¿Le gustaría que le cambiaran la cama?",
+        transcription: "wud yu laik yur bed cheinjd?",
+      },
+      [lang.bg]: {
+        name: "Желаете ли да ви сменим чаршафите?",
+        transcription: "ууд ю лайк юр бед чейнджд?",
+      },
+      [lang.hi]: {
+        name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
+        transcription: "वुड यू लाइक योर बेड चेंज्ड?",
+      },
+    },
+  },
+  {
+    id: 70,
+    name: "Do you need more amenities like soap or shampoo?",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
+        transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
+      },
+      [lang.ru]: {
+        name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
+        transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
+      },
+      [lang.ua]: {
+        name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
+        transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
+      },
+      [lang.es]: {
+        name: "¿Necesita más artículos de tocador como jabón o champú?",
+        transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
+      },
+      [lang.bg]: {
+        name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
+        transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
+      },
+      [lang.hi]: {
+        name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
+        transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
+      },
+    },
+  },
+  {
+    id: 71,
+    name: "I can bring you extra pillows/blankets.",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Vă pot aduce perne/pături suplimentare.",
+        transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
+      },
+      [lang.ru]: {
+        name: "Я могу принести вам дополнительные подушки/одеяла.",
+        transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
+      },
+      [lang.ua]: {
+        name: "Я можу принести вам додаткові подушки/ковдри.",
+        transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
+      },
+      [lang.es]: {
+        name: "Puedo traerle almohadas/mantas adicionales.",
+        transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
+      },
+      [lang.bg]: {
+        name: "Мога да ви донеса допълнителни възглавници/одеяла.",
+        transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
+      },
+      [lang.hi]: {
+        name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
+        transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
+      },
+    },
+  },
+  {
+    id: 72,
+    name: "Is there anything else I can get for you?",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Mai este ceva ce vă pot aduce?",
+        transcription: "iz ther en-ee-thing els ai kan get for yoo?",
+      },
+      [lang.ru]: {
+        name: "Могу ли я еще что-нибудь для вас принести?",
+        transcription: "из зер эни-синг элс ай кан гет фор ю?",
+      },
+      [lang.ua]: {
+        name: "Чи є ще щось, що я можу принести для вас?",
+        transcription: "із зер ені-сінг елс ай кан гет фор ю?",
+      },
+      [lang.es]: {
+        name: "¿Hay algo más en lo que pueda ayudarle?",
+        transcription: "iz der en-i-thing els ai kan get for yu?",
+      },
+      [lang.bg]: {
+        name: "Има ли нещо друго, което мога да ви донеса?",
+        transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
+      },
+      [lang.hi]: {
+        name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
+        transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
+      },
+    },
+  },
+  {
+    id: 73,
+    name: "Your room is now clean and tidy.",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Camera dumneavoastră este acum curată și ordonată.",
+        transcription: "yur rum iz nau klin end tai-di",
+      },
+      [lang.ru]: {
+        name: "Ваша комната теперь чистая и опрятная.",
+        transcription: "юр рум из нау клин энд тай-ди",
+      },
+      [lang.ua]: {
+        name: "Ваша кімната тепер чиста і охайна.",
+        transcription: "юр рум із нау клін енд тай-ді",
+      },
+      [lang.es]: {
+        name: "Su habitación está ahora limpia y ordenada.",
+        transcription: "yur rum iz nau clin end tai-di",
+      },
+      [lang.bg]: {
+        name: "Стаята ви вече е чиста и подредена.",
+        transcription: "юр рум из нау клин енд тай-ди",
+      },
+      [lang.hi]: {
+        name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
+        transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
+      },
+    },
+  },
+  {
+    id: 74,
+    name: "Have a pleasant day!",
+    categories: [categories.sentences],
+    translation: {
+      [lang.ro]: {
+        name: "Să aveți o zi plăcută!",
+        transcription: "hav a ple-zant dei!",
+      },
+      [lang.ru]: {
+        name: "Приятного дня!",
+        transcription: "хав э пле-зант дэй!",
+      },
+      [lang.ua]: {
+        name: "Приємного дня!",
+        transcription: "хав а пле-зант дей!",
+      },
+      [lang.es]: {
+        name: "¡Que tenga un día agradable!",
+        transcription: "hav a ple-sant dei!",
+      },
+      [lang.bg]: {
+        name: "Приятен ден!",
+        transcription: "хав а пле-зант дей!",
+      },
+      [lang.hi]: {
+        name: "आपका दिन शुभ हो!",
+        transcription: "हैव अ प्लेज-न्ट डे!",
+      },
+    },
+  },
+].filter((el) => el.id)
 
 testData.list = [...testData.list, ...sentences]
 
@@ -3148,6 +3109,7 @@ function Database(testData) {
 
   return {
     get All() {
+      console.log("data received: ", data)
       return data.list
     },
     getAllByProperty: (property) => data?.list.map((item) => item[property]),
