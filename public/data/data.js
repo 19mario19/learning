@@ -90,6 +90,17 @@ const categories = {
       [lang.hi]: "सफाई 🧼",
     },
   },
+  damages: {
+    name: "damages",
+    translation: {
+      [lang.ro]: "deteriorări 💥",
+      [lang.ru]: "повреждения 💥",
+      [lang.ua]: "пошкодження 💥",
+      [lang.es]: "daños 💥",
+      [lang.bg]: "щети 💥",
+      [lang.hi]: "नुकसान 💥",
+    },
+  },
 }
 const testData = {
   list: [
@@ -3103,6 +3114,442 @@ const sentences = [
 ].filter((el) => el.id)
 
 testData.list = [...testData.list, ...sentences]
+
+let newWords = [
+  {
+    name: "tap",
+    categories: [categories.bathroom],
+    translation: {
+      [lang.ro]: {
+        name: "robinet 💧",
+        transcription: "tap",
+      },
+      [lang.ru]: {
+        name: "кран 💧",
+        transcription: "тап",
+      },
+      [lang.ua]: {
+        name: "кран 💧",
+        transcription: "тап",
+      },
+      [lang.es]: {
+        name: "grifo 💧",
+        transcription: "tap",
+      },
+      [lang.bg]: {
+        name: "кран 💧",
+        transcription: "тап",
+      },
+      [lang.hi]: {
+        name: "नल 💧",
+        transcription: "टैप",
+      },
+    },
+  },
+  {
+    name: "report damaged sink",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "raportează chiuveta deteriorată",
+        transcription: "ri-port dem-ij-d sink",
+      },
+      [lang.ru]: {
+        name: "сообщить о поврежденной раковине",
+        transcription: "ри-порт дэм-иджд синк",
+      },
+      [lang.ua]: {
+        name: "повідомити про пошкоджену раковину",
+        transcription: "рі-порт деміджд сінк",
+      },
+      [lang.es]: {
+        name: "reportar lavabo dañado",
+        transcription: "ri-port dam-ajd sink",
+      },
+      [lang.bg]: {
+        name: "докладвайте повреден умивалник",
+        transcription: "ри-порт де-миджд синк",
+      },
+      [lang.hi]: {
+        name: "क्षतिग्रस्त सिंक की रिपोर्ट करें",
+        transcription: "रिपोर्ट डैमेज्ड सिंक",
+      },
+    },
+  },
+  {
+    name: "report damaged air conditioning",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "raportează aerul condiționat deteriorat",
+        transcription: "ri-port dem-ij-d air con-di-shun-ing",
+      },
+      [lang.ru]: {
+        name: "сообщить о поврежденном кондиционере",
+        transcription: "ри-порт дэм-иджд эир кон-ди-шни-нг",
+      },
+      [lang.ua]: {
+        name: "повідомити про пошкоджений кондиціонер",
+        transcription: "рі-порт деміджд еир кон-ді-шни-нг",
+      },
+      [lang.es]: {
+        name: "reportar aire acondicionado dañado",
+        transcription: "ri-port dam-ajd air con-di-shun-ing",
+      },
+      [lang.bg]: {
+        name: "докладвайте повреден климатик",
+        transcription: "ри-порт де-миджд еър кон-ди-шъ-нинг",
+      },
+      [lang.hi]: {
+        name: "क्षतिग्रस्त एयर कंडीशनिंग की रिपोर्ट करें",
+        transcription: "रिपोर्ट डैमेज्ड एयर कंडीशनिंग",
+      },
+    },
+  },
+  {
+    name: "report carpet stains",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "raportează pete pe covor",
+        transcription: "ri-port kar-pet steinz",
+      },
+      [lang.ru]: {
+        name: "сообщить о пятнах на ковре",
+        transcription: "ри-порт кар-пет стэйнз",
+      },
+      [lang.ua]: {
+        name: "повідомити про плями на килимі",
+        transcription: "рі-порт кар-пет стейнз",
+      },
+      [lang.es]: {
+        name: "reportar manchas en la alfombra",
+        transcription: "ri-port car-pet stains",
+      },
+      [lang.bg]: {
+        name: "докладвайте петна по килима",
+        transcription: "ри-порт кар-пет стейнз",
+      },
+      [lang.hi]: {
+        name: "कालीन के दागों की रिपोर्ट करें",
+        transcription: "रिपोर्ट कारपेट स्टेंस",
+      },
+    },
+  },
+
+  {
+    id: 77,
+    name: "The heating is not working.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Încălzirea nu funcționează.",
+        transcription: "dhə hee-ting iz not wăr-king",
+      },
+      [lang.ru]: {
+        name: "Отопление не работает.",
+        transcription: "зэ хи-тинг из нот во-ркинг",
+      },
+      [lang.ua]: {
+        name: "Опалення не працює.",
+        transcription: "зе хі-тінг із нот воркінг",
+      },
+      [lang.es]: {
+        name: "La calefacción no funciona.",
+        transcription: "dhe hee-ting is not wer-king",
+      },
+      [lang.bg]: {
+        name: "Отоплението не работи.",
+        transcription: "дъ хий-тинг из нот уър-кинг",
+      },
+      [lang.hi]: {
+        name: "हीटिंग काम नहीं कर रही है।",
+        transcription: "द हीटिंग इज नॉट वर्किंग",
+      },
+    },
+  },
+  {
+    id: 78,
+    name: "There's a flickering light in the bathroom.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Există o lumină pâlpâitoare în baie.",
+        transcription: "dherz a flik-ăr-ing lait in dhə bath-rum",
+      },
+      [lang.ru]: {
+        name: "В ванной мигает свет.",
+        transcription: "зэрз э фли-ке-ринг лайт ин зэ бас-рум",
+      },
+      [lang.ua]: {
+        name: "У ванній кімнаті блимає світло.",
+        transcription: "зерз а флікерінг лайт ін зе бас-рум",
+      },
+      [lang.es]: {
+        name: "Hay una luz parpadeante en el baño.",
+        transcription: "dherz a flik-er-ing lait in the bath-rum",
+      },
+      [lang.bg]: {
+        name: "Има мигаща светлина в банята.",
+        transcription: "дерз ъ флик-ъ-ринг лайт ин дъ бат-руум",
+      },
+      [lang.hi]: {
+        name: "बाथरूम में एक झिलमिलाती रोशनी है।",
+        transcription: "देयर इज़ अ फ्लिकरिंग लाइट इन द बाथरूम",
+      },
+    },
+  },
+  {
+    id: 79,
+    name: "The air conditioning is not working.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Aerul condiționat nu funcționează.",
+        transcription: "dhə air con-di-shun-ing iz not wăr-king",
+      },
+      [lang.ru]: {
+        name: "Кондиционер не работает.",
+        transcription: "зэ эир кон-ди-шни-нг из нот во-ркинг",
+      },
+      [lang.ua]: {
+        name: "Кондиціонер не працює.",
+        transcription: "зе еир кон-ді-шни-нг із нот воркінг",
+      },
+      [lang.es]: {
+        name: "El aire acondicionado no funciona.",
+        transcription: "dhe air con-di-shun-ing is not wer-king",
+      },
+      [lang.bg]: {
+        name: "Климатикът не работи.",
+        transcription: "дъ еър кон-ди-шъ-нинг из нот уър-кинг",
+      },
+      [lang.hi]: {
+        name: "एयर कंडीशनिंग काम नहीं कर रहा है।",
+        transcription: "द एयर कंडीशनिंग इज नॉट वर्किंग",
+      },
+    },
+  },
+  {
+    id: 80,
+    name: "I've found a stain on the carpet.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Am găsit o pată pe covor.",
+        transcription: "aiv faund a stein on dhə kar-pet",
+      },
+      [lang.ru]: {
+        name: "Я нашел(ла) пятно на ковре.",
+        transcription: "айв фаунд э стэйн он зэ кар-пет",
+      },
+      [lang.ua]: {
+        name: "Я знайшов(ла) пляму на килимі.",
+        transcription: "айв фаунд а стейн он зе кар-пет",
+      },
+      [lang.es]: {
+        name: "He encontrado una mancha en la alfombra.",
+        transcription: "aiv faund a stain on the kar-pet",
+      },
+      [lang.bg]: {
+        name: "Намерих петно по килима.",
+        transcription: "айв фаунд ъ стейн он дъ кар-пет",
+      },
+      [lang.hi]: {
+        name: "मुझे कालीन पर एक दाग मिला है।",
+        transcription: "आईव फाउंड अ स्टेन ऑन द कारपेट",
+      },
+    },
+  },
+  {
+    id: 81,
+    name: "The toilet is blocked.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Toaleta este înfundată.",
+        transcription: "dhə toi-let iz blokt",
+      },
+      [lang.ru]: {
+        name: "Туалет засорен.",
+        transcription: "зэ той-лет из блокт",
+      },
+      [lang.ua]: {
+        name: "Туалет заблокований.",
+        transcription: "зе туалет із блокт",
+      },
+      [lang.es]: {
+        name: "El inodoro está atascado.",
+        transcription: "dhe toi-let is blokt",
+      },
+      [lang.bg]: {
+        name: "Тоалетната е запушена.",
+        transcription: "дъ той-лет из блокт",
+      },
+      [lang.hi]: {
+        name: "टॉयलेट ब्लॉक है।",
+        transcription: "द टॉयलेट इज ब्लॉक्ड",
+      },
+    },
+  },
+  {
+    id: 82,
+    name: "The lamp on the bedside table is broken.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Lampa de pe noptieră este stricată.",
+        transcription: "dhə lamp on dhə bed-said tei-băl iz bro-kăn",
+      },
+      [lang.ru]: {
+        name: "Лампа на прикроватной тумбочке сломана.",
+        transcription: "зэ ламп он зэ бэд-сайд тэй-бл из бро-кен",
+      },
+      [lang.ua]: {
+        name: "Лампа на тумбочці зламана.",
+        transcription: "зе ламп он зе бед-сайд тейбл із броукен",
+      },
+      [lang.es]: {
+        name: "La lámpara de la mesita de noche está rota.",
+        transcription: "dhe lamp on the bed-said tei-bel is bro-ken",
+      },
+      [lang.bg]: {
+        name: "Лампата на нощното шкафче е счупена.",
+        transcription: "дъ ламп он дъ бед-сайд тей-бъл из бро-кън",
+      },
+      [lang.hi]: {
+        name: "बेडसाइड टेबल पर रखा लैंप टूटा हुआ है।",
+        transcription: "द लैंप ऑन द बेडसाइड टेबल इज ब्रोकेन",
+      },
+    },
+  },
+  {
+    id: 83,
+    name: "There's a hole in the duvet cover.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Este o gaură în husa de plapumă.",
+        transcription: "dherz a houl in dhə du-vei kuv-ăr",
+      },
+      [lang.ru]: {
+        name: "В пододеяльнике дырка.",
+        transcription: "зэрз э хоул ин зэ ду-вэй кав-ер",
+      },
+      [lang.ua]: {
+        name: "У підковдрі дірка.",
+        transcription: "зерз а хоул ін зе ду-вей кавер",
+      },
+      [lang.es]: {
+        name: "Hay un agujero en la funda nórdica.",
+        transcription: "dherz a hol in the du-vet cov-er",
+      },
+      [lang.bg]: {
+        name: "Има дупка в плика за завивка.",
+        transcription: "дерз ъ хоул ин дъ ду-вей къв-ър",
+      },
+      [lang.hi]: {
+        name: "दूवेट कवर में एक छेद है।",
+        transcription: "देयर इज़ अ होल इन द दूवेट कवर",
+      },
+    },
+  },
+  {
+    id: 84,
+    name: "The TV remote control is not functioning.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Telecomanda TV nu funcționează.",
+        transcription: "dhə ti-vi ri-mout kən-trol iz not fank-shun-ing",
+      },
+      [lang.ru]: {
+        name: "Пульт дистанционного управления телевизором не работает.",
+        transcription: "зэ ти-ви ри-моут кон-трол из нот фанк-шо-нинг",
+      },
+      [lang.ua]: {
+        name: "Пульт дистанційного керування телевізором не працює.",
+        transcription: "зе ті-ві рі-моут контрол із нот фанкшенінг",
+      },
+      [lang.es]: {
+        name: "El control remoto del televisor no funciona.",
+        transcription: "dhe ti-vi ri-mot con-trol is not fank-shun-ing",
+      },
+      [lang.bg]: {
+        name: "Дистанционното управление на телевизора не работи.",
+        transcription: "дъ ти-ви ри-моут кън-трол из нот фънк-шъ-нинг",
+      },
+      [lang.hi]: {
+        name: "टीवी रिमोट कंट्रोल काम नहीं कर रहा है।",
+        transcription: "द टीवी रिमोट कंट्रोल इज नॉट फंक्शनिंग",
+      },
+    },
+  },
+  {
+    id: 85,
+    name: "One of the chairs in the room is damaged.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Unul dintre scaunele din cameră este deteriorat.",
+        transcription: "uăn ov dhə chers in dhə rum iz dem-ij-d",
+      },
+      [lang.ru]: {
+        name: "Один из стульев в комнате поврежден.",
+        transcription: "ван ов зэ черз ин зэ рум из дэм-иджд",
+      },
+      [lang.ua]: {
+        name: "Один зі стільців у кімнаті пошкоджений.",
+        transcription: "ван ов зе черз ін зе рум із деміджд",
+      },
+      [lang.es]: {
+        name: "Una de las sillas de la habitación está dañada.",
+        transcription: "uon ov the chers in the rum is dam-ajd",
+      },
+      [lang.bg]: {
+        name: "Един от столовете в стаята е повреден.",
+        transcription: "уан ов дъ чеърз ин дъ руум из де-миджд",
+      },
+      [lang.hi]: {
+        name: "कमरे में एक कुर्सी क्षतिग्रस्त है।",
+        transcription: "वन ऑफ़ द चेयर्स इन द रूम इज डैमेज्ड",
+      },
+    },
+  },
+  {
+    id: 86,
+    name: "The showerhead is faulty.",
+    categories: [categories.damages, categories.requests],
+    translation: {
+      [lang.ro]: {
+        name: "Capul de duș este defect.",
+        transcription: "dhə shau-ăr-hed iz fol-ti",
+      },
+      [lang.ru]: {
+        name: "Лейка душа неисправна.",
+        transcription: "зэ шау-эр-хед из фол-ти",
+      },
+      [lang.ua]: {
+        name: "Душова насадка несправна.",
+        transcription: "зе шау-ер-хед із фолті",
+      },
+      [lang.es]: {
+        name: "El cabezal de la ducha está defectuoso.",
+        transcription: "dhe shau-er-hed is fol-ti",
+      },
+      [lang.bg]: {
+        name: "Душ слушалката е дефектна.",
+        transcription: "дъ шау-ър-хед из фол-ти",
+      },
+      [lang.hi]: {
+        name: "शॉवरहेड खराब है।",
+        transcription: "द शावरहेड इज फॉल्टी",
+      },
+    },
+  },
+]
+
+testData.list = [...testData.list, ...newWords]
 
 function Database(testData) {
   let data = testData
