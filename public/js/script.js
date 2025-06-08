@@ -17,6 +17,8 @@ const storeCategory = store.currentCategory
 // top subscribtions
 storeLang.subscribe((data) => {
   document.title = data + " | " + storeCategory.value
+  let addPublic = local ? "/public" : ""
+  setFavicon(`${addPublic}/images/flags/${storeLang.value}.svg`)
   // console.log(storeLang.getObservables())
   // console.log("Languages was changed to: ", data)
 })
@@ -37,7 +39,7 @@ storeLang.value = JSON.parse(localStorage.getItem("lang")) || languages.ro
 storeCategory.value =
   JSON.parse(localStorage.getItem("category")) || categories.all
 
-if ((db.ByCategory({ name: storeCategory.value })).length > 0) {
+if (db.ByCategory({ name: storeCategory.value }).length > 0) {
   storeData.value = db.ByCategory({ name: storeCategory.value })
 } else {
   storeData.value = db.All
@@ -261,6 +263,16 @@ function ListWordsComponent(list) {
   for (let item of list) {
     WordComponent(item, ulWord)
   }
+}
+
+function setFavicon(iconURL) {
+  let link = document.querySelector("link[rel~='icon']")
+  if (!link) {
+    link = document.createElement("link")
+    link.rel = "icon"
+    document.head.appendChild(link)
+  }
+  link.href = iconURL
 }
 
 window.addEventListener("DOMContentLoaded", () => {
