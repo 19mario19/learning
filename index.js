@@ -1,5 +1,6 @@
 import express from "express"
 import path from "path"
+import { DictService } from "./services/DictService.js"
 const app = express()
 const PORT = 3000
 
@@ -13,9 +14,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(fullPath, "index.html"))
 })
 
-
+// const dict = DictService()
 //api
-router.get("/test", (req, res) => res.json(db.getAll()))
+// router.get("/test", async (req, res) => {
+//   let data = (await dict).getAll().filter((el) => el)
+
+//   return res.json({ data })
+// })
 
 app.use("/api", router)
 app.listen(PORT, () => {

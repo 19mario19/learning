@@ -106,7 +106,6 @@ const testData = {
   list: [
     // Bathroom items
     {
-      id: 0,
       name: "towel",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -137,7 +136,6 @@ const testData = {
       },
     },
     {
-      id: 1,
       name: "hand towel",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -168,7 +166,6 @@ const testData = {
       },
     },
     {
-      id: 2,
       name: "bath mat",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -199,7 +196,6 @@ const testData = {
       },
     },
     {
-      id: 3,
       name: "toilet paper",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -230,7 +226,6 @@ const testData = {
       },
     },
     {
-      id: 4,
       name: "shower",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
@@ -261,7 +256,6 @@ const testData = {
       },
     },
     {
-      id: 5,
       name: "bathtub",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
@@ -292,7 +286,6 @@ const testData = {
       },
     },
     {
-      id: 6,
       name: "toilet",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
@@ -323,7 +316,6 @@ const testData = {
       },
     },
     {
-      id: 7,
       name: "sink",
       categories: [categories.bathroom, categories.cleaning],
       translation: {
@@ -354,7 +346,6 @@ const testData = {
       },
     },
     {
-      id: 8,
       name: "shampoo",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -385,7 +376,6 @@ const testData = {
       },
     },
     {
-      id: 9,
       name: "conditioner",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -416,7 +406,6 @@ const testData = {
       },
     },
     {
-      id: 10,
       name: "body wash",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -447,7 +436,6 @@ const testData = {
       },
     },
     {
-      id: 11,
       name: "soap",
       categories: [categories.bathroom, categories.supplies],
       translation: {
@@ -478,7 +466,6 @@ const testData = {
       },
     },
     {
-      id: 12,
       name: "hairdryer",
       categories: [categories.bathroom],
       translation: {
@@ -509,7 +496,6 @@ const testData = {
       },
     },
     {
-      id: 13,
       name: "bed",
       categories: [categories.bedroom, categories.cleaning],
       translation: {
@@ -540,7 +526,6 @@ const testData = {
       },
     },
     {
-      id: 14,
       name: "sheets",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -571,7 +556,6 @@ const testData = {
       },
     },
     {
-      id: 15,
       name: "pillow",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -602,7 +586,6 @@ const testData = {
       },
     },
     {
-      id: 16,
       name: "pillowcase",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -633,7 +616,6 @@ const testData = {
       },
     },
     {
-      id: 17,
       name: "blanket",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -664,7 +646,6 @@ const testData = {
       },
     },
     {
-      id: 18,
       name: "duvet",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -695,7 +676,6 @@ const testData = {
       },
     },
     {
-      id: 19,
       name: "duvet cover",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -726,7 +706,6 @@ const testData = {
       },
     },
     {
-      id: 20,
       name: "mattress",
       categories: [categories.bedroom],
       translation: {
@@ -757,7 +736,6 @@ const testData = {
       },
     },
     {
-      id: 21,
       name: "mattress protector",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -788,7 +766,6 @@ const testData = {
       },
     },
     {
-      id: 22,
       name: "extra blanket",
       categories: [categories.bedroom, categories.requests],
       translation: {
@@ -819,7 +796,6 @@ const testData = {
       },
     },
     {
-      id: 23,
       name: "extra pillow",
       categories: [categories.bedroom, categories.requests],
       translation: {
@@ -850,7 +826,6 @@ const testData = {
       },
     },
     {
-      id: 24,
       name: "vacuum cleaner",
       categories: [categories.cleaning],
       translation: {
@@ -881,7 +856,6 @@ const testData = {
       },
     },
     {
-      id: 25,
       name: "mop",
       categories: [categories.cleaning],
       translation: {
@@ -912,7 +886,6 @@ const testData = {
       },
     },
     {
-      id: 26,
       name: "broom",
       categories: [categories.cleaning],
       translation: {
@@ -943,7 +916,6 @@ const testData = {
       },
     },
     {
-      id: 27,
       name: "dustpan",
       categories: [categories.cleaning],
       translation: {
@@ -974,7 +946,6 @@ const testData = {
       },
     },
     {
-      id: 28,
       name: "duster",
       categories: [categories.cleaning],
       translation: {
@@ -1005,7 +976,6 @@ const testData = {
       },
     },
     {
-      id: 29,
       name: "cleaning spray",
       categories: [categories.cleaning, categories.supplies],
       translation: {
@@ -1036,7 +1006,6 @@ const testData = {
       },
     },
     {
-      id: 30,
       name: "disinfectant",
       categories: [categories.cleaning, categories.supplies],
       translation: {
@@ -1067,7 +1036,6 @@ const testData = {
       },
     },
     {
-      id: 31,
       name: "glass cleaner",
       categories: [categories.cleaning, categories.supplies],
       translation: {
@@ -1098,7 +1066,6 @@ const testData = {
       },
     },
     {
-      id: 32,
       name: "do not disturb",
       categories: [categories.requests],
       translation: {
@@ -1129,7 +1096,6 @@ const testData = {
       },
     },
     {
-      id: 33,
       name: "please clean my room",
       categories: [categories.requests],
       translation: {
@@ -1160,7 +1126,6 @@ const testData = {
       },
     },
     {
-      id: 34,
       name: "need more towels",
       categories: [categories.requests],
       translation: {
@@ -1191,7 +1156,6 @@ const testData = {
       },
     },
     {
-      id: 35,
       name: "need more toilet paper",
       categories: [categories.requests],
       translation: {
@@ -1222,7 +1186,6 @@ const testData = {
       },
     },
     {
-      id: 36,
       name: "clean",
       categories: [categories.cleaning],
       translation: {
@@ -1253,7 +1216,6 @@ const testData = {
       },
     },
     {
-      id: 37,
       name: "dirty",
       categories: [categories.cleaning],
       translation: {
@@ -1284,7 +1246,6 @@ const testData = {
       },
     },
     {
-      id: 38,
       name: "stain",
       categories: [categories.cleaning],
       translation: {
@@ -1315,7 +1276,6 @@ const testData = {
       },
     },
     {
-      id: 39,
       name: "trash",
       categories: [categories.cleaning],
       translation: {
@@ -1346,7 +1306,6 @@ const testData = {
       },
     },
     {
-      id: 40,
       name: "trash bin",
       categories: [categories.cleaning],
       translation: {
@@ -1377,7 +1336,6 @@ const testData = {
       },
     },
     {
-      id: 41,
       name: "pillowcase",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -1408,7 +1366,6 @@ const testData = {
       },
     },
     {
-      id: 42,
       name: "remote control",
       categories: [categories.bedroom],
       translation: {
@@ -1439,7 +1396,6 @@ const testData = {
       },
     },
     {
-      id: 43,
       name: "air conditioning",
       categories: [categories.bedroom],
       translation: {
@@ -1470,7 +1426,6 @@ const testData = {
       },
     },
     {
-      id: 44,
       name: "hanger",
       categories: [categories.bedroom],
       translation: {
@@ -1501,7 +1456,6 @@ const testData = {
       },
     },
     {
-      id: 45,
       name: "luggage rack",
       categories: [categories.bedroom],
       translation: {
@@ -1532,7 +1486,6 @@ const testData = {
       },
     },
     {
-      id: 46,
       name: "make the bed",
       categories: [categories.cleaning, categories.requests],
       translation: {
@@ -1563,7 +1516,6 @@ const testData = {
       },
     },
     {
-      id: 47,
       name: "dust",
       categories: [categories.cleaning],
       translation: {
@@ -1594,7 +1546,6 @@ const testData = {
       },
     },
     {
-      id: 48,
       name: "polish",
       categories: [categories.cleaning, categories.supplies],
       translation: {
@@ -1625,7 +1576,6 @@ const testData = {
       },
     },
     {
-      id: 49,
       name: "stains on the carpet",
       categories: [categories.requests, categories.cleaning],
       translation: {
@@ -1656,7 +1606,6 @@ const testData = {
       },
     },
     {
-      id: 50,
       name: "change the sheets",
       categories: [categories.requests, categories.cleaning],
       translation: {
@@ -1687,7 +1636,6 @@ const testData = {
       },
     },
     {
-      id: 51,
       name: "restock supplies",
       categories: [categories.requests, categories.supplies],
       translation: {
@@ -1718,7 +1666,6 @@ const testData = {
       },
     },
     {
-      id: 52,
       name: "empty the trash",
       categories: [categories.requests, categories.cleaning],
       translation: {
@@ -1749,9 +1696,8 @@ const testData = {
       },
     },
     {
-      id: 53,
       name: "broken",
-      categories: [],
+      categories: [categories.damages],
       translation: {
         [lang.ro]: {
           name: "stricat 💔",
@@ -1780,7 +1726,6 @@ const testData = {
       },
     },
     {
-      id: 54,
       name: "report a problem",
       categories: [categories.requests],
       translation: {
@@ -1811,7 +1756,6 @@ const testData = {
       },
     },
     {
-      id: 55,
       name: "light",
       categories: [],
       translation: {
@@ -1842,7 +1786,6 @@ const testData = {
       },
     },
     {
-      id: 56,
       name: "tidy up",
       categories: [categories.cleaning],
       translation: {
@@ -1873,7 +1816,6 @@ const testData = {
       },
     },
     {
-      id: 57,
       name: "stains on the linen",
       categories: [categories.requests, categories.cleaning],
       translation: {
@@ -1904,7 +1846,6 @@ const testData = {
       },
     },
     {
-      id: 58,
       name: "refill soap dispenser",
       categories: [categories.requests, categories.supplies],
       translation: {
@@ -1935,7 +1876,6 @@ const testData = {
       },
     },
     {
-      id: 59,
       name: "check out",
       categories: [categories.requests],
       translation: {
@@ -1966,7 +1906,6 @@ const testData = {
       },
     },
     {
-      id: 60,
       name: "check in",
       categories: [categories.requests],
       translation: {
@@ -1998,7 +1937,6 @@ const testData = {
     },
 
     {
-      id: 61,
       name: "foam pillow",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -2029,7 +1967,6 @@ const testData = {
       },
     },
     {
-      id: 62,
       name: "feather pillow",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -2060,7 +1997,6 @@ const testData = {
       },
     },
     {
-      id: 63,
       name: "topper (for the bed)",
       categories: [categories.bedroom, categories.supplies],
       translation: {
@@ -2091,7 +2027,6 @@ const testData = {
       },
     },
     {
-      id: 64,
       name: "hole (in the linen)",
       categories: [categories.requests, categories.cleaning],
       translation: {
@@ -2121,1442 +2056,1048 @@ const testData = {
         },
       },
     },
+
+    {
+      name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
+      categories: [categories.requests, categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
+          transcription:
+            "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
+        },
+        [lang.ru]: {
+          name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
+          transcription:
+            "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
+        },
+        [lang.ua]: {
+          name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
+          transcription:
+            "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
+        },
+        [lang.es]: {
+          name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
+          transcription:
+            "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
+        },
+        [lang.bg]: {
+          name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
+          transcription:
+            "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
+        },
+        [lang.hi]: {
+          name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
+          transcription:
+            "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
+        },
+      },
+    },
+    {
+      name: "Good morning! May I clean your room now?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună dimineața! Pot să vă curăț camera acum?",
+          transcription: "gud mor-ning! mei ai klin yur rum nau?",
+        },
+        [lang.ru]: {
+          name: "Доброе утро! Могу я убрать вашу комнату сейчас?",
+          transcription: "гуд мо-рнинг! мэй ай клин юр рум нау?",
+        },
+        [lang.ua]: {
+          name: "Доброго ранку! Чи можу я прибрати вашу кімнату зараз?",
+          transcription: "гуд мо-рнінг! мей ай клін юр рум нау?",
+        },
+        [lang.es]: {
+          name: "¡Buenos días! ¿Puedo limpiar su habitación ahora?",
+          transcription: "gud mor-ning! mei ai clin yur rum nau?",
+        },
+        [lang.bg]: {
+          name: "Добро утро! Мога ли да почистя стаята ви сега?",
+          transcription: "гуд мор-нинг! мей ай клин юр рум нау?",
+        },
+        [lang.hi]: {
+          name: "सुप्रभात! क्या मैं अभी आपका कमरा साफ कर सकता हूँ?",
+          transcription: "गुड मोर-निंग! मे आई क्लीन योर रूम नाउ?",
+        },
+      },
+    },
+    {
+      name: "Good afternoon! Would you like your room serviced?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună ziua! Doriți să vă aranjăm camera?",
+          transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
+        },
+        [lang.ru]: {
+          name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
+          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
+        },
+        [lang.ua]: {
+          name: "Добрий день! Бажаєте прибирання кімнати?",
+          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
+        },
+        [lang.es]: {
+          name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
+          transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
+        },
+        [lang.bg]: {
+          name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
+          transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
+        },
+        [lang.hi]: {
+          name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
+          transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
+        },
+      },
+    },
+    {
+      name: "Good evening. Do you need fresh towels?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună seara. Aveți nevoie de prosoape curate?",
+          transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
+        },
+        [lang.ru]: {
+          name: "Добрый вечер. Вам нужны свежие полотенца?",
+          transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
+        },
+        [lang.ua]: {
+          name: "Добрий вечір. Вам потрібні свіжі рушники?",
+          transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
+        },
+        [lang.es]: {
+          name: "Buenas noches. ¿Necesita toallas limpias?",
+          transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
+        },
+        [lang.bg]: {
+          name: "Добър вечер. Имате ли нужда от чисти хавлии?",
+          transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
+        },
+        [lang.hi]: {
+          name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
+          transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
+        },
+      },
+    },
+    {
+      name: "I am here to refresh your room.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Sunt aici să vă reîmprospătez camera.",
+          transcription: "ai am hir tu ri-fresh yur rum",
+        },
+        [lang.ru]: {
+          name: "Я здесь, чтобы обновить вашу комнату.",
+          transcription: "ай эм хир ту ри-фреш юр рум",
+        },
+        [lang.ua]: {
+          name: "Я тут, щоб оновити вашу кімнату.",
+          transcription: "ай ем хір ту рі-фреш юр рум",
+        },
+        [lang.es]: {
+          name: "Estoy aquí para refrescar su habitación.",
+          transcription: "ai am hir tu ri-fresh yur rum",
+        },
+        [lang.bg]: {
+          name: "Тук съм, за да освежа стаята ви.",
+          transcription: "ай ем хир ту ри-фреш юр рум",
+        },
+        [lang.hi]: {
+          name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
+          transcription: "आई एम हियर टू री-फ्रेश योर रूम",
+        },
+      },
+    },
+    {
+      name: "Would you like your bed changed?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Doriți să vă schimbăm lenjeria de pat?",
+          transcription: "wud yoo laik yur bed cheinjd?",
+        },
+        [lang.ru]: {
+          name: "Хотите, чтобы сменили постельное белье?",
+          transcription: "вуд ю лайк юр бед чейнджд?",
+        },
+        [lang.ua]: {
+          name: "Бажаєте змінити постіль?",
+          transcription: "вуд ю лайк юр бед чейнджд?",
+        },
+        [lang.es]: {
+          name: "¿Le gustaría que le cambiaran la cama?",
+          transcription: "wud yu laik yur bed cheinjd?",
+        },
+        [lang.bg]: {
+          name: "Желаете ли да ви сменим чаршафите?",
+          transcription: "ууд ю лайк юр бед чейнджд?",
+        },
+        [lang.hi]: {
+          name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
+          transcription: "वुड यू लाइक योर बेड चेंज्ड?",
+        },
+      },
+    },
+    {
+      name: "Do you need more amenities like soap or shampoo?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
+          transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
+        },
+        [lang.ru]: {
+          name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
+          transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
+        },
+        [lang.ua]: {
+          name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
+          transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
+        },
+        [lang.es]: {
+          name: "¿Necesita más artículos de tocador como jabón o champú?",
+          transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
+        },
+        [lang.bg]: {
+          name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
+          transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
+        },
+        [lang.hi]: {
+          name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
+          transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
+        },
+      },
+    },
+    {
+      name: "I can bring you extra pillows/blankets.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Vă pot aduce perne/pături suplimentare.",
+          transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
+        },
+        [lang.ru]: {
+          name: "Я могу принести вам дополнительные подушки/одеяла.",
+          transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
+        },
+        [lang.ua]: {
+          name: "Я можу принести вам додаткові подушки/ковдри.",
+          transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
+        },
+        [lang.es]: {
+          name: "Puedo traerle almohadas/mantas adicionales.",
+          transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
+        },
+        [lang.bg]: {
+          name: "Мога да ви донеса допълнителни възглавници/одеяла.",
+          transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
+        },
+        [lang.hi]: {
+          name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
+          transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
+        },
+      },
+    },
+    {
+      name: "Is there anything else I can get for you?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Mai este ceva ce vă pot aduce?",
+          transcription: "iz ther en-ee-thing els ai kan get for yoo?",
+        },
+        [lang.ru]: {
+          name: "Могу ли я еще что-нибудь для вас принести?",
+          transcription: "из зер эни-синг элс ай кан гет фор ю?",
+        },
+        [lang.ua]: {
+          name: "Чи є ще щось, що я можу принести для вас?",
+          transcription: "із зер ені-сінг елс ай кан гет фор ю?",
+        },
+        [lang.es]: {
+          name: "¿Hay algo más en lo que pueda ayudarle?",
+          transcription: "iz der en-i-thing els ai kan get for yu?",
+        },
+        [lang.bg]: {
+          name: "Има ли нещо друго, което мога да ви донеса?",
+          transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
+        },
+        [lang.hi]: {
+          name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
+          transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
+        },
+      },
+    },
+    {
+      name: "Your room is now clean and tidy.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Camera dumneavoastră este acum curată și ordonată.",
+          transcription: "yur rum iz nau klin end tai-di",
+        },
+        [lang.ru]: {
+          name: "Ваша комната теперь чистая и опрятная.",
+          transcription: "юр рум из нау клин энд тай-ди",
+        },
+        [lang.ua]: {
+          name: "Ваша кімната тепер чиста і охайна.",
+          transcription: "юр рум із нау клін енд тай-ді",
+        },
+        [lang.es]: {
+          name: "Su habitación está ahora limpia y ordenada.",
+          transcription: "yur rum iz nau clin end tai-di",
+        },
+        [lang.bg]: {
+          name: "Стаята ви вече е чиста и подредена.",
+          transcription: "юр рум из нау клин енд тай-ди",
+        },
+        [lang.hi]: {
+          name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
+          transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
+        },
+      },
+    },
+    {
+      name: "Have a pleasant day!",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Să aveți o zi plăcută!",
+          transcription: "hav a ple-zant dei!",
+        },
+        [lang.ru]: {
+          name: "Приятного дня!",
+          transcription: "хав э пле-зант дэй!",
+        },
+        [lang.ua]: {
+          name: "Приємного дня!",
+          transcription: "хав а пле-зант дей!",
+        },
+        [lang.es]: {
+          name: "¡Que tenga un día agradable!",
+          transcription: "hav a ple-sant dei!",
+        },
+        [lang.bg]: {
+          name: "Приятен ден!",
+          transcription: "хав а пле-зант дей!",
+        },
+        [lang.hi]: {
+          name: "आपका दिन शुभ हो!",
+          transcription: "हैव अ प्लेज-न्ट डे!",
+        },
+      },
+    },
+    {
+      name: "Good afternoon! Would you like your room serviced?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună ziua! Doriți să vă aranjăm camera?",
+          transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
+        },
+        [lang.ru]: {
+          name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
+          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
+        },
+        [lang.ua]: {
+          name: "Добрий день! Бажаєте прибирання кімнати?",
+          transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
+        },
+        [lang.es]: {
+          name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
+          transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
+        },
+        [lang.bg]: {
+          name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
+          transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
+        },
+        [lang.hi]: {
+          name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
+          transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
+        },
+      },
+    },
+    {
+      name: "Good evening. Do you need fresh towels?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Bună seara. Aveți nevoie de prosoape curate?",
+          transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
+        },
+        [lang.ru]: {
+          name: "Добрый вечер. Вам нужны свежие полотенца?",
+          transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
+        },
+        [lang.ua]: {
+          name: "Добрий вечір. Вам потрібні свіжі рушники?",
+          transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
+        },
+        [lang.es]: {
+          name: "Buenas noches. ¿Necesita toallas limpias?",
+          transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
+        },
+        [lang.bg]: {
+          name: "Добър вечер. Имате ли нужда от чисти хавлии?",
+          transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
+        },
+        [lang.hi]: {
+          name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
+          transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
+        },
+      },
+    },
+    {
+      name: "I am here to refresh your room.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Sunt aici să vă reîmprospătez camera.",
+          transcription: "ai am hir tu ri-fresh yur rum",
+        },
+        [lang.ru]: {
+          name: "Я здесь, чтобы обновить вашу комнату.",
+          transcription: "ай эм хир ту ри-фреш юр рум",
+        },
+        [lang.ua]: {
+          name: "Я тут, щоб оновити вашу кімнату.",
+          transcription: "ай ем хір ту рі-фреш юр рум",
+        },
+        [lang.es]: {
+          name: "Estoy aquí para refrescar su habitación.",
+          transcription: "ai am hir tu ri-fresh yur rum",
+        },
+        [lang.bg]: {
+          name: "Тук съм, за да освежа стаята ви.",
+          transcription: "ай ем хир ту ри-фреш юр рум",
+        },
+        [lang.hi]: {
+          name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
+          transcription: "आई एम हियर टू री-फ्रेश योर रूम",
+        },
+      },
+    },
+    {
+      name: "Would you like your bed changed?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Doriți să vă schimbăm lenjeria de pat?",
+          transcription: "wud yoo laik yur bed cheinjd?",
+        },
+        [lang.ru]: {
+          name: "Хотите, чтобы сменили постельное белье?",
+          transcription: "вуд ю лайк юр бед чейнджд?",
+        },
+        [lang.ua]: {
+          name: "Бажаєте змінити постіль?",
+          transcription: "вуд ю лайк юр бед чейнджд?",
+        },
+        [lang.es]: {
+          name: "¿Le gustaría que le cambiaran la cama?",
+          transcription: "wud yu laik yur bed cheinjd?",
+        },
+        [lang.bg]: {
+          name: "Желаете ли да ви сменим чаршафите?",
+          transcription: "ууд ю лайк юр бед чейнджд?",
+        },
+        [lang.hi]: {
+          name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
+          transcription: "वुड यू लाइक योर बेड चेंज्ड?",
+        },
+      },
+    },
+    {
+      name: "Do you need more amenities like soap or shampoo?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
+          transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
+        },
+        [lang.ru]: {
+          name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
+          transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
+        },
+        [lang.ua]: {
+          name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
+          transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
+        },
+        [lang.es]: {
+          name: "¿Necesita más artículos de tocador como jabón o champú?",
+          transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
+        },
+        [lang.bg]: {
+          name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
+          transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
+        },
+        [lang.hi]: {
+          name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
+          transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
+        },
+      },
+    },
+    {
+      name: "I can bring you extra pillows/blankets.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Vă pot aduce perne/pături suplimentare.",
+          transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
+        },
+        [lang.ru]: {
+          name: "Я могу принести вам дополнительные подушки/одеяла.",
+          transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
+        },
+        [lang.ua]: {
+          name: "Я можу принести вам додаткові подушки/ковдри.",
+          transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
+        },
+        [lang.es]: {
+          name: "Puedo traerle almohadas/mantas adicionales.",
+          transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
+        },
+        [lang.bg]: {
+          name: "Мога да ви донеса допълнителни възглавници/одеяла.",
+          transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
+        },
+        [lang.hi]: {
+          name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
+          transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
+        },
+      },
+    },
+    {
+      name: "Is there anything else I can get for you?",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Mai este ceva ce vă pot aduce?",
+          transcription: "iz ther en-ee-thing els ai kan get for yoo?",
+        },
+        [lang.ru]: {
+          name: "Могу ли я еще что-нибудь для вас принести?",
+          transcription: "из зер эни-синг элс ай кан гет фор ю?",
+        },
+        [lang.ua]: {
+          name: "Чи є ще щось, що я можу принести для вас?",
+          transcription: "із зер ені-сінг елс ай кан гет фор ю?",
+        },
+        [lang.es]: {
+          name: "¿Hay algo más en lo que pueda ayudarle?",
+          transcription: "iz der en-i-thing els ai kan get for yu?",
+        },
+        [lang.bg]: {
+          name: "Има ли нещо друго, което мога да ви донеса?",
+          transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
+        },
+        [lang.hi]: {
+          name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
+          transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
+        },
+      },
+    },
+    {
+      name: "Your room is now clean and tidy.",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Camera dumneavoastră este acum curată și ordonată.",
+          transcription: "yur rum iz nau klin end tai-di",
+        },
+        [lang.ru]: {
+          name: "Ваша комната теперь чистая и опрятная.",
+          transcription: "юр рум из нау клин энд тай-ди",
+        },
+        [lang.ua]: {
+          name: "Ваша кімната тепер чиста і охайна.",
+          transcription: "юр рум із нау клін енд тай-ді",
+        },
+        [lang.es]: {
+          name: "Su habitación está ahora limpia y ordenada.",
+          transcription: "yur rum iz nau clin end tai-di",
+        },
+        [lang.bg]: {
+          name: "Стаята ви вече е чиста и подредена.",
+          transcription: "юр рум из нау клин енд тай-ди",
+        },
+        [lang.hi]: {
+          name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
+          transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
+        },
+      },
+    },
+    {
+      name: "Have a pleasant day!",
+      categories: [categories.sentences],
+      translation: {
+        [lang.ro]: {
+          name: "Să aveți o zi plăcută!",
+          transcription: "hav a ple-zant dei!",
+        },
+        [lang.ru]: {
+          name: "Приятного дня!",
+          transcription: "хав э пле-зант дэй!",
+        },
+        [lang.ua]: {
+          name: "Приємного дня!",
+          transcription: "хав а пле-зант дей!",
+        },
+        [lang.es]: {
+          name: "¡Que tenga un día agradable!",
+          transcription: "hav a ple-sant dei!",
+        },
+        [lang.bg]: {
+          name: "Приятен ден!",
+          transcription: "хав а пле-зант дей!",
+        },
+        [lang.hi]: {
+          name: "आपका दिन शुभ हो!",
+          transcription: "हैव अ प्लेज-न्ट डे!",
+        },
+      },
+    },
+
+    {
+      name: "tap",
+      categories: [categories.bathroom],
+      translation: {
+        [lang.ro]: {
+          name: "robinet 💧",
+          transcription: "tap",
+        },
+        [lang.ru]: {
+          name: "кран 💧",
+          transcription: "тап",
+        },
+        [lang.ua]: {
+          name: "кран 💧",
+          transcription: "тап",
+        },
+        [lang.es]: {
+          name: "grifo 💧",
+          transcription: "tap",
+        },
+        [lang.bg]: {
+          name: "кран 💧",
+          transcription: "тап",
+        },
+        [lang.hi]: {
+          name: "नल 💧",
+          transcription: "टैप",
+        },
+      },
+    },
+    {
+      name: "report damaged sink",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "raportează chiuveta deteriorată",
+          transcription: "ri-port dem-ij-d sink",
+        },
+        [lang.ru]: {
+          name: "сообщить о поврежденной раковине",
+          transcription: "ри-порт дэм-иджд синк",
+        },
+        [lang.ua]: {
+          name: "повідомити про пошкоджену раковину",
+          transcription: "рі-порт деміджд сінк",
+        },
+        [lang.es]: {
+          name: "reportar lavabo dañado",
+          transcription: "ri-port dam-ajd sink",
+        },
+        [lang.bg]: {
+          name: "докладвайте повреден умивалник",
+          transcription: "ри-порт де-миджд синк",
+        },
+        [lang.hi]: {
+          name: "क्षतिग्रस्त सिंक की रिपोर्ट करें",
+          transcription: "रिपोर्ट डैमेज्ड सिंक",
+        },
+      },
+    },
+    {
+      name: "report damaged air conditioning",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "raportează aerul condiționat deteriorat",
+          transcription: "ri-port dem-ij-d air con-di-shun-ing",
+        },
+        [lang.ru]: {
+          name: "сообщить о поврежденном кондиционере",
+          transcription: "ри-порт дэм-иджд эир кон-ди-шни-нг",
+        },
+        [lang.ua]: {
+          name: "повідомити про пошкоджений кондиціонер",
+          transcription: "рі-порт деміджд еир кон-ді-шни-нг",
+        },
+        [lang.es]: {
+          name: "reportar aire acondicionado dañado",
+          transcription: "ri-port dam-ajd air con-di-shun-ing",
+        },
+        [lang.bg]: {
+          name: "докладвайте повреден климатик",
+          transcription: "ри-порт де-миджд еър кон-ди-шъ-нинг",
+        },
+        [lang.hi]: {
+          name: "क्षतिग्रस्त एयर कंडीशनिंग की रिपोर्ट करें",
+          transcription: "रिपोर्ट डैमेज्ड एयर कंडीशनिंग",
+        },
+      },
+    },
+    {
+      name: "report carpet stains",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "raportează pete pe covor",
+          transcription: "ri-port kar-pet steinz",
+        },
+        [lang.ru]: {
+          name: "сообщить о пятнах на ковре",
+          transcription: "ри-порт кар-пет стэйнз",
+        },
+        [lang.ua]: {
+          name: "повідомити про плями на килимі",
+          transcription: "рі-порт кар-пет стейнз",
+        },
+        [lang.es]: {
+          name: "reportar manchas en la alfombra",
+          transcription: "ri-port car-pet stains",
+        },
+        [lang.bg]: {
+          name: "докладвайте петна по килима",
+          transcription: "ри-порт кар-пет стейнз",
+        },
+        [lang.hi]: {
+          name: "कालीन के दागों की रिपोर्ट करें",
+          transcription: "रिपोर्ट कारपेट स्टेंस",
+        },
+      },
+    },
+
+    {
+      name: "The heating is not working.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Încălzirea nu funcționează.",
+          transcription: "dhə hee-ting iz not wăr-king",
+        },
+        [lang.ru]: {
+          name: "Отопление не работает.",
+          transcription: "зэ хи-тинг из нот во-ркинг",
+        },
+        [lang.ua]: {
+          name: "Опалення не працює.",
+          transcription: "зе хі-тінг із нот воркінг",
+        },
+        [lang.es]: {
+          name: "La calefacción no funciona.",
+          transcription: "dhe hee-ting is not wer-king",
+        },
+        [lang.bg]: {
+          name: "Отоплението не работи.",
+          transcription: "дъ хий-тинг из нот уър-кинг",
+        },
+        [lang.hi]: {
+          name: "हीटिंग काम नहीं कर रही है।",
+          transcription: "द हीटिंग इज नॉट वर्किंग",
+        },
+      },
+    },
+    {
+      name: "There's a flickering light in the bathroom.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Există o lumină pâlpâitoare în baie.",
+          transcription: "dherz a flik-ăr-ing lait in dhə bath-rum",
+        },
+        [lang.ru]: {
+          name: "В ванной мигает свет.",
+          transcription: "зэрз э фли-ке-ринг лайт ин зэ бас-рум",
+        },
+        [lang.ua]: {
+          name: "У ванній кімнаті блимає світло.",
+          transcription: "зерз а флікерінг лайт ін зе бас-рум",
+        },
+        [lang.es]: {
+          name: "Hay una luz parpadeante en el baño.",
+          transcription: "dherz a flik-er-ing lait in the bath-rum",
+        },
+        [lang.bg]: {
+          name: "Има мигаща светлина в банята.",
+          transcription: "дерз ъ флик-ъ-ринг лайт ин дъ бат-руум",
+        },
+        [lang.hi]: {
+          name: "बाथरूम में एक झिलमिलाती रोशनी है।",
+          transcription: "देयर इज़ अ फ्लिकरिंग लाइट इन द बाथरूम",
+        },
+      },
+    },
+    {
+      name: "The air conditioning is not working.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Aerul condiționat nu funcționează.",
+          transcription: "dhə air con-di-shun-ing iz not wăr-king",
+        },
+        [lang.ru]: {
+          name: "Кондиционер не работает.",
+          transcription: "зэ эир кон-ди-шни-нг из нот во-ркинг",
+        },
+        [lang.ua]: {
+          name: "Кондиціонер не працює.",
+          transcription: "зе еир кон-ді-шни-нг із нот воркінг",
+        },
+        [lang.es]: {
+          name: "El aire acondicionado no funciona.",
+          transcription: "dhe air con-di-shun-ing is not wer-king",
+        },
+        [lang.bg]: {
+          name: "Климатикът не работи.",
+          transcription: "дъ еър кон-ди-шъ-нинг из нот уър-кинг",
+        },
+        [lang.hi]: {
+          name: "एयर कंडीशनिंग काम नहीं कर रहा है।",
+          transcription: "द एयर कंडीशनिंग इज नॉट वर्किंग",
+        },
+      },
+    },
+    {
+      name: "I've found a stain on the carpet.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Am găsit o pată pe covor.",
+          transcription: "aiv faund a stein on dhə kar-pet",
+        },
+        [lang.ru]: {
+          name: "Я нашел(ла) пятно на ковре.",
+          transcription: "айв фаунд э стэйн он зэ кар-пет",
+        },
+        [lang.ua]: {
+          name: "Я знайшов(ла) пляму на килимі.",
+          transcription: "айв фаунд а стейн он зе кар-пет",
+        },
+        [lang.es]: {
+          name: "He encontrado una mancha en la alfombra.",
+          transcription: "aiv faund a stain on the kar-pet",
+        },
+        [lang.bg]: {
+          name: "Намерих петно по килима.",
+          transcription: "айв фаунд ъ стейн он дъ кар-пет",
+        },
+        [lang.hi]: {
+          name: "मुझे कालीन पर एक दाग मिला है।",
+          transcription: "आईव फाउंड अ स्टेन ऑन द कारपेट",
+        },
+      },
+    },
+    {
+      name: "The toilet is blocked.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Toaleta este înfundată.",
+          transcription: "dhə toi-let iz blokt",
+        },
+        [lang.ru]: {
+          name: "Туалет засорен.",
+          transcription: "зэ той-лет из блокт",
+        },
+        [lang.ua]: {
+          name: "Туалет заблокований.",
+          transcription: "зе туалет із блокт",
+        },
+        [lang.es]: {
+          name: "El inodoro está atascado.",
+          transcription: "dhe toi-let is blokt",
+        },
+        [lang.bg]: {
+          name: "Тоалетната е запушена.",
+          transcription: "дъ той-лет из блокт",
+        },
+        [lang.hi]: {
+          name: "टॉयलेट ब्लॉक है।",
+          transcription: "द टॉयलेट इज ब्लॉक्ड",
+        },
+      },
+    },
+    {
+      name: "The lamp on the bedside table is broken.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Lampa de pe noptieră este stricată.",
+          transcription: "dhə lamp on dhə bed-said tei-băl iz bro-kăn",
+        },
+        [lang.ru]: {
+          name: "Лампа на прикроватной тумбочке сломана.",
+          transcription: "зэ ламп он зэ бэд-сайд тэй-бл из бро-кен",
+        },
+        [lang.ua]: {
+          name: "Лампа на тумбочці зламана.",
+          transcription: "зе ламп он зе бед-сайд тейбл із броукен",
+        },
+        [lang.es]: {
+          name: "La lámpara de la mesita de noche está rota.",
+          transcription: "dhe lamp on the bed-said tei-bel is bro-ken",
+        },
+        [lang.bg]: {
+          name: "Лампата на нощното шкафче е счупена.",
+          transcription: "дъ ламп он дъ бед-сайд тей-бъл из бро-кън",
+        },
+        [lang.hi]: {
+          name: "बेडसाइड टेबल पर रखा लैंप टूटा हुआ है।",
+          transcription: "द लैंप ऑन द बेडसाइड टेबल इज ब्रोकेन",
+        },
+      },
+    },
+    {
+      name: "There's a hole in the duvet cover.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Este o gaură în husa de plapumă.",
+          transcription: "dherz a houl in dhə du-vei kuv-ăr",
+        },
+        [lang.ru]: {
+          name: "В пододеяльнике дырка.",
+          transcription: "зэрз э хоул ин зэ ду-вэй кав-ер",
+        },
+        [lang.ua]: {
+          name: "У підковдрі дірка.",
+          transcription: "зерз а хоул ін зе ду-вей кавер",
+        },
+        [lang.es]: {
+          name: "Hay un agujero en la funda nórdica.",
+          transcription: "dherz a hol in the du-vet cov-er",
+        },
+        [lang.bg]: {
+          name: "Има дупка в плика за завивка.",
+          transcription: "дерз ъ хоул ин дъ ду-вей къв-ър",
+        },
+        [lang.hi]: {
+          name: "दूवेट कवर में एक छेद है।",
+          transcription: "देयर इज़ अ होल इन द दूवेट कवर",
+        },
+      },
+    },
+    {
+      name: "The TV remote control is not functioning.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Telecomanda TV nu funcționează.",
+          transcription: "dhə ti-vi ri-mout kən-trol iz not fank-shun-ing",
+        },
+        [lang.ru]: {
+          name: "Пульт дистанционного управления телевизором не работает.",
+          transcription: "зэ ти-ви ри-моут кон-трол из нот фанк-шо-нинг",
+        },
+        [lang.ua]: {
+          name: "Пульт дистанційного керування телевізором не працює.",
+          transcription: "зе ті-ві рі-моут контрол із нот фанкшенінг",
+        },
+        [lang.es]: {
+          name: "El control remoto del televisor no funciona.",
+          transcription: "dhe ti-vi ri-mot con-trol is not fank-shun-ing",
+        },
+        [lang.bg]: {
+          name: "Дистанционното управление на телевизора не работи.",
+          transcription: "дъ ти-ви ри-моут кън-трол из нот фънк-шъ-нинг",
+        },
+        [lang.hi]: {
+          name: "टीवी रिमोट कंट्रोल काम नहीं कर रहा है।",
+          transcription: "द टीवी रिमोट कंट्रोल इज नॉट फंक्शनिंग",
+        },
+      },
+    },
+    {
+      name: "One of the chairs in the room is damaged.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Unul dintre scaunele din cameră este deteriorat.",
+          transcription: "uăn ov dhə chers in dhə rum iz dem-ij-d",
+        },
+        [lang.ru]: {
+          name: "Один из стульев в комнате поврежден.",
+          transcription: "ван ов зэ черз ин зэ рум из дэм-иджд",
+        },
+        [lang.ua]: {
+          name: "Один зі стільців у кімнаті пошкоджений.",
+          transcription: "ван ов зе черз ін зе рум із деміджд",
+        },
+        [lang.es]: {
+          name: "Una de las sillas de la habitación está dañada.",
+          transcription: "uon ov the chers in the rum is dam-ajd",
+        },
+        [lang.bg]: {
+          name: "Един от столовете в стаята е повреден.",
+          transcription: "уан ов дъ чеърз ин дъ руум из де-миджд",
+        },
+        [lang.hi]: {
+          name: "कमरे में एक कुर्सी क्षतिग्रस्त है।",
+          transcription: "वन ऑफ़ द चेयर्स इन द रूम इज डैमेज्ड",
+        },
+      },
+    },
+    {
+      name: "The showerhead is faulty.",
+      categories: [categories.damages, categories.requests],
+      translation: {
+        [lang.ro]: {
+          name: "Capul de duș este defect.",
+          transcription: "dhə shau-ăr-hed iz fol-ti",
+        },
+        [lang.ru]: {
+          name: "Лейка душа неисправна.",
+          transcription: "зэ шау-эр-хед из фол-ти",
+        },
+        [lang.ua]: {
+          name: "Душова насадка несправна.",
+          transcription: "зе шау-ер-хед із фолті",
+        },
+        [lang.es]: {
+          name: "El cabezal de la ducha está defectuoso.",
+          transcription: "dhe shau-er-hed is fol-ti",
+        },
+        [lang.bg]: {
+          name: "Душ слушалката е дефектна.",
+          transcription: "дъ шау-ър-хед из фол-ти",
+        },
+        [lang.hi]: {
+          name: "शॉवरहेड खराब है।",
+          transcription: "द शावरहेड इज फॉल्टी",
+        },
+      },
+    },
   ],
 }
-const newWordsWithPhonetics = [
-  {
-    name: "towel",
-    phonetic: "/taʊl/",
-  },
-  {
-    name: "hand towel",
-    phonetic: "/hænd ˈtaʊl/",
-  },
-  {
-    name: "bath mat",
-    phonetic: "/bæθ mæt/",
-  },
-  {
-    name: "toilet paper",
-    phonetic: "/ˈtɔɪlət ˈpeɪpər/",
-  },
-  {
-    name: "shower",
-    phonetic: "/ˈʃaʊər/",
-  },
-  {
-    name: "bathtub",
-    phonetic: "/ˈbæθtʌb/",
-  },
-  {
-    name: "toilet",
-    phonetic: "/ˈtɔɪlət/",
-  },
-  {
-    name: "sink",
-    phonetic: "/sɪŋk/",
-  },
-  {
-    name: "shampoo",
-    phonetic: "/ʃæmˈpuː/",
-  },
-  {
-    name: "conditioner",
-    phonetic: "/kənˈdɪʃənər/",
-  },
-  {
-    name: "body wash",
-    phonetic: "/ˈbɒdi wɔʃ/",
-  },
-  {
-    name: "soap",
-    phonetic: "/soʊp/",
-  },
-  {
-    name: "hairdryer",
-    phonetic: "/ˈheərˌdraɪər/",
-  },
-  {
-    name: "bed",
-    phonetic: "/bed/",
-  },
-  {
-    name: "sheets",
-    phonetic: "/ʃiːts/",
-  },
-  {
-    name: "pillow",
-    phonetic: "/ˈpɪloʊ/",
-  },
-  {
-    name: "pillowcase",
-    phonetic: "/ˈpɪloʊkeɪs/",
-  },
-  {
-    name: "blanket",
-    phonetic: "/ˈblæŋkɪt/",
-  },
-  {
-    name: "duvet",
-    phonetic: "/ˈdjuːveɪ/",
-  },
-  {
-    name: "duvet cover",
-    phonetic: "/ˈdjuːveɪ ˈkʌvər/",
-  },
-  {
-    name: "mattress",
-    phonetic: "/ˈmætrɪs/",
-  },
-  {
-    name: "mattress protector",
-    phonetic: "/ˈmætrɪs prəˈtektər/",
-  },
-  {
-    name: "extra blanket",
-    phonetic: "/ˈekstrə ˈblæŋkɪt/",
-  },
-  {
-    name: "extra pillow",
-    phonetic: "/ˈekstrə ˈpɪloʊ/",
-  },
-  {
-    name: "vacuum cleaner",
-    phonetic: "/ˈvækjuːm ˈkliːnər/",
-  },
-  {
-    name: "mop",
-    phonetic: "/mɒp/",
-  },
-  {
-    name: "broom",
-    phonetic: "/bruːm/",
-  },
-  {
-    name: "dustpan",
-    phonetic: "/ˈdʌstˌpæn/",
-  },
-  {
-    name: "duster",
-    phonetic: "/ˈdʌstər/",
-  },
-  {
-    name: "cleaning spray",
-    phonetic: "/ˈkliːnɪŋ spreɪ/",
-  },
-  {
-    name: "disinfectant",
-    phonetic: "/ˌdɪsɪnˈfektənt/",
-  },
-  {
-    name: "glass cleaner",
-    phonetic: "/ɡlæs ˈkliːnər/",
-  },
-  {
-    name: "do not disturb",
-    phonetic: "/duː nɒt dɪˈstɜːb/",
-  },
-  {
-    name: "please clean my room",
-    phonetic: "/pliːz kliːn maɪ ruːm/",
-  },
-  {
-    name: "need more towels",
-    phonetic: "/niːd mɔːr ˈtaʊəlz/",
-  },
-  {
-    name: "need more toilet paper",
-    phonetic: "/niːd mɔːr ˈtɔɪlət ˈpeɪpər/",
-  },
-  {
-    name: "clean",
-    phonetic: "/kliːn/",
-  },
-  {
-    name: "dirty",
-    phonetic: "/ˈdɜːrti/",
-  },
-  {
-    name: "stain",
-    phonetic: "/steɪn/",
-  },
-  {
-    name: "trash",
-    phonetic: "/træʃ/",
-  },
-  {
-    name: "trash bin",
-    phonetic: "/træʃ bɪn/",
-  },
-  {
-    name: "remote control",
-    phonetic: "/rɪˈmoʊt kənˈtroʊl/",
-  },
-  {
-    name: "air conditioning",
-    phonetic: "/er kənˈdɪʃənɪŋ/",
-  },
-  {
-    name: "hanger",
-    phonetic: "/ˈhæŋər/",
-  },
-  {
-    name: "luggage rack",
-    phonetic: "/ˈlʌɡɪdʒ ræk/",
-  },
-  {
-    name: "make the bed",
-    phonetic: "/meɪk ðə bed/",
-  },
-  {
-    name: "dust",
-    phonetic: "/dʌst/",
-  },
-  {
-    name: "polish",
-    phonetic: "/ˈpɒlɪʃ/",
-  },
-  {
-    name: "stains on the carpet",
-    phonetic: "/steɪnz ɒn ðə ˈkɑːrpɪt/",
-  },
-  {
-    name: "change the sheets",
-    phonetic: "/tʃeɪndʒ ðə ʃiːts/",
-  },
-  {
-    name: "restock supplies",
-    phonetic: "/riːˈstɒk səˈplaɪz/",
-  },
-  {
-    name: "empty the trash",
-    phonetic: "/ˈempti ðə træʃ/",
-  },
-  {
-    name: "broken",
-    phonetic: "/ˈbroʊkən/",
-  },
-  {
-    name: "report a problem",
-    phonetic: "/rɪˈpɔːrt ə ˈprɒbləm/",
-  },
-  {
-    name: "light",
-    phonetic: "/laɪt/",
-  },
-  {
-    name: "tidy up",
-    phonetic: "/ˈtaɪdi ʌp/",
-  },
-  {
-    name: "stains on the linen",
-    phonetic: "/steɪnz ɒn ðə ˈlɪnɪn/",
-  },
-  {
-    name: "refill soap dispenser",
-    phonetic: "/riːˈfɪl soʊp dɪˈspensər/",
-  },
-  {
-    name: "check out",
-    phonetic: "/tʃek aʊt/",
-  },
-  {
-    name: "check in",
-    phonetic: "/tʃek ɪn/",
-  },
-  {
-    name: "foam pillow",
-    phonetic: "/foʊm ˈpɪloʊ/",
-  },
-  {
-    name: "feather pillow",
-    phonetic: "/ˈfeðər ˈpɪloʊ/",
-  },
-  {
-    name: "topper (for the bed)",
-    phonetic: "/ˈtɒpər (fɔːr ðə bed)/",
-  },
-  {
-    name: "hole (in the linen)",
-    phonetic: "/hoʊl (ɪn ðə ˈlɪnɪn)/",
-  },
-]
-
-// adding phonetic
-const array = Array.isArray(testData.list)
-  ? testData?.list.map((item) => {
-      for (let word of newWordsWithPhonetics) {
-        if (word.name === item.name) {
-          return { ...item, ...word }
-        }
-      }
-    })
-  : []
-
-testData.list = array
-
-// adding audio
-const withAudio = [
-  {
-    id: 0,
-    name: "towel",
-    phonetic: "/taʊl/",
-    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/towel-uk.mp3",
-    meaning:
-      "A cloth used for wiping, especially one used for drying anything wet, as a person after a bath.",
-  },
-  {
-    id: 1,
-    name: "shower",
-    phonetic: "",
-    audio:
-      "https://api.dictionaryapi.dev/media/pronunciations/en/shower-1-au.mp3",
-    meaning:
-      "A brief fall of precipitation (spell of rain, or a similar fall of snow, sleet, or cascade).",
-  },
-  {
-    id: 3,
-    name: "toilet",
-    phonetic: "/ˈtɔɪ.lət/",
-    audio:
-      "https://api.dictionaryapi.dev/media/pronunciations/en/toilet-uk.mp3",
-    meaning:
-      "A covering of linen, silk, or tapestry, spread over a dressing table in a chamber or dressing room.",
-  },
-  {
-    id: 4,
-    name: "sink",
-    phonetic: "/sɪŋk/",
-    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/sink-uk.mp3",
-    meaning: "A basin used for holding water for washing.",
-  },
-  {
-    id: 7,
-    name: "body",
-    phonetic: "/ˈbɒdi/",
-    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/body-uk.mp3",
-    meaning: "Physical frame.",
-  },
-  {
-    id: 9,
-    name: "soap",
-    phonetic: "/səʊp/",
-    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/soap-uk.mp3",
-    meaning:
-      "A substance able to mix with both oil and water, used for cleaning, often in the form of a solid bar or in liquid form, derived from fats or made synthetically.",
-  },
-  {
-    id: 13,
-    name: "pillow",
-    phonetic: "/ˈpɪləʊ/",
-    audio:
-      "https://api.dictionaryapi.dev/media/pronunciations/en/pillow-uk.mp3",
-    meaning: "A soft cushion used to support the head in bed.",
-  },
-  {
-    id: 15,
-    name: "blanket",
-    phonetic: "/ˈblæŋkɪt/",
-    audio:
-      "https://api.dictionaryapi.dev/media/pronunciations/en/blanket-uk.mp3",
-    meaning:
-      "A heavy, loosely woven fabric, usually large and woollen, used for warmth while sleeping or resting.",
-  },
-  {
-    id: 16,
-    name: "duvet",
-    phonetic: "/ˈduːveɪ/",
-    audio: "https://api.dictionaryapi.dev/media/pronunciations/en/duvet-uk.mp3",
-    meaning: "A thick, padded quilt used instead of blankets.",
-  },
-]
-
-const array2 = Array.isArray(testData.list)
-  ? testData?.list.map((item) => {
-      for (let word of withAudio) {
-        if (word.name === item.name) {
-          return { ...item, ...word }
-        }
-      }
-      return item
-    })
-  : []
-
-testData.list = array2
-
-const sentences = [
-  {
-    id: 75,
-    name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
-    categories: [categories.requests, categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună dimineața [numele oaspetelui], numele meu este [numele tău] de la curățenie. Doriți să vă curăț camera acum sau să vin mai târziu?",
-        transcription:
-          "guud mor-ning [ghest's neim], mai neim iz [your neim] from haus-ki-ping. uuld yuu laik mi tu klin yoor rum nau or shal ai kam lei-tăr?",
-      },
-      [lang.ru]: {
-        name: "Доброе утро [имя гостя], меня зовут [ваше имя], я из housekeeping. Хотите, чтобы я убрал(а) вашу комнату сейчас или мне прийти позже?",
-        transcription:
-          "гуд мо-рнинг [гэстс нэйм], май нэйм из [ёр нэйм] фром хаус-ки-пинг. вуд ю лайк ми ту клин ёр рум нау ор шэл ай кам лэй-тер?",
-      },
-      [lang.ua]: {
-        name: "Доброго ранку [ім'я гостя], мене звуть [ваше ім'я], я з housekeeping. Хочете, щоб я прибрав(ла) вашу кімнату зараз чи мені прийти пізніше?",
-        transcription:
-          "гуд мо-рнінг [гестс нейм], май нейм із [йор нейм] фром хаус-кіпінг. вуд ю лайк мі ту клін йор рум нау ор шел ай кам лей-тер?",
-      },
-      [lang.es]: {
-        name: "Buenos días [nombre del huésped], mi nombre es [tu nombre] de limpieza. ¿Le gustaría que limpie su habitación ahora o prefiere que venga más tarde?",
-        transcription:
-          "gud mor-ning [guest's neim], mai neim is [your neim] from haus-ki-ping. wud iu laik mi tu klin ior rum nau or shal ai cam le-ter?",
-      },
-      [lang.bg]: {
-        name: "Добро утро [име на госта], моето име е [вашето име] от домакинството. Искате ли да почистя стаята ви сега или да дойда по-късно?",
-        transcription:
-          "гуд мо-рнинг [гестс нейм], май нейм из [йор нейм] фром хаус-кий-пинг. ууд ю лайк ми ту клийн йор руум nau ор шал ай към лей-тър?",
-      },
-      [lang.hi]: {
-        name: "सुप्रभात [अतिथि का नाम], मेरा नाम [आपका नाम] है, मैं हाउसकीपिंग से हूँ। क्या आप चाहेंगे कि मैं आपका कमरा अभी साफ करूँ या मैं बाद में आऊँ?",
-        transcription:
-          "गुड मॉर्निंग [गेस्ट्स नेम], माई नेम इज [योर नेम] फ्रॉम हाउसकीपिंग। वुड यू लाइक मी टू क्लीन योर रूम नाउ ऑर शैल आई कम लेटर?",
-      },
-    },
-  },
-  {
-    id: 65,
-    name: "Good morning! May I clean your room now?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună dimineața! Pot să vă curăț camera acum?",
-        transcription: "gud mor-ning! mei ai klin yur rum nau?",
-      },
-      [lang.ru]: {
-        name: "Доброе утро! Могу я убрать вашу комнату сейчас?",
-        transcription: "гуд мо-рнинг! мэй ай клин юр рум нау?",
-      },
-      [lang.ua]: {
-        name: "Доброго ранку! Чи можу я прибрати вашу кімнату зараз?",
-        transcription: "гуд мо-рнінг! мей ай клін юр рум нау?",
-      },
-      [lang.es]: {
-        name: "¡Buenos días! ¿Puedo limpiar su habitación ahora?",
-        transcription: "gud mor-ning! mei ai clin yur rum nau?",
-      },
-      [lang.bg]: {
-        name: "Добро утро! Мога ли да почистя стаята ви сега?",
-        transcription: "гуд мор-нинг! мей ай клин юр рум нау?",
-      },
-      [lang.hi]: {
-        name: "सुप्रभात! क्या मैं अभी आपका कमरा साफ कर सकता हूँ?",
-        transcription: "गुड मोर-निंग! मे आई क्लीन योर रूम नाउ?",
-      },
-    },
-  },
-  {
-    id: 66,
-    name: "Good afternoon! Would you like your room serviced?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună ziua! Doriți să vă aranjăm camera?",
-        transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
-      },
-      [lang.ru]: {
-        name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
-        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
-      },
-      [lang.ua]: {
-        name: "Добрий день! Бажаєте прибирання кімнати?",
-        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
-      },
-      [lang.es]: {
-        name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
-        transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
-      },
-      [lang.bg]: {
-        name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
-        transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
-      },
-      [lang.hi]: {
-        name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
-        transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
-      },
-    },
-  },
-  {
-    id: 67,
-    name: "Good evening. Do you need fresh towels?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună seara. Aveți nevoie de prosoape curate?",
-        transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
-      },
-      [lang.ru]: {
-        name: "Добрый вечер. Вам нужны свежие полотенца?",
-        transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
-      },
-      [lang.ua]: {
-        name: "Добрий вечір. Вам потрібні свіжі рушники?",
-        transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
-      },
-      [lang.es]: {
-        name: "Buenas noches. ¿Necesita toallas limpias?",
-        transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
-      },
-      [lang.bg]: {
-        name: "Добър вечер. Имате ли нужда от чисти хавлии?",
-        transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
-      },
-      [lang.hi]: {
-        name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
-        transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
-      },
-    },
-  },
-  {
-    id: 68,
-    name: "I am here to refresh your room.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Sunt aici să vă reîmprospătez camera.",
-        transcription: "ai am hir tu ri-fresh yur rum",
-      },
-      [lang.ru]: {
-        name: "Я здесь, чтобы обновить вашу комнату.",
-        transcription: "ай эм хир ту ри-фреш юр рум",
-      },
-      [lang.ua]: {
-        name: "Я тут, щоб оновити вашу кімнату.",
-        transcription: "ай ем хір ту рі-фреш юр рум",
-      },
-      [lang.es]: {
-        name: "Estoy aquí para refrescar su habitación.",
-        transcription: "ai am hir tu ri-fresh yur rum",
-      },
-      [lang.bg]: {
-        name: "Тук съм, за да освежа стаята ви.",
-        transcription: "ай ем хир ту ри-фреш юр рум",
-      },
-      [lang.hi]: {
-        name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
-        transcription: "आई एम हियर टू री-फ्रेश योर रूम",
-      },
-    },
-  },
-  {
-    id: 69,
-    name: "Would you like your bed changed?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Doriți să vă schimbăm lenjeria de pat?",
-        transcription: "wud yoo laik yur bed cheinjd?",
-      },
-      [lang.ru]: {
-        name: "Хотите, чтобы сменили постельное белье?",
-        transcription: "вуд ю лайк юр бед чейнджд?",
-      },
-      [lang.ua]: {
-        name: "Бажаєте змінити постіль?",
-        transcription: "вуд ю лайк юр бед чейнджд?",
-      },
-      [lang.es]: {
-        name: "¿Le gustaría que le cambiaran la cama?",
-        transcription: "wud yu laik yur bed cheinjd?",
-      },
-      [lang.bg]: {
-        name: "Желаете ли да ви сменим чаршафите?",
-        transcription: "ууд ю лайк юр бед чейнджд?",
-      },
-      [lang.hi]: {
-        name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
-        transcription: "वुड यू लाइक योर बेड चेंज्ड?",
-      },
-    },
-  },
-  {
-    id: 70,
-    name: "Do you need more amenities like soap or shampoo?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
-        transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
-      },
-      [lang.ru]: {
-        name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
-        transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
-      },
-      [lang.ua]: {
-        name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
-        transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
-      },
-      [lang.es]: {
-        name: "¿Necesita más artículos de tocador como jabón o champú?",
-        transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
-      },
-      [lang.bg]: {
-        name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
-        transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
-      },
-      [lang.hi]: {
-        name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
-        transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
-      },
-    },
-  },
-  {
-    id: 71,
-    name: "I can bring you extra pillows/blankets.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Vă pot aduce perne/pături suplimentare.",
-        transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
-      },
-      [lang.ru]: {
-        name: "Я могу принести вам дополнительные подушки/одеяла.",
-        transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
-      },
-      [lang.ua]: {
-        name: "Я можу принести вам додаткові подушки/ковдри.",
-        transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
-      },
-      [lang.es]: {
-        name: "Puedo traerle almohadas/mantas adicionales.",
-        transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
-      },
-      [lang.bg]: {
-        name: "Мога да ви донеса допълнителни възглавници/одеяла.",
-        transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
-      },
-      [lang.hi]: {
-        name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
-        transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
-      },
-    },
-  },
-  {
-    id: 72,
-    name: "Is there anything else I can get for you?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Mai este ceva ce vă pot aduce?",
-        transcription: "iz ther en-ee-thing els ai kan get for yoo?",
-      },
-      [lang.ru]: {
-        name: "Могу ли я еще что-нибудь для вас принести?",
-        transcription: "из зер эни-синг элс ай кан гет фор ю?",
-      },
-      [lang.ua]: {
-        name: "Чи є ще щось, що я можу принести для вас?",
-        transcription: "із зер ені-сінг елс ай кан гет фор ю?",
-      },
-      [lang.es]: {
-        name: "¿Hay algo más en lo que pueda ayudarle?",
-        transcription: "iz der en-i-thing els ai kan get for yu?",
-      },
-      [lang.bg]: {
-        name: "Има ли нещо друго, което мога да ви донеса?",
-        transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
-      },
-      [lang.hi]: {
-        name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
-        transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
-      },
-    },
-  },
-  {
-    id: 73,
-    name: "Your room is now clean and tidy.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Camera dumneavoastră este acum curată și ordonată.",
-        transcription: "yur rum iz nau klin end tai-di",
-      },
-      [lang.ru]: {
-        name: "Ваша комната теперь чистая и опрятная.",
-        transcription: "юр рум из нау клин энд тай-ди",
-      },
-      [lang.ua]: {
-        name: "Ваша кімната тепер чиста і охайна.",
-        transcription: "юр рум із нау клін енд тай-ді",
-      },
-      [lang.es]: {
-        name: "Su habitación está ahora limpia y ordenada.",
-        transcription: "yur rum iz nau clin end tai-di",
-      },
-      [lang.bg]: {
-        name: "Стаята ви вече е чиста и подредена.",
-        transcription: "юр рум из нау клин енд тай-ди",
-      },
-      [lang.hi]: {
-        name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
-        transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
-      },
-    },
-  },
-  {
-    id: 74,
-    name: "Have a pleasant day!",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Să aveți o zi plăcută!",
-        transcription: "hav a ple-zant dei!",
-      },
-      [lang.ru]: {
-        name: "Приятного дня!",
-        transcription: "хав э пле-зант дэй!",
-      },
-      [lang.ua]: {
-        name: "Приємного дня!",
-        transcription: "хав а пле-зант дей!",
-      },
-      [lang.es]: {
-        name: "¡Que tenga un día agradable!",
-        transcription: "hav a ple-sant dei!",
-      },
-      [lang.bg]: {
-        name: "Приятен ден!",
-        transcription: "хав а пле-зант дей!",
-      },
-      [lang.hi]: {
-        name: "आपका दिन शुभ हो!",
-        transcription: "हैव अ प्लेज-न्ट डे!",
-      },
-    },
-  },
-  {
-    id: 66,
-    name: "Good afternoon! Would you like your room serviced?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună ziua! Doriți să vă aranjăm camera?",
-        transcription: "gud af-ter-nun! wud yoo laik yur rum sur-vist?",
-      },
-      [lang.ru]: {
-        name: "Добрый день! Хотите, чтобы вашу комнату убрали?",
-        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сёр-вист?",
-      },
-      [lang.ua]: {
-        name: "Добрий день! Бажаєте прибирання кімнати?",
-        transcription: "гуд аф-тер-нун! вуд ю лайк юр рум сер-віст?",
-      },
-      [lang.es]: {
-        name: "¡Buenas tardes! ¿Le gustaría que arregláramos su habitación?",
-        transcription: "gud af-ter-nun! wud yu laik yur rum ser-vist?",
-      },
-      [lang.bg]: {
-        name: "Добър ден! Желаете ли стаята ви да бъде почистена?",
-        transcription: "гуд аф-тър-нун! ууд ю лайк юр рум сър-вист?",
-      },
-      [lang.hi]: {
-        name: "शुभ दोपहर! क्या आप अपने कमरे में सेवा करवाना चाहेंगे?",
-        transcription: "गुड आफ-टर-नून! वुड यू लाइक योर रूम सर-विस्ड?",
-      },
-    },
-  },
-  {
-    id: 67,
-    name: "Good evening. Do you need fresh towels?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Bună seara. Aveți nevoie de prosoape curate?",
-        transcription: "gud iv-ning. doo yoo nid fresh tau-els?",
-      },
-      [lang.ru]: {
-        name: "Добрый вечер. Вам нужны свежие полотенца?",
-        transcription: "гуд ив-нинг. ду ю нид фреш тау-элс?",
-      },
-      [lang.ua]: {
-        name: "Добрий вечір. Вам потрібні свіжі рушники?",
-        transcription: "гуд ів-нінг. ду ю нід фреш руш-никс?", // used рушникс for towels
-      },
-      [lang.es]: {
-        name: "Buenas noches. ¿Necesita toallas limpias?",
-        transcription: "gud iv-ning. du yu nid fresh to-a-yas?", // used toayas for towels
-      },
-      [lang.bg]: {
-        name: "Добър вечер. Имате ли нужда от чисти хавлии?",
-        transcription: "гуд ив-нинг. ду ю нийд фреш хав-лии?", // used хавлии for towels
-      },
-      [lang.hi]: {
-        name: "शुभ संध्या। क्या आपको नए तौलिये चाहिए?",
-        transcription: "गुड ईव-निंग. डू यू नीड फ्रेश तौ-लिये?", // used तौलिए for towels
-      },
-    },
-  },
-  {
-    id: 68,
-    name: "I am here to refresh your room.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Sunt aici să vă reîmprospătez camera.",
-        transcription: "ai am hir tu ri-fresh yur rum",
-      },
-      [lang.ru]: {
-        name: "Я здесь, чтобы обновить вашу комнату.",
-        transcription: "ай эм хир ту ри-фреш юр рум",
-      },
-      [lang.ua]: {
-        name: "Я тут, щоб оновити вашу кімнату.",
-        transcription: "ай ем хір ту рі-фреш юр рум",
-      },
-      [lang.es]: {
-        name: "Estoy aquí para refrescar su habitación.",
-        transcription: "ai am hir tu ri-fresh yur rum",
-      },
-      [lang.bg]: {
-        name: "Тук съм, за да освежа стаята ви.",
-        transcription: "ай ем хир ту ри-фреш юр рум",
-      },
-      [lang.hi]: {
-        name: "मैं आपका कमरा ताज़ा करने के लिए यहाँ हूँ।",
-        transcription: "आई एम हियर टू री-फ्रेश योर रूम",
-      },
-    },
-  },
-  {
-    id: 69,
-    name: "Would you like your bed changed?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Doriți să vă schimbăm lenjeria de pat?",
-        transcription: "wud yoo laik yur bed cheinjd?",
-      },
-      [lang.ru]: {
-        name: "Хотите, чтобы сменили постельное белье?",
-        transcription: "вуд ю лайк юр бед чейнджд?",
-      },
-      [lang.ua]: {
-        name: "Бажаєте змінити постіль?",
-        transcription: "вуд ю лайк юр бед чейнджд?",
-      },
-      [lang.es]: {
-        name: "¿Le gustaría que le cambiaran la cama?",
-        transcription: "wud yu laik yur bed cheinjd?",
-      },
-      [lang.bg]: {
-        name: "Желаете ли да ви сменим чаршафите?",
-        transcription: "ууд ю лайк юр бед чейнджд?",
-      },
-      [lang.hi]: {
-        name: "क्या आप अपना बिस्तर बदलवाना चाहेंगे?",
-        transcription: "वुड यू लाइक योर बेड चेंज्ड?",
-      },
-    },
-  },
-  {
-    id: 70,
-    name: "Do you need more amenities like soap or shampoo?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Aveți nevoie de mai multe articole de toaletă, cum ar fi săpun sau șampon?",
-        transcription: "doo yoo nid mor a-men-i-tiz laik sohp or sham-poo?",
-      },
-      [lang.ru]: {
-        name: "Вам нужны дополнительные принадлежности, такие как мыло или шампунь?",
-        transcription: "ду ю нид мор а-мен-и-тиз лайк соуп ор шам-пунь?",
-      },
-      [lang.ua]: {
-        name: "Вам потрібно більше зручностей, таких як мило чи шампунь?",
-        transcription: "ду ю нід мор а-мен-і-тіз лайк соуп ор шам-пунь?",
-      },
-      [lang.es]: {
-        name: "¿Necesita más artículos de tocador como jabón o champú?",
-        transcription: "du yu nid mor a-men-i-tiz laik soap or sham-pu?",
-      },
-      [lang.bg]: {
-        name: "Имате ли нужда от повече консумативи като сапун или шампоан?",
-        transcription: "ду ю нийд мор а-мен-и-тийз лайк са-пун ор шам-поан?",
-      },
-      [lang.hi]: {
-        name: "क्या आपको साबुन या शैम्पू जैसी और सुविधाएं चाहिए?",
-        transcription: "डू यू नीड मोर ए-मे-नि-टीज़ लाइक सोप और शैम्पू?",
-      },
-    },
-  },
-  {
-    id: 71,
-    name: "I can bring you extra pillows/blankets.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Vă pot aduce perne/pături suplimentare.",
-        transcription: "ai kan bring yoo eks-tra pi-lous/blang-kets",
-      },
-      [lang.ru]: {
-        name: "Я могу принести вам дополнительные подушки/одеяла.",
-        transcription: "ай кан бринг ю экс-тра пи-лоус/блэн-кетс",
-      },
-      [lang.ua]: {
-        name: "Я можу принести вам додаткові подушки/ковдри.",
-        transcription: "ай кан брінг ю екс-тра пі-лоус/ков-дрі", // used ковдри for blankets
-      },
-      [lang.es]: {
-        name: "Puedo traerle almohadas/mantas adicionales.",
-        transcription: "ai kan bring yu eks-tra pi-lous/blan-kets",
-      },
-      [lang.bg]: {
-        name: "Мога да ви донеса допълнителни възглавници/одеяла.",
-        transcription: "ай кан бринг ю екс-тра въз-глав-ници/оде-яла", // used възглавници/одеяла
-      },
-      [lang.hi]: {
-        name: "मैं आपको अतिरिक्त तकिए/कंबल ला सकता हूँ।",
-        transcription: "आई कैन ब्रिंग यू एक्स-ट्रा पि-लोज़/ब्लैं-केट्स",
-      },
-    },
-  },
-  {
-    id: 72,
-    name: "Is there anything else I can get for you?",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Mai este ceva ce vă pot aduce?",
-        transcription: "iz ther en-ee-thing els ai kan get for yoo?",
-      },
-      [lang.ru]: {
-        name: "Могу ли я еще что-нибудь для вас принести?",
-        transcription: "из зер эни-синг элс ай кан гет фор ю?",
-      },
-      [lang.ua]: {
-        name: "Чи є ще щось, що я можу принести для вас?",
-        transcription: "із зер ені-сінг елс ай кан гет фор ю?",
-      },
-      [lang.es]: {
-        name: "¿Hay algo más en lo que pueda ayudarle?",
-        transcription: "iz der en-i-thing els ai kan get for yu?",
-      },
-      [lang.bg]: {
-        name: "Има ли нещо друго, което мога да ви донеса?",
-        transcription: "из зер е-ни-тинг елс ай кан гет фор ю?",
-      },
-      [lang.hi]: {
-        name: "क्या मैं आपके लिए कुछ और ला सकता हूँ?",
-        transcription: "इज़ देअर एनी-थिंग एल्स आई कैन गेट फॉर यू?",
-      },
-    },
-  },
-  {
-    id: 73,
-    name: "Your room is now clean and tidy.",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Camera dumneavoastră este acum curată și ordonată.",
-        transcription: "yur rum iz nau klin end tai-di",
-      },
-      [lang.ru]: {
-        name: "Ваша комната теперь чистая и опрятная.",
-        transcription: "юр рум из нау клин энд тай-ди",
-      },
-      [lang.ua]: {
-        name: "Ваша кімната тепер чиста і охайна.",
-        transcription: "юр рум із нау клін енд тай-ді",
-      },
-      [lang.es]: {
-        name: "Su habitación está ahora limpia y ordenada.",
-        transcription: "yur rum iz nau clin end tai-di",
-      },
-      [lang.bg]: {
-        name: "Стаята ви вече е чиста и подредена.",
-        transcription: "юр рум из нау клин енд тай-ди",
-      },
-      [lang.hi]: {
-        name: "आपका कमरा अब साफ और सुव्यवस्थित है।",
-        transcription: "योर रूम इज़ नाउ क्लीन एंड टाइ-डी",
-      },
-    },
-  },
-  {
-    id: 74,
-    name: "Have a pleasant day!",
-    categories: [categories.sentences],
-    translation: {
-      [lang.ro]: {
-        name: "Să aveți o zi plăcută!",
-        transcription: "hav a ple-zant dei!",
-      },
-      [lang.ru]: {
-        name: "Приятного дня!",
-        transcription: "хав э пле-зант дэй!",
-      },
-      [lang.ua]: {
-        name: "Приємного дня!",
-        transcription: "хав а пле-зант дей!",
-      },
-      [lang.es]: {
-        name: "¡Que tenga un día agradable!",
-        transcription: "hav a ple-sant dei!",
-      },
-      [lang.bg]: {
-        name: "Приятен ден!",
-        transcription: "хав а пле-зант дей!",
-      },
-      [lang.hi]: {
-        name: "आपका दिन शुभ हो!",
-        transcription: "हैव अ प्लेज-न्ट डे!",
-      },
-    },
-  },
-].filter((el) => el.id)
-
-testData.list = [...testData.list, ...sentences]
-
-let newWords = [
-  {
-    name: "tap",
-    categories: [categories.bathroom],
-    translation: {
-      [lang.ro]: {
-        name: "robinet 💧",
-        transcription: "tap",
-      },
-      [lang.ru]: {
-        name: "кран 💧",
-        transcription: "тап",
-      },
-      [lang.ua]: {
-        name: "кран 💧",
-        transcription: "тап",
-      },
-      [lang.es]: {
-        name: "grifo 💧",
-        transcription: "tap",
-      },
-      [lang.bg]: {
-        name: "кран 💧",
-        transcription: "тап",
-      },
-      [lang.hi]: {
-        name: "नल 💧",
-        transcription: "टैप",
-      },
-    },
-  },
-  {
-    name: "report damaged sink",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "raportează chiuveta deteriorată",
-        transcription: "ri-port dem-ij-d sink",
-      },
-      [lang.ru]: {
-        name: "сообщить о поврежденной раковине",
-        transcription: "ри-порт дэм-иджд синк",
-      },
-      [lang.ua]: {
-        name: "повідомити про пошкоджену раковину",
-        transcription: "рі-порт деміджд сінк",
-      },
-      [lang.es]: {
-        name: "reportar lavabo dañado",
-        transcription: "ri-port dam-ajd sink",
-      },
-      [lang.bg]: {
-        name: "докладвайте повреден умивалник",
-        transcription: "ри-порт де-миджд синк",
-      },
-      [lang.hi]: {
-        name: "क्षतिग्रस्त सिंक की रिपोर्ट करें",
-        transcription: "रिपोर्ट डैमेज्ड सिंक",
-      },
-    },
-  },
-  {
-    name: "report damaged air conditioning",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "raportează aerul condiționat deteriorat",
-        transcription: "ri-port dem-ij-d air con-di-shun-ing",
-      },
-      [lang.ru]: {
-        name: "сообщить о поврежденном кондиционере",
-        transcription: "ри-порт дэм-иджд эир кон-ди-шни-нг",
-      },
-      [lang.ua]: {
-        name: "повідомити про пошкоджений кондиціонер",
-        transcription: "рі-порт деміджд еир кон-ді-шни-нг",
-      },
-      [lang.es]: {
-        name: "reportar aire acondicionado dañado",
-        transcription: "ri-port dam-ajd air con-di-shun-ing",
-      },
-      [lang.bg]: {
-        name: "докладвайте повреден климатик",
-        transcription: "ри-порт де-миджд еър кон-ди-шъ-нинг",
-      },
-      [lang.hi]: {
-        name: "क्षतिग्रस्त एयर कंडीशनिंग की रिपोर्ट करें",
-        transcription: "रिपोर्ट डैमेज्ड एयर कंडीशनिंग",
-      },
-    },
-  },
-  {
-    name: "report carpet stains",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "raportează pete pe covor",
-        transcription: "ri-port kar-pet steinz",
-      },
-      [lang.ru]: {
-        name: "сообщить о пятнах на ковре",
-        transcription: "ри-порт кар-пет стэйнз",
-      },
-      [lang.ua]: {
-        name: "повідомити про плями на килимі",
-        transcription: "рі-порт кар-пет стейнз",
-      },
-      [lang.es]: {
-        name: "reportar manchas en la alfombra",
-        transcription: "ri-port car-pet stains",
-      },
-      [lang.bg]: {
-        name: "докладвайте петна по килима",
-        transcription: "ри-порт кар-пет стейнз",
-      },
-      [lang.hi]: {
-        name: "कालीन के दागों की रिपोर्ट करें",
-        transcription: "रिपोर्ट कारपेट स्टेंस",
-      },
-    },
-  },
-
-  {
-    id: 77,
-    name: "The heating is not working.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Încălzirea nu funcționează.",
-        transcription: "dhə hee-ting iz not wăr-king",
-      },
-      [lang.ru]: {
-        name: "Отопление не работает.",
-        transcription: "зэ хи-тинг из нот во-ркинг",
-      },
-      [lang.ua]: {
-        name: "Опалення не працює.",
-        transcription: "зе хі-тінг із нот воркінг",
-      },
-      [lang.es]: {
-        name: "La calefacción no funciona.",
-        transcription: "dhe hee-ting is not wer-king",
-      },
-      [lang.bg]: {
-        name: "Отоплението не работи.",
-        transcription: "дъ хий-тинг из нот уър-кинг",
-      },
-      [lang.hi]: {
-        name: "हीटिंग काम नहीं कर रही है।",
-        transcription: "द हीटिंग इज नॉट वर्किंग",
-      },
-    },
-  },
-  {
-    id: 78,
-    name: "There's a flickering light in the bathroom.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Există o lumină pâlpâitoare în baie.",
-        transcription: "dherz a flik-ăr-ing lait in dhə bath-rum",
-      },
-      [lang.ru]: {
-        name: "В ванной мигает свет.",
-        transcription: "зэрз э фли-ке-ринг лайт ин зэ бас-рум",
-      },
-      [lang.ua]: {
-        name: "У ванній кімнаті блимає світло.",
-        transcription: "зерз а флікерінг лайт ін зе бас-рум",
-      },
-      [lang.es]: {
-        name: "Hay una luz parpadeante en el baño.",
-        transcription: "dherz a flik-er-ing lait in the bath-rum",
-      },
-      [lang.bg]: {
-        name: "Има мигаща светлина в банята.",
-        transcription: "дерз ъ флик-ъ-ринг лайт ин дъ бат-руум",
-      },
-      [lang.hi]: {
-        name: "बाथरूम में एक झिलमिलाती रोशनी है।",
-        transcription: "देयर इज़ अ फ्लिकरिंग लाइट इन द बाथरूम",
-      },
-    },
-  },
-  {
-    id: 79,
-    name: "The air conditioning is not working.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Aerul condiționat nu funcționează.",
-        transcription: "dhə air con-di-shun-ing iz not wăr-king",
-      },
-      [lang.ru]: {
-        name: "Кондиционер не работает.",
-        transcription: "зэ эир кон-ди-шни-нг из нот во-ркинг",
-      },
-      [lang.ua]: {
-        name: "Кондиціонер не працює.",
-        transcription: "зе еир кон-ді-шни-нг із нот воркінг",
-      },
-      [lang.es]: {
-        name: "El aire acondicionado no funciona.",
-        transcription: "dhe air con-di-shun-ing is not wer-king",
-      },
-      [lang.bg]: {
-        name: "Климатикът не работи.",
-        transcription: "дъ еър кон-ди-шъ-нинг из нот уър-кинг",
-      },
-      [lang.hi]: {
-        name: "एयर कंडीशनिंग काम नहीं कर रहा है।",
-        transcription: "द एयर कंडीशनिंग इज नॉट वर्किंग",
-      },
-    },
-  },
-  {
-    id: 80,
-    name: "I've found a stain on the carpet.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Am găsit o pată pe covor.",
-        transcription: "aiv faund a stein on dhə kar-pet",
-      },
-      [lang.ru]: {
-        name: "Я нашел(ла) пятно на ковре.",
-        transcription: "айв фаунд э стэйн он зэ кар-пет",
-      },
-      [lang.ua]: {
-        name: "Я знайшов(ла) пляму на килимі.",
-        transcription: "айв фаунд а стейн он зе кар-пет",
-      },
-      [lang.es]: {
-        name: "He encontrado una mancha en la alfombra.",
-        transcription: "aiv faund a stain on the kar-pet",
-      },
-      [lang.bg]: {
-        name: "Намерих петно по килима.",
-        transcription: "айв фаунд ъ стейн он дъ кар-пет",
-      },
-      [lang.hi]: {
-        name: "मुझे कालीन पर एक दाग मिला है।",
-        transcription: "आईव फाउंड अ स्टेन ऑन द कारपेट",
-      },
-    },
-  },
-  {
-    id: 81,
-    name: "The toilet is blocked.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Toaleta este înfundată.",
-        transcription: "dhə toi-let iz blokt",
-      },
-      [lang.ru]: {
-        name: "Туалет засорен.",
-        transcription: "зэ той-лет из блокт",
-      },
-      [lang.ua]: {
-        name: "Туалет заблокований.",
-        transcription: "зе туалет із блокт",
-      },
-      [lang.es]: {
-        name: "El inodoro está atascado.",
-        transcription: "dhe toi-let is blokt",
-      },
-      [lang.bg]: {
-        name: "Тоалетната е запушена.",
-        transcription: "дъ той-лет из блокт",
-      },
-      [lang.hi]: {
-        name: "टॉयलेट ब्लॉक है।",
-        transcription: "द टॉयलेट इज ब्लॉक्ड",
-      },
-    },
-  },
-  {
-    id: 82,
-    name: "The lamp on the bedside table is broken.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Lampa de pe noptieră este stricată.",
-        transcription: "dhə lamp on dhə bed-said tei-băl iz bro-kăn",
-      },
-      [lang.ru]: {
-        name: "Лампа на прикроватной тумбочке сломана.",
-        transcription: "зэ ламп он зэ бэд-сайд тэй-бл из бро-кен",
-      },
-      [lang.ua]: {
-        name: "Лампа на тумбочці зламана.",
-        transcription: "зе ламп он зе бед-сайд тейбл із броукен",
-      },
-      [lang.es]: {
-        name: "La lámpara de la mesita de noche está rota.",
-        transcription: "dhe lamp on the bed-said tei-bel is bro-ken",
-      },
-      [lang.bg]: {
-        name: "Лампата на нощното шкафче е счупена.",
-        transcription: "дъ ламп он дъ бед-сайд тей-бъл из бро-кън",
-      },
-      [lang.hi]: {
-        name: "बेडसाइड टेबल पर रखा लैंप टूटा हुआ है।",
-        transcription: "द लैंप ऑन द बेडसाइड टेबल इज ब्रोकेन",
-      },
-    },
-  },
-  {
-    id: 83,
-    name: "There's a hole in the duvet cover.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Este o gaură în husa de plapumă.",
-        transcription: "dherz a houl in dhə du-vei kuv-ăr",
-      },
-      [lang.ru]: {
-        name: "В пододеяльнике дырка.",
-        transcription: "зэрз э хоул ин зэ ду-вэй кав-ер",
-      },
-      [lang.ua]: {
-        name: "У підковдрі дірка.",
-        transcription: "зерз а хоул ін зе ду-вей кавер",
-      },
-      [lang.es]: {
-        name: "Hay un agujero en la funda nórdica.",
-        transcription: "dherz a hol in the du-vet cov-er",
-      },
-      [lang.bg]: {
-        name: "Има дупка в плика за завивка.",
-        transcription: "дерз ъ хоул ин дъ ду-вей къв-ър",
-      },
-      [lang.hi]: {
-        name: "दूवेट कवर में एक छेद है।",
-        transcription: "देयर इज़ अ होल इन द दूवेट कवर",
-      },
-    },
-  },
-  {
-    id: 84,
-    name: "The TV remote control is not functioning.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Telecomanda TV nu funcționează.",
-        transcription: "dhə ti-vi ri-mout kən-trol iz not fank-shun-ing",
-      },
-      [lang.ru]: {
-        name: "Пульт дистанционного управления телевизором не работает.",
-        transcription: "зэ ти-ви ри-моут кон-трол из нот фанк-шо-нинг",
-      },
-      [lang.ua]: {
-        name: "Пульт дистанційного керування телевізором не працює.",
-        transcription: "зе ті-ві рі-моут контрол із нот фанкшенінг",
-      },
-      [lang.es]: {
-        name: "El control remoto del televisor no funciona.",
-        transcription: "dhe ti-vi ri-mot con-trol is not fank-shun-ing",
-      },
-      [lang.bg]: {
-        name: "Дистанционното управление на телевизора не работи.",
-        transcription: "дъ ти-ви ри-моут кън-трол из нот фънк-шъ-нинг",
-      },
-      [lang.hi]: {
-        name: "टीवी रिमोट कंट्रोल काम नहीं कर रहा है।",
-        transcription: "द टीवी रिमोट कंट्रोल इज नॉट फंक्शनिंग",
-      },
-    },
-  },
-  {
-    id: 85,
-    name: "One of the chairs in the room is damaged.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Unul dintre scaunele din cameră este deteriorat.",
-        transcription: "uăn ov dhə chers in dhə rum iz dem-ij-d",
-      },
-      [lang.ru]: {
-        name: "Один из стульев в комнате поврежден.",
-        transcription: "ван ов зэ черз ин зэ рум из дэм-иджд",
-      },
-      [lang.ua]: {
-        name: "Один зі стільців у кімнаті пошкоджений.",
-        transcription: "ван ов зе черз ін зе рум із деміджд",
-      },
-      [lang.es]: {
-        name: "Una de las sillas de la habitación está dañada.",
-        transcription: "uon ov the chers in the rum is dam-ajd",
-      },
-      [lang.bg]: {
-        name: "Един от столовете в стаята е повреден.",
-        transcription: "уан ов дъ чеърз ин дъ руум из де-миджд",
-      },
-      [lang.hi]: {
-        name: "कमरे में एक कुर्सी क्षतिग्रस्त है।",
-        transcription: "वन ऑफ़ द चेयर्स इन द रूम इज डैमेज्ड",
-      },
-    },
-  },
-  {
-    id: 86,
-    name: "The showerhead is faulty.",
-    categories: [categories.damages, categories.requests],
-    translation: {
-      [lang.ro]: {
-        name: "Capul de duș este defect.",
-        transcription: "dhə shau-ăr-hed iz fol-ti",
-      },
-      [lang.ru]: {
-        name: "Лейка душа неисправна.",
-        transcription: "зэ шау-эр-хед из фол-ти",
-      },
-      [lang.ua]: {
-        name: "Душова насадка несправна.",
-        transcription: "зе шау-ер-хед із фолті",
-      },
-      [lang.es]: {
-        name: "El cabezal de la ducha está defectuoso.",
-        transcription: "dhe shau-er-hed is fol-ti",
-      },
-      [lang.bg]: {
-        name: "Душ слушалката е дефектна.",
-        transcription: "дъ шау-ър-хед из фол-ти",
-      },
-      [lang.hi]: {
-        name: "शॉवरहेड खराब है।",
-        transcription: "द शावरहेड इज फॉल्टी",
-      },
-    },
-  },
-]
-
-testData.list = [...testData.list, ...newWords]
 
 function Database(testData) {
-  let data = testData
+  let withId = [...testData?.list].map((item, index) => {
+    return { id: index, ...item }
+  })
+
+  let data = { list: withId }
 
   return {
     get All() {
-      console.log("data received: ", data)
+      // console.log("data received: ", data)
       return data.list
     },
     getAllByProperty: (property) => data?.list.map((item) => item[property]),

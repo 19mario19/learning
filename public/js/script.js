@@ -1,19 +1,13 @@
 import { store } from "../reactive/observable.js"
 import { newDatabase, categories, lang as languages } from "../data/data.js"
 
-import { hasAudio } from "../data/dict.js"
-
 const local = false
 // change to flase when deploying to netlify
 
 // database
 const db = newDatabase()
 
-console.log(db.All)
-
 // console.log(db.getAllByProperty("name"))
-
-console.log(hasAudio)
 
 // stores
 const storeLang = store.lang
@@ -40,8 +34,14 @@ storeCategory.subscribe((data) => {
 
 // initialisation on load
 storeLang.value = JSON.parse(localStorage.getItem("lang")) || languages.ro
-storeCategory.value = JSON.parse(localStorage.getItem("category")) || categories.all
-storeData.value = db.ByCategory({ name: storeCategory.value }) ?? db.All
+storeCategory.value =
+  JSON.parse(localStorage.getItem("category")) || categories.all
+
+if ((db.ByCategory({ name: storeCategory.value })).length > 0) {
+  storeData.value = db.ByCategory({ name: storeCategory.value })
+} else {
+  storeData.value = db.All
+}
 
 // functions
 function navbar(root) {

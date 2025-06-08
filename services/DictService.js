@@ -1,8 +1,71 @@
-// import { words } from "../data/words.js"
+import dotenv from "dotenv"
+dotenv.config()
 
-const words = []
+const APIKEY = process.env.APIKEY
 
-// console.log(words)
+const words = [
+  "towel",
+  "shower",
+  "bathtub",
+  "toilet",
+  "sink",
+  "shampoo",
+  "conditioner",
+  "soap",
+  "hairdryer",
+  "bed",
+  "sheets",
+  "pillow",
+  "pillowcase",
+  "blanket",
+  "duvet",
+  "mattress",
+  "mop",
+  "broom",
+  "dustpan",
+  "duster",
+  "disinfectant",
+  "clean",
+  "dirty",
+  "stain",
+  "trash",
+  "pillowcase",
+  "hanger",
+  "dust",
+  "polish",
+  "broken",
+  "light",
+  "tap",
+]
+
+/**
+ * @param {string} word
+ * @param {number} [limit=5]
+ * @param {boolean} [includeRelated=false]
+ */
+async function fetchMeaningWordnik(word, limit = 1) {
+  word = word.toLocaleLowerCase()
+  if (!word) throw new Error("Please add a word")
+  if (!APIKEY) throw new Error("API key needed!")
+
+  const URL_AUDIO = `https://api.wordnik.com/v4/word.json/${word}/audio?useCanonical=false&limit=${limit}&api_key=${APIKEY}`
+  try {
+    const resAudio = await fetch(URL_AUDIO)
+
+    if (!resAudio.ok) return
+
+    const jsonAudio = await resAudio.json()
+
+    const data = jsonAudio.map((item) => {
+      return { word: item.word, audio: item?.fileUrl }
+    })
+
+    console.log(data)
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
 
 async function FetchData(query) {
   try {
@@ -22,12 +85,16 @@ async function FetchData(query) {
 async function GetDataForAllWords(data) {
   const output = []
 
-  for (let word of data) {
-    let res = await FetchData(word)
-    if (res) {
-      //   console.log(`Word [${word}] was found!`)
+  console.log("Fetching all data for : ", data)
+  try {
+    for (let word of data) {
+      let res = await fetchMeaningWordnik(word)
+      console.log("RESPONSE: ",Array.from(res)[0])
+      if (!res) return
       output.push(res)
     }
+  } catch (error) {
+    console.log(error)
   }
 
   //   console.log(output)
@@ -36,30 +103,30 @@ async function GetDataForAllWords(data) {
 }
 
 async function DictService() {
-  let data = (await GetDataForAllWords(words)) || []
-
+  console.log("Dict service started!")
+  let data = []
   let output = new Set()
-  if (data.length > 0) {
-    let id = 0
+  try {
+    data =
+      (await GetDataForAllWords(words)).then((data) =>
+        console.log("In then: ", data),
+      ) || []
+
+    data = data?.filter((item) => item?.audio)
+
     for (let item of data) {
+      if (!item) return
 
-      let object = item[0]
-
-      output.add({
-        id,
-        name: object.word ?? "",
-        // phonetics: object?.phonetics[0]?.text ?? "",
-        phonetic: object?.phonetic ?? "",
-        audio: object?.phonetics[0]?.audio ?? "",
-
-        meaning: object?.meanings[0]?.definitions[0]?.definition ?? "",
-      })
-      id++
+      output.add(item)
     }
-  }
+  } catch (error) {}
+
+  // console.log(output)
 
   return {
-    getAll: () => Array.from(output),
+    getAll: () => {
+      Array.from(output)
+    },
     getById: (id) => {
       return data?.find((item) => item.id == id)
     },
