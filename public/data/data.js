@@ -2058,7 +2058,7 @@ const testData = {
     },
 
     {
-      name: "Good morning [guest's name], my name is [your name] from housekeeping. Would you like me to clean your room now or shall I come later?",
+      name: "Good morning ***, my name is *** from housekeeping. Would you like me to clean your room now or shall I come later?",
       categories: [categories.requests, categories.sentences],
       translation: {
         [lang.ro]: {
