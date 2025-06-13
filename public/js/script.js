@@ -255,6 +255,7 @@ function WordComponent(element, appendTo) {
   // bot.append(googleLink, merriamLink)
 
   wrapper.append(top, mid, bot)
+  // appending audio if found
   if (found) wrapper.append(audio)
 }
 
